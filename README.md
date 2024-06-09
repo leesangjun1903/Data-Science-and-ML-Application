@@ -45,4 +45,9 @@ Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://susta
 - ML for Engineers https://ml-course.github.io/master/intro.html#
 - CS4780/CS5780: Machine Learning for Intelligent Systems https://www.cs.cornell.edu/courses/cs4780/2018fa/
 - Stanford Machine Learning https://www.holehouse.org/mlclass/
-- 
+
+
+## Code
+## Project    
+- 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
+
