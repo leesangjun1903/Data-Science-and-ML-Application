@@ -91,6 +91,7 @@ Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://susta
 - https://jhyeup.tistory.com/?page=3
 - https://dlgari33.tistory.com/
 - https://mvje.tistory.com/
+- https://dslyh01.tistory.com/
 
 ## Control AI  
 https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
