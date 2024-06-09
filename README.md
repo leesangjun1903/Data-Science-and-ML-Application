@@ -8,6 +8,9 @@
 Top 10 Deep Learning Algorithms to Know in 2024 https://emeritus.org/in/learn/top-10-deep-learning-algorithms-to-know-in-2024/  
 https://stackoverflow.com/
 
+## Chatbot
+Deepseekcode https://chat.deepseek.com/
+
 ## Papers
 Journal of Machine Learning Research https://jmlr.org/papers/  
 Deep Learning Monitor https://deeplearn.org/  
