@@ -51,3 +51,43 @@ Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://susta
 ## Project    
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
 
+# ETC(Blog)
+- https://github.com/smfelixchoi?tab=repositories
+- ddiddu blog https://ddiddu.medium.com/ 
+- https://seongqjini.com/category/deeplearning/
+- Meta Learning https://bigwaveai.tistory.com/18
+- 클래스 불균형 다루기 https://hyeonchan523.tistory.com/3
+- Robotics, 3D-Vision, Deep-Learning https://velog.io/@wilko97/posts
+- [딥러닝 with 파이썬] Segmentation 평가지표 (Pixel Accuracy, IOU, Dice Coefficient(F1 score), Precision & Recall 등) https://jaylala.tistory.com/entry/딥러닝-with-파이썬-Segmentation-평가지표-Pixel-Accuracy-IOU-Dice-CoefficientF1-score-Precision-Recall-등
+- [딥러닝] Dice Coefficient 설명, pytorch 코드(segmentation 평가방법) https://minimin2.tistory.com/179
+- https://velog.io/@seolryung/posts
+- HEEJOON MOON https://github.com/PHANTOM0122?tab=repositories
+- [매핑 & 로컬라이제이션 챌린지] 데이터셋 구축 과정과 베이스라인 측위 기법 https://www.naverlabs.com/storyDetail/161
+- https://stanford.edu/~shervine/
+- https://jrc-park.tistory.com/
+- https://m.blog.naver.com/PostList.naver?blogId=laonple&categoryNo=31&logCode=0&tab=1
+- https://bkshin.tistory.com/
+- https://pinkwink.kr/category/Theory/DeepLearning
+- 데이터 사이언스 스쿨 https://datascienceschool.net/intro.html
+- https://velog.io/@cha-suyeon/posts
+- https://ysco.tistory.com/
+- https://minimin2.tistory.com/
+- https://yeong-jin-data-blog.tistory.com/
+- https://strutive07.github.io/
+- https://devkihyun.github.io/
+- https://bigdatamaster.tistory.com/
+- https://dbstndi6316.tistory.com/
+- https://limitsinx.tistory.com/
+- https://076923.github.io/
+- https://hyunlee103.tistory.com/
+- https://ssung-22.tistory.com/
+- https://deep-learning-study.tistory.com/
+- https://rfriend.tistory.com/
+- https://gils-lab.tistory.com/
+- https://rhcsky.tistory.com/
+- https://jhyeup.tistory.com/?page=3
+- https://dlgari33.tistory.com/
+
+## Control AI  
+https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
+
