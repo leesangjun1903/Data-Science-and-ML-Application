@@ -54,6 +54,18 @@ Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://susta
 ## Project    
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
 
+### Classification
+Deep Learning Tutorial for Beginners https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/Deep%20learning%20tutorial%20for%20beginners.ipynb  
+How to build a convolutional neural network using Pytorch https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/Pytorch%20animal%20face%20classification%20with%20cnns.ipynb  
+
+### GAN
+Generate Fasion Images with Conditional GAN https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/Generate%20fashion%20images%20with%20conditional%20GAN.ipynb  
+Generative Adversarial Networks(GAN) - PyTorch Tutorial https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/Pytorch%20GAN%20basic%20tutorial%20for%20beginner.ipynb  
+
+### Object Detection
+SIIM-FISABIO-RSNA COVID-19 Detection https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/SIIM-FISABIO-RSNA%20COVID-19%20Detection%20using%20fasterRCNN.ipynb  
+SIIM: Step-by-Step Image Detection for Beginners https://github.com/leesangjun1903/Data-Science-and-Machine-learning/blob/main/siim-covid-19-detection-10-step-tutorial-1.ipynb
+
 ### Kaggle Tutorial | Natural Language Processing
 - Beginner to Intermediate Natural Language Processing Guide - NowYSM https://www.kaggle.com/code/ashishpatel26/beginner-to-intermediate-nlp-tutorial/notebook : sklearn + logistic Regression을 활용한 감성분석(긍/부정 표현 판별)
 - Deep Learning NLP Quora Solutions - https://www.kaggle.com/code/ashishpatel26/deep-learning-nlp-quora-solutions : NowYSM 딥러닝(Keras)을 활용한 악성(사회적으로 문제가 될 수 있는, 질이 나쁜) 질문 판별
