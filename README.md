@@ -1,5 +1,6 @@
 # Data-Science
 - Goggle Scholar https://scholar.google.com/
+- Awesome AI & Data GitHub-Repos https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
 
 # Data Science with coding 
 데이콘 https://dacon.io/  
