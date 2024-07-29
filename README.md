@@ -10,6 +10,7 @@ https://stackoverflow.com/
 
 ## Chatbot
 Deepseekcode https://chat.deepseek.com/
+Mistral https://chat.mistral.ai/chat
 
 ## Papers
 Journal of Machine Learning Research https://jmlr.org/papers/  
