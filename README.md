@@ -9,7 +9,7 @@ Top 10 Deep Learning Algorithms to Know in 2024 https://emeritus.org/in/learn/to
 https://stackoverflow.com/
 
 ## Chatbot
-Deepseekcode https://chat.deepseek.com/
+Deepseekcode https://chat.deepseek.com/  
 Mistral https://chat.mistral.ai/chat
 
 ## Papers
