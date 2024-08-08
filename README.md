@@ -57,6 +57,7 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 ## Project    
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
 - 365 Days Computer Vision Learning LinkedIn Post : https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post
+- ARC Prize 2024 : https://www.kaggle.com/competitions/arc-prize-2024/code?competitionId=67357&sortBy=voteCount&excludeNonAccessedDatasources=true
 
 ### Kaggle Tutorial | Natural Language Processing
 - Beginner to Intermediate Natural Language Processing Guide - NowYSM https://www.kaggle.com/code/ashishpatel26/beginner-to-intermediate-nlp-tutorial/notebook : sklearn + logistic Regression을 활용한 감성분석(긍/부정 표현 판별)
@@ -104,9 +105,15 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - https://dslyh01.tistory.com/
 - https://ambitious-posong.tistory.com/category/AIML%20%EB%B6%84%EC%95%BC
 - https://kimjy99.github.io/categories/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/CV/
+- https://ai-com.tistory.com/
+- https://velog.io/@lee9843/posts
+- https://neulvo.tistory.com/category/Data
 - Github에 있는 소스코드 코랩에 설치하기 : https://wikidocs.net/197088
 - 고려대학교 산업경영공학부 DSBA 연구실 : https://www.youtube.com/@dsba2979/playlists
 - ML(CV,NLP) example : https://github.com/HiMyNameIsDavidKim/ML_Example/tree/main
+- https://lilianweng.github.io/
+- https://ffighting.net/
+- 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
 
 ## Control AI  
 https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
