@@ -39,6 +39,7 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - Neural Networks and Deep Learning by Michael A. Nielsen https://sihyeon-kim.github.io/neural-networks-and-deep-learning-korean/index.html
 - 딥 러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
 - 데이터 과학자를 위한 실전 머신러닝 https://github.com/giwoong2/doit_hands-on_ML
+- CS565600 Deep Learning : https://nthu-datalab.github.io/ml/
 
 ## Theory
 - Functional Gradient Descent https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html
@@ -52,10 +53,10 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - CS4780/CS5780: Machine Learning for Intelligent Systems https://www.cs.cornell.edu/courses/cs4780/2018fa/
 - Stanford Machine Learning https://www.holehouse.org/mlclass/
 
-
 ## Code
 ## Project    
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
+- 365 Days Computer Vision Learning LinkedIn Post : https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post
 
 ### Kaggle Tutorial | Natural Language Processing
 - Beginner to Intermediate Natural Language Processing Guide - NowYSM https://www.kaggle.com/code/ashishpatel26/beginner-to-intermediate-nlp-tutorial/notebook : sklearn + logistic Regression을 활용한 감성분석(긍/부정 표현 판별)
