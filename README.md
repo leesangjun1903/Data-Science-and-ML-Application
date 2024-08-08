@@ -102,6 +102,11 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - https://dlgari33.tistory.com/
 - https://mvje.tistory.com/
 - https://dslyh01.tistory.com/
+- https://ambitious-posong.tistory.com/category/AIML%20%EB%B6%84%EC%95%BC
+- https://kimjy99.github.io/categories/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0/CV/
+- Github에 있는 소스코드 코랩에 설치하기 : https://wikidocs.net/197088
+- 고려대학교 산업경영공학부 DSBA 연구실 : https://www.youtube.com/@dsba2979/playlists
+- ML(CV,NLP) example : https://github.com/HiMyNameIsDavidKim/ML_Example/tree/main
 
 ## Control AI  
 https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
