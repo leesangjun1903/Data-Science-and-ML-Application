@@ -38,7 +38,6 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
 - 핸즈온 머신러닝(2판) https://formal.hknu.ac.kr/handson-ml2/
 - Neural Networks and Deep Learning by Michael A. Nielsen https://sihyeon-kim.github.io/neural-networks-and-deep-learning-korean/index.html
-- 딥 러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
 - 데이터 과학자를 위한 실전 머신러닝 https://github.com/giwoong2/doit_hands-on_ML
 - CS565600 Deep Learning : https://nthu-datalab.github.io/ml/
 
@@ -59,12 +58,6 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
 - 365 Days Computer Vision Learning LinkedIn Post : https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post
 - ARC Prize 2024 : https://www.kaggle.com/competitions/arc-prize-2024/code?competitionId=67357&sortBy=voteCount&excludeNonAccessedDatasources=true
-
-### Kaggle Tutorial | Natural Language Processing
-- Beginner to Intermediate Natural Language Processing Guide - NowYSM https://www.kaggle.com/code/ashishpatel26/beginner-to-intermediate-nlp-tutorial/notebook : sklearn + logistic Regression을 활용한 감성분석(긍/부정 표현 판별)
-- Deep Learning NLP Quora Solutions - https://www.kaggle.com/code/ashishpatel26/deep-learning-nlp-quora-solutions : NowYSM 딥러닝(Keras)을 활용한 악성(사회적으로 문제가 될 수 있는, 질이 나쁜) 질문 판별
-- NLP Quick Start for Newbie😁 with 9steps https://www.kaggle.com/code/songseungwon/nlp-quick-start-for-newbie-with-9steps : Seungwon Song 재난 트위터를 활용한 가짜 뉴스 판별기 구현
-- LLaVA: Large Language and Vision Assistant https://github.com/haotian-liu/LLaVA?tab=readme-ov-file
 
 # ETC(Blog)
 - https://github.com/smfelixchoi?tab=repositories
