@@ -2,18 +2,16 @@
 - Goggle Scholar https://scholar.google.com/
 - Awesome AI & Data GitHub-Repos https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
 
-# Data Science with coding 
+# 유용한 Data Science site
 데이콘 https://dacon.io/  
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
 코드 오류 해결 : https://stackoverflow.com/  
 Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
-
-## Papers
 Journal of Machine Learning Research https://jmlr.org/papers/  
 Deep Learning Monitor https://deeplearn.org/  
 AI 논문 사이트 모음 https://sohyunwriter.tistory.com/59  
-Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://sustaining-starflower-aff.notion.site/c3b3474d18ef4304b23ea360367a5137?v=5d763ad5773f44eb950f49de7d7671bd
+Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://sustaining-starflower-aff.notion.site/c3b3474d18ef4304b23ea360367a5137?v=5d763ad5773f44eb950f49de7d7671bd  
 Best Computer Science Conferences https://research.com/conference-rankings/computer-science
 
 ## Learning Coding
