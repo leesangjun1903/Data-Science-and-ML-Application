@@ -39,6 +39,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - CS565600 Deep Learning(Notebook만 코딩) : https://nthu-datalab.github.io/ml/
 - 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython
 - 딥러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
+- Zero to Mastery Learn PyTorch for Deep Learning : https://www.learnpytorch.io/
 
 ## Learning Coding - 언어 실력 기르기
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
