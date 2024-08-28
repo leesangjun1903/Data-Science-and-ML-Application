@@ -6,8 +6,7 @@
 데이콘 https://dacon.io/  
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
-Top 10 Deep Learning Algorithms to Know in 2024 https://emeritus.org/in/learn/top-10-deep-learning-algorithms-to-know-in-2024/  
-https://stackoverflow.com/  
+코드 오류 해결 : https://stackoverflow.com/  
 Deep Learning Bible : https://wikidocs.net/profile/info/book/14245 
 
 ## Chatbot
