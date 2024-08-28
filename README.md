@@ -15,11 +15,8 @@ Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://susta
 Best Computer Science Conferences https://research.com/conference-rankings/computer-science  
 Coding Interview University https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md#%EC%9D%B4%EA%B1%B4-%EB%8C%80%EC%B2%B4-%EB%AD%90%ED%95%98%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94
 
-## Learning Coding - 코딩 실력 기르기
-- Part of my daily plan for studying Python. https://github.com/jwasham/practice-python  
-
 # Machine Learning Tutorial
-## Lecture 
+## Coding Lecture 
 - Understanding Deep Learning https://udlbook.github.io/udlbook/
 - Machine Learning Study 혼자 해보기 https://github.com/teddylee777/machine-learning/tree/master?tab=readme-ov-file
 - 텐서 플로우 블로그 (Tensor ≈ Blog) https://tensorflow.blog/book-roadmap/
@@ -32,7 +29,11 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - Neural Networks and Deep Learning by Michael A. Nielsen https://sihyeon-kim.github.io/neural-networks-and-deep-learning-korean/index.html
 - 데이터 과학자를 위한 실전 머신러닝 https://github.com/giwoong2/doit_hands-on_ML
 - CS565600 Deep Learning : https://nthu-datalab.github.io/ml/
-- 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython  
+- 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython
+
+## Learning Coding - 언어 코딩 실력 기르기
+- 
+- Part of my daily plan for studying Python. https://github.com/jwasham/practice-python 
 
 ## Theory
 - Functional Gradient Descent https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html
@@ -103,6 +104,9 @@ Mistral https://chat.mistral.ai/chat
 - https://lilianweng.github.io/
 - https://ffighting.net/
 - 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
+
+# Topological Deep Learning (TDL)
+- Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
 
 ## Control AI  
 https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
