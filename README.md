@@ -104,6 +104,7 @@ Mistral https://chat.mistral.ai/chat
 - https://lilianweng.github.io/
 - https://ffighting.net/
 - 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
+- https://thecho7.tistory.com/
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
