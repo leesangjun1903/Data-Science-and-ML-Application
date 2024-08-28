@@ -25,7 +25,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 
 
 # Machine Learning Tutorial
-## Coding Lecture 
+## Coding Studies
 - Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
 - Understanding Deep Learning https://udlbook.github.io/udlbook/
 - Machine Learning Study 혼자 해보기 https://github.com/teddylee777/machine-learning/tree/master?tab=readme-ov-file
