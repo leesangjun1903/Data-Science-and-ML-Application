@@ -7,11 +7,7 @@
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
 코드 오류 해결 : https://stackoverflow.com/  
-Deep Learning Bible : https://wikidocs.net/profile/info/book/14245 
-
-## Chatbot
-Deepseekcode https://chat.deepseek.com/  
-Mistral https://chat.mistral.ai/chat
+Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
 
 ## Papers
 Journal of Machine Learning Research https://jmlr.org/papers/  
@@ -57,6 +53,10 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
 - 365 Days Computer Vision Learning LinkedIn Post : https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post
 - ARC Prize 2024 : https://www.kaggle.com/competitions/arc-prize-2024/code?competitionId=67357&sortBy=voteCount&excludeNonAccessedDatasources=true
+
+## 도움주는 NLP model
+Deepseekcode https://chat.deepseek.com/  
+Mistral https://chat.mistral.ai/chat
 
 # ETC(Blog)
 - https://github.com/smfelixchoi?tab=repositories
