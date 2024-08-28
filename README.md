@@ -131,6 +131,8 @@ Mistral https://chat.mistral.ai/chat
 - https://jins-sw.tistory.com/
 - https://facerain.github.io/
 - https://rfriend.tistory.com/
+- https://ahnjg.tistory.com/m/42
+- How can I import custom modules from a Github repository in Google Colab? : https://stackoverflow.com/questions/52681405/how-can-i-import-custom-modules-from-a-github-repository-in-google-colab
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
