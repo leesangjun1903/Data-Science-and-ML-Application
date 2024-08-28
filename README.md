@@ -18,7 +18,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 ## Learning Coding - 코딩 실력 기르기
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python  
 
-# Machine Learning
+# Machine Learning Tutorial
 ## Lecture 
 - Understanding Deep Learning https://udlbook.github.io/udlbook/
 - Machine Learning Study 혼자 해보기 https://github.com/teddylee777/machine-learning/tree/master?tab=readme-ov-file
