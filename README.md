@@ -1,8 +1,16 @@
 # DL Research
 - Goggle Scholar https://scholar.google.com/
 - Awesome AI & Data GitHub-Repos https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
+- Awesome Recurrent Neural Networks https://github.com/kjw0612/awesome-rnn
+- Awesome Deep Vision https://github.com/kjw0612/awesome-deep-vision
+- Awesome Random Forest https://github.com/kjw0612/awesome-random-forest
+- Awesome Deep Learning https://github.com/ChristosChristofidis/awesome-deep-learning
+- A curated list of awesome Deep Learning tutorials, projects and communities.
+- Awesome - Most Cited Deep Learning Papers https://github.com/terryum/awesome-deep-learning-papers
+- Project Based Learning https://github.com/tuvtran/project-based-learning
 
 # 유용한 Data Science site
+머신러닝 관련 도서 로드맵 https://www.mindmeister.com/812276967/_?fullscreen=1
 데이콘 https://dacon.io/  
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
@@ -36,6 +44,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python 
 
 ## Theory
+- PRML정리 문서 Pattern Recognition & Machien Learning, Bishop http://norman3.github.io/prml/
 - Functional Gradient Descent https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html
 - Reproducing Kernel Hilbert Space https://nzer0.github.io/reproducing-kernel-hilbert-space.html
 - Regularization Methods for Machine Learning Lab https://lcsl.unige.it/courses/regml/regml2020/  
@@ -105,6 +114,15 @@ Mistral https://chat.mistral.ai/chat
 - https://ffighting.net/
 - 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
 - https://thecho7.tistory.com/
+- 라온 피플 Vision 블로그 https://blog.naver.com/laonple/220463627091
+- ratsgo's 블로그 https://ratsgo.github.io/blog/categories/
+- 송호연 - 인공지능 1학년 브런치 https://brunch.co.kr/magazine/ai-first
+- 카카오 - AI 브런치 https://brunch.co.kr/magazine/kakaoaireport
+- 솔라리스의 인공지능 연구실 블로그 http://solarisailab.com/deep-learning
+- 카카오 Brain 블로그 https://www.kakaobrain.com/blog
+- Google AI Blog https://ai.googleblog.com/
+- Skelter Labs - PingPong Blog https://blog.pingpong.us/
+- miscellaneous - practicalcryptography - http://www.practicalcryptography.com/miscellaneous/machine-learning/
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
