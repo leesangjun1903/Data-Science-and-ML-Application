@@ -10,7 +10,8 @@
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 
 # 유용한 Data Science site
-머신러닝 관련 도서 로드맵 https://www.mindmeister.com/812276967/_?fullscreen=1
+https://fall2019.fullstackdeeplearning.com/ : 딥러닝의 기본적인 것들을 이미 알고있는 사람들이 실제로 DL Production을 만드는 과정을 이해하기 위한 강의다.  
+머신러닝 관련 도서 로드맵 https://www.mindmeister.com/812276967/_?fullscreen=1  
 데이콘 https://dacon.io/  
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
@@ -21,6 +22,8 @@ AI 논문 사이트 모음 https://sohyunwriter.tistory.com/59
 Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://sustaining-starflower-aff.notion.site/c3b3474d18ef4304b23ea360367a5137?v=5d763ad5773f44eb950f49de7d7671bd  
 Best Computer Science Conferences https://research.com/conference-rankings/computer-science  
 Coding Interview University https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md#%EC%9D%B4%EA%B1%B4-%EB%8C%80%EC%B2%B4-%EB%AD%90%ED%95%98%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94
+프로그래머 필독서 64선 https://blog.naver.com/wikiware/100042152479
+
 
 # Machine Learning Tutorial
 ## Coding Lecture 
@@ -38,8 +41,8 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - 딥러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
 
 ## Learning Coding - 언어 실력 기르기
-- 
-- Part of my daily plan for studying Python. https://github.com/jwasham/practice-python 
+- 파이썬 헤엄치기 : https://wikidocs.net/book/5148
+- Part of my daily plan for studying Python. https://github.com/jwasham/practice-python
 
 ## Lecture with Theory
 - Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
@@ -124,6 +127,8 @@ Mistral https://chat.mistral.ai/chat
 - Google AI Blog https://ai.googleblog.com/
 - Skelter Labs - PingPong Blog https://blog.pingpong.us/
 - miscellaneous - practicalcryptography - http://www.practicalcryptography.com/miscellaneous/machine-learning/
+- https://blog.naver.com/jodi999
+- https://bovit.tistory.com/
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
