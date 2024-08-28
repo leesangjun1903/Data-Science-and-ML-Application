@@ -128,6 +128,9 @@ Mistral https://chat.mistral.ai/chat
 - miscellaneous - practicalcryptography - http://www.practicalcryptography.com/miscellaneous/machine-learning/
 - https://blog.naver.com/jodi999
 - https://bovit.tistory.com/
+- https://jins-sw.tistory.com/
+- https://facerain.github.io/
+- https://rfriend.tistory.com/
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
