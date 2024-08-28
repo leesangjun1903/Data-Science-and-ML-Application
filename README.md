@@ -116,7 +116,7 @@ Mistral https://chat.mistral.ai/chat
 - https://neulvo.tistory.com/category/Data
 - Github에 있는 소스코드 코랩에 설치하기 : https://wikidocs.net/197088
 - ML(CV,NLP) example : https://github.com/HiMyNameIsDavidKim/ML_Example/tree/main
-- https://lilianweng.github.io/
+- https://lilianweng.github.io/ : https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 - https://ffighting.net/
 - https://thecho7.tistory.com/
 - 라온 피플 Vision 블로그 https://blog.naver.com/laonple/220463627091
@@ -137,6 +137,7 @@ Mistral https://chat.mistral.ai/chat
 - How can I import custom modules from a Github repository in Google Colab? : https://stackoverflow.com/questions/52681405/how-can-i-import-custom-modules-from-a-github-repository-in-google-colab
 - https://davidlds.tistory.com/category/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0
 - https://kevinitcoding.tistory.com/
+- https://eehoeskrap.tistory.com/
 
 # Topological Deep Learning (TDL)
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
