@@ -41,6 +41,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 
 ## Learning Coding - 언어 실력 기르기
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
+- Practical Python Programming : https://dabeaz-course.github.io/practical-python/Notes/Contents.html
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python
 
 ## Lecture with Theory
