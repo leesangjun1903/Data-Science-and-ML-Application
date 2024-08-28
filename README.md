@@ -7,6 +7,7 @@
 - Awesome Deep Learning https://github.com/ChristosChristofidis/awesome-deep-learning
 - Awesome - Most Cited Deep Learning Papers https://github.com/terryum/awesome-deep-learning-papers
 - Project Based Learning https://github.com/tuvtran/project-based-learning
+- Paper with code(~2018) https://github.com/zziz/pwc
 
 # 유용한 Data Science site
 https://fall2019.fullstackdeeplearning.com/ : 딥러닝의 기본적인 것들을 이미 알고있는 사람들이 실제로 DL Production을 만드는 과정을 이해하기 위한 강의다.  
