@@ -5,7 +5,6 @@
 - Awesome Deep Vision https://github.com/kjw0612/awesome-deep-vision
 - Awesome Random Forest https://github.com/kjw0612/awesome-random-forest
 - Awesome Deep Learning https://github.com/ChristosChristofidis/awesome-deep-learning
-- A curated list of awesome Deep Learning tutorials, projects and communities.
 - Awesome - Most Cited Deep Learning Papers https://github.com/terryum/awesome-deep-learning-papers
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 
