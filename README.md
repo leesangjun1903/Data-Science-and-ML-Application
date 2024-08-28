@@ -15,7 +15,6 @@
 위키독스 https://wikidocs.net/  
 머신러닝 레딧 https://www.reddit.com/r/MachineLearning/  
 코드 오류 해결 : https://stackoverflow.com/  
-Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
 Journal of Machine Learning Research https://jmlr.org/papers/  
 Deep Learning Monitor https://deeplearn.org/  
 AI 논문 사이트 모음 https://sohyunwriter.tistory.com/59  
@@ -25,25 +24,25 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 
 # Machine Learning Tutorial
 ## Coding Lecture 
+- Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
 - Understanding Deep Learning https://udlbook.github.io/udlbook/
 - Machine Learning Study 혼자 해보기 https://github.com/teddylee777/machine-learning/tree/master?tab=readme-ov-file
 - 텐서 플로우 블로그 (Tensor ≈ Blog) https://tensorflow.blog/book-roadmap/
 - PyTorch로 시작하는 딥 러닝 입문 https://wikidocs.net/book/2788
 - 논문으로 짚어보는 딥러닝의 맥 https://www.edwith.org/deeplearningchoi/joinLectures/10979
 - Tensorflow Tutorials using Jupyter Notebook https://github.com/sjchoi86/Tensorflow-101/tree/master?tab=readme-ov-file
-- 모두를 위한 머신러닝/딥러닝 강의 https://hunkim.github.io/ml/
-- Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
 - 핸즈온 머신러닝(2판) https://formal.hknu.ac.kr/handson-ml2/
-- Neural Networks and Deep Learning by Michael A. Nielsen https://sihyeon-kim.github.io/neural-networks-and-deep-learning-korean/index.html
 - 데이터 과학자를 위한 실전 머신러닝 https://github.com/giwoong2/doit_hands-on_ML
-- CS565600 Deep Learning : https://nthu-datalab.github.io/ml/
+- CS565600 Deep Learning(Notebook만 코딩) : https://nthu-datalab.github.io/ml/
 - 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython
+- 딥러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
 
-## Learning Coding - 언어 코딩 실력 기르기
+## Learning Coding - 언어 실력 기르기
 - 
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python 
 
-## Theory
+## Lecture with Theory
+- Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
 - PRML정리 문서 Pattern Recognition & Machien Learning, Bishop http://norman3.github.io/prml/
 - Functional Gradient Descent https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html
 - Reproducing Kernel Hilbert Space https://nzer0.github.io/reproducing-kernel-hilbert-space.html
@@ -55,6 +54,10 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - ML for Engineers https://ml-course.github.io/master/intro.html#
 - CS4780/CS5780: Machine Learning for Intelligent Systems https://www.cs.cornell.edu/courses/cs4780/2018fa/
 - Stanford Machine Learning https://www.holehouse.org/mlclass/
+- 모두를 위한 머신러닝/딥러닝 강의 https://hunkim.github.io/ml/
+- Neural Networks and Deep Learning by Michael A. Nielsen https://sihyeon-kim.github.io/neural-networks-and-deep-learning-korean/index.html
+- 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
+- 고려대학교 산업경영공학부 DSBA 연구실 : https://www.youtube.com/@dsba2979/playlists
 
 ## Project    
 - 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲 https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code?tab=readme-ov-file
@@ -108,11 +111,9 @@ Mistral https://chat.mistral.ai/chat
 - https://velog.io/@lee9843/posts
 - https://neulvo.tistory.com/category/Data
 - Github에 있는 소스코드 코랩에 설치하기 : https://wikidocs.net/197088
-- 고려대학교 산업경영공학부 DSBA 연구실 : https://www.youtube.com/@dsba2979/playlists
 - ML(CV,NLP) example : https://github.com/HiMyNameIsDavidKim/ML_Example/tree/main
 - https://lilianweng.github.io/
 - https://ffighting.net/
-- 강승우의 인공지능 이야기 : https://www.youtube.com/playlist?list=PLZwFtgKc35I8QwuvmrmK24jXzK9qhz0-6
 - https://thecho7.tistory.com/
 - 라온 피플 Vision 블로그 https://blog.naver.com/laonple/220463627091
 - ratsgo's 블로그 https://ratsgo.github.io/blog/categories/
