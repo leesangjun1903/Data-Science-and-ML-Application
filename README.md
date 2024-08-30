@@ -6,6 +6,7 @@
 - Awesome Random Forest https://github.com/kjw0612/awesome-random-forest
 - Awesome Deep Learning https://github.com/ChristosChristofidis/awesome-deep-learning
 - Awesome - Most Cited Deep Learning Papers https://github.com/terryum/awesome-deep-learning-papers
+- Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 - Paper with code(~2018) https://github.com/zziz/pwc
 
@@ -139,9 +140,6 @@ Mistral https://chat.mistral.ai/chat
 - https://davidlds.tistory.com/category/%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0
 - https://kevinitcoding.tistory.com/
 - https://eehoeskrap.tistory.com/
-
-# Topological Deep Learning (TDL)
-- Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
 
 ## Control AI  
 https://shelf.io/blog/how-to-control-ai-ensuring-ai-remains-manageable-and-safe/
