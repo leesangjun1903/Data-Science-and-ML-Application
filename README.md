@@ -9,6 +9,9 @@
 - Awesome TDL : https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 - Paper with code(~2018) https://github.com/zziz/pwc
+- Top DeepLearning tutorials and curated projects : https://github.com/ajay-sreeram/Deep-Learning-is-Awesome?tab=readme-ov-file
+- Awesome Deep learning papers and other resources : https://github.com/endymecy/awesome-deeplearning-resources
+- Awesome Deep Learning : https://github.com/ChristosChristofidis/awesome-deep-learning?tab=readme-ov-file#tutorials
 
 # 유용한 Data Science site
 https://fall2019.fullstackdeeplearning.com/ : 딥러닝의 기본적인 것들을 이미 알고있는 사람들이 실제로 DL Production을 만드는 과정을 이해하기 위한 강의다.  
@@ -41,6 +44,12 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython
 - 딥러닝을 이용한 자연어 처리 입문 https://wikidocs.net/book/2155
 - Zero to Mastery Learn PyTorch for Deep Learning : https://www.learnpytorch.io/
+- Beginner Level Deep Learning Tutorials in Pytorch! : https://github.com/LukeDitria/pytorch_tutorials/tree/main
+- Companion Jupyter notebooks for the book "Deep Learning with Python" : https://github.com/fchollet/deep-learning-with-python-notebooks?tab=readme-ov-file
+- Papers in 100 Lines of Code : https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main
+- Awesome deep learning and machine learning tutorials : https://github.com/Burton2000/Awesome-DeepLearning-Tutorials#datasets
+- Great-Deep-Learning-Tutorials : https://github.com/ahkarami/Great-Deep-Learning-Tutorials?tab=readme-ov-file
+- DeepLearning-Summary : https://github.com/taki0112/Awesome-DeepLearning-Study?tab=readme-ov-file 
 
 ## Learning Coding - 언어 실력 기르기
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
