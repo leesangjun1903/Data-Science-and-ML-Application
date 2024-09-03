@@ -49,7 +49,8 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - Papers in 100 Lines of Code : https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main
 - Awesome deep learning and machine learning tutorials : https://github.com/Burton2000/Awesome-DeepLearning-Tutorials#datasets
 - Great-Deep-Learning-Tutorials : https://github.com/ahkarami/Great-Deep-Learning-Tutorials?tab=readme-ov-file
-- DeepLearning-Summary : https://github.com/taki0112/Awesome-DeepLearning-Study?tab=readme-ov-file 
+- DeepLearning-Summary : https://github.com/taki0112/Awesome-DeepLearning-Study?tab=readme-ov-file
+- Deep Understanding Of Deep Learning : https://github.com/mikexcohen/DeepUnderstandingOfDeepLearning/tree/main
 
 ## Learning Coding - 언어 실력 기르기
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
