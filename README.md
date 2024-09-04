@@ -136,7 +136,6 @@ Mistral https://chat.mistral.ai/chat
 - 송호연 - 인공지능 1학년 브런치 https://brunch.co.kr/magazine/ai-first
 - 카카오 - AI 브런치 https://brunch.co.kr/magazine/kakaoaireport
 - 솔라리스의 인공지능 연구실 블로그 http://solarisailab.com/deep-learning
-- 카카오 Brain 블로그 https://www.kakaobrain.com/blog
 - Google AI Blog https://ai.googleblog.com/
 - Skelter Labs - PingPong Blog https://blog.pingpong.us/
 - miscellaneous - practicalcryptography - http://www.practicalcryptography.com/miscellaneous/machine-learning/
