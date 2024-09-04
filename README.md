@@ -28,9 +28,8 @@ Best Computer Science Conferences https://research.com/conference-rankings/compu
 Coding Interview University https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md#%EC%9D%B4%EA%B1%B4-%EB%8C%80%EC%B2%B4-%EB%AD%90%ED%95%98%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94  
 프로그래머 필독서 64선 https://blog.naver.com/wikiware/100042152479
 
-
-# Machine Learning Tutorial
-## Coding Studies
+# Tutorial
+## ML and Deep Learning
 - Deep Learning Bible : https://wikidocs.net/profile/info/book/14245
 - Understanding Deep Learning https://udlbook.github.io/udlbook/
 - Machine Learning Study 혼자 해보기 https://github.com/teddylee777/machine-learning/tree/master?tab=readme-ov-file
@@ -52,12 +51,51 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - DeepLearning-Summary : https://github.com/taki0112/Awesome-DeepLearning-Study?tab=readme-ov-file
 - Deep Understanding Of Deep Learning : https://github.com/mikexcohen/DeepUnderstandingOfDeepLearning/tree/main
 
+## Computer Vision
+- Mask Verification https://github.com/ddiddu/cs470team1/tree/master   
+- Easy Few-Shot Learning https://github.com/sicara/easy-few-shot-learning/tree/master
+- OpenCV를 활용한 컴퓨터 비전 스터디 https://github.com/engineerjkk/Image_Processing/tree/main
+- Satellite-image-deep-learning https://github.com/satellite-image-deep-learning/techniques?tab=readme-ov-file
+- hloc - the hierarchical localization toolbox https://github.com/cvg/Hierarchical-Localization?tab=readme-ov-file   
+- DEEP-IMAGE-MATCHING https://github.com/3DOM-FBK/deep-image-matching  
+- 3D Reconstruction using Structure from Motion https://github.com/harish-vnkt/structure-from-motion
+- Awesome-Local-Feature-Matching https://github.com/vignywang/Awesome-Local-Feature-Matching?tab=readme-ov-file#Detector-based-Models
+- SOTA in Computer vision, two excellent resources https://www.kaggle.com/competitions/statoil-iceberg-classifier-challenge/discussion/44102
+- [Tutorial] Image Feature Extraction and Matching https://www.kaggle.com/code/wesamelshamy/tutorial-image-feature-extraction-and-matching
+- Deep Autoenconder - PyTorch - Image Reconstruction https://www.kaggle.com/code/drvaibhavkumar/deep-autoenconder-pytorch-image-reconstruction
+- Segment Anything https://github.com/facebookresearch/segment-anything/tree/main
+- Classifying custom image datasets by creating Convolutional Neural Networks and Residual Networks from scratch with PyTorch https://github.com/Rumeysakeskin/EuroSat-Satellite-CNN-and-ResNet/tree/main
+- Deep Learning Tutorials using PyTorch (PseudoLab) https://github.com/Pseudo-Lab/Tutorial-Book?tab=readme-ov-file
+- Joeun Park https://github.com/corazzon
+- Exploring-the-MLP-Mixer-Architecture for Image Classification: Performance Evaluation, Tuning, and Ablation Study on MNIST Dataset https://github.com/sijan67/Exploring-the-MLP-Mixer-Architecture/tree/main?tab=readme-ov-file
+- 논문으로 짚어보는 딥러닝의 맥 : https://www.boostcourse.org/deeplearningchoi/joinLectures/10979
+- image classification with qnn-inference-examples : https://github.com/maltanar/qnn-inference-examples
+- Classifying animals using SOTA Models : https://www.kaggle.com/code/aymenkhouja/classifying-animals-using-sota-models/notebook
+- 365 Days Computer Vision Learning LinkedIn Post : https://github.com/ashishpatel26/365-Days-Computer-Vision-Learning-Linkedin-Post
+- Semantic Segmentation을 위한 U-Net 모델 : https://dacon.io/forum/405807
+- Top 10 Open Source Computer Vision Repositories : https://encord.com/blog/open-source-computer-vision-repositories/
+- Understanding and Calculating the number of Parameters in Convolution Neural Networks (CNNs) : https://towardsdatascience.com/understanding-and-calculating-the-number-of-parameters-in-convolution-neural-networks-cnns-fc88790d530d
+- object detection 개요 [딥러닝 컴퓨터 비전 완벽가이드 필기] : https://check-this.tistory.com/6
+- Artificial Images : https://github.com/dvschultz/ai/tree/master
+- LearnOpenCV https://github.com/spmallick/learnopencv/tree/master?tab=readme-ov-file
+- PyTorch-GAN : https://github.com/eriklindernoren/PyTorch-GAN/tree/master?tab=readme-ov-file#super-resolution-gan
+- Three Ways of Storing and Accessing Lots of Images in Python : https://realpython.com/storing-images-in-python/
+- Deep Learning Projects : https://github.com/aswintechguy/Deep-Learning-Projects/tree/main
+
+## Reinforcement Learning
+- Quantile Regression DQN - RL : https://www.kaggle.com/code/auxeno/quantile-regression-dqn-rl
+
+## NLP
+- Beginner to Intermediate Natural Language Processing Guide - NowYSM https://www.kaggle.com/code/ashishpatel26/beginner-to-intermediate-nlp-tutorial/notebook : sklearn + logistic Regression을 활용한 감성분석(긍/부정 표현 판별)
+- Deep Learning NLP Quora Solutions - https://www.kaggle.com/code/ashishpatel26/deep-learning-nlp-quora-solutions : NowYSM 딥러닝(Keras)을 활용한 악성(사회적으로 문제가 될 수 있는, 질이 나쁜) 질문 판별
+- NLP Quick Start for Newbie😁 with 9steps https://www.kaggle.com/code/songseungwon/nlp-quick-start-for-newbie-with-9steps : Seungwon Song 재난 트위터를 활용한 가짜 뉴스 판별기 구현
+
 ## Learning Coding - 언어 실력 기르기
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
 - Practical Python Programming : https://dabeaz-course.github.io/practical-python/Notes/Contents.html
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python
 
-## Lecture with Theory
+## Lecture
 - Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
 - PRML정리 문서 Pattern Recognition & Machien Learning, Bishop http://norman3.github.io/prml/
 - Functional Gradient Descent https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html
