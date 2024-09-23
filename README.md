@@ -50,6 +50,7 @@ Coding Interview University https://github.com/jwasham/coding-interview-universi
 - Great-Deep-Learning-Tutorials : https://github.com/ahkarami/Great-Deep-Learning-Tutorials?tab=readme-ov-file
 - DeepLearning-Summary : https://github.com/taki0112/Awesome-DeepLearning-Study?tab=readme-ov-file
 - Deep Understanding Of Deep Learning : https://github.com/mikexcohen/DeepUnderstandingOfDeepLearning/tree/main
+- (DMQA) Python-codes-for-machine-learning-algorithms : https://github.com/DMQA/Python-codes-for-machine-learning-algorithms
 
 ## Computer Vision
 - Mask Verification https://github.com/ddiddu/cs470team1/tree/master   
