@@ -26,7 +26,8 @@ AI 논문 사이트 모음 https://sohyunwriter.tistory.com/59
 Papers You Must Read (PYMR), Data Science & Business Analytics Lab https://sustaining-starflower-aff.notion.site/c3b3474d18ef4304b23ea360367a5137?v=5d763ad5773f44eb950f49de7d7671bd  
 Best Computer Science Conferences https://research.com/conference-rankings/computer-science  
 Coding Interview University https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md#%EC%9D%B4%EA%B1%B4-%EB%8C%80%EC%B2%B4-%EB%AD%90%ED%95%98%EB%8A%94-%EA%B1%B4%EA%B0%80%EC%9A%94  
-프로그래머 필독서 64선 https://blog.naver.com/wikiware/100042152479
+프로그래머 필독서 64선 https://blog.naver.com/wikiware/100042152479  
+Convnet calculator : https://madebyollin.github.io/convnet-calculator/
 
 # Tutorial
 ## ML and Deep Learning
