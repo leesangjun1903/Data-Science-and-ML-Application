@@ -97,6 +97,9 @@ Convnet calculator : https://madebyollin.github.io/convnet-calculator/
 - 파이썬 헤엄치기 : https://wikidocs.net/book/5148
 - Practical Python Programming : https://dabeaz-course.github.io/practical-python/Notes/Contents.html
 - Part of my daily plan for studying Python. https://github.com/jwasham/practice-python
+- 점프 투 파이썬 : https://wikidocs.net/book/1
+- 파이썬으로 배우는 알고리즘 트레이딩 (개정판-2쇄) : https://wikidocs.net/book/110
+- 다빈치코딩 알고리즘 : https://wikidocs.net/book/10280
 
 ## Lecture
 - Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
