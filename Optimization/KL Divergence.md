@@ -11,7 +11,8 @@ https://hwiyong.tistory.com/408
 
 # VAE
 https://devs0n.tistory.com/191  
-https://www.kaggle.com/code/sushovansaha9/vae-pytorch-lightning-elbo-loss  
+https://www.kaggle.com/code/sushovansaha9/vae-pytorch-lightning-elbo-loss
+https://velog.io/@hong_journey/VAEVariational-AutoEncoder-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
 
 # ELBO
 DDPM ELBO : https://xoft.tistory.com/33  
