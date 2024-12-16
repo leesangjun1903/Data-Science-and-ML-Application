@@ -1,5 +1,8 @@
 Probability distributions - torch.distributions : https://pytorch.org/docs/stable/distributions.html
 
+# Total variation distance of probability measures
+https://en.wikipedia.org/wiki/Total_variation_distance_of_probability_measures
+
 # Variational Bayesian methods
 https://en.wikipedia.org/wiki/Variational_Bayesian_methods
 
