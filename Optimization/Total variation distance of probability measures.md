@@ -29,6 +29,9 @@ https://velog.io/@hong_journey/VAEVariational-AutoEncoder-%EA%B5%AC%ED%98%84%ED%
 DDPM ELBO : https://xoft.tistory.com/33   
 https://glanceyes.com/entry/VAE-%EA%B3%84%EC%97%B4-%EB%AA%A8%EB%8D%B8%EC%9D%98-ELBOEvidence-Lower-Bound-%EB%B6%84%EC%84%9D    
 
+# Wasserstein Distance
+https://www.slideshare.net/slideshow/wasserstein-gan-i/75554346
+
 # marginalize 의미
 https://ploradoaa.tistory.com/107  
 Marginal Likelihood 란? (빈도주의VS. 베이지안 관점 비교) : https://m.blog.naver.com/sw4r/221380395720
