@@ -15,4 +15,5 @@ https://coding-yoon.tistory.com/142
 nohup 명령어를 사용해도 프로세스가 종료되는 경우 해결 방법
 https://wildeveloperetrain.tistory.com/10  
 https://youngkdevlog.tistory.com/109  
-https://junyoru.tistory.com/143
+https://junyoru.tistory.com/143  
+https://joonyon.tistory.com/entry/%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85%ED%95%9C-nohup-%EA%B3%BC-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%82%AC%EC%9A%A9%EB%B2%95
