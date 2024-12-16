@@ -11,3 +11,8 @@ https://our-ef.tistory.com/entry/%EB%A7%A5%EB%B6%81-%ED%99%94%EB%A9%B4%EB%9A%9C%
 
 Target n is out of bounds.
 https://coding-yoon.tistory.com/142
+
+nohup 명령어를 사용해도 프로세스가 종료되는 경우 해결 방법
+https://wildeveloperetrain.tistory.com/10  
+https://youngkdevlog.tistory.com/109  
+https://junyoru.tistory.com/143
