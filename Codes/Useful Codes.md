@@ -25,3 +25,6 @@ https://our-ef.tistory.com/entry/%EB%A7%A5%EB%B6%81-%ED%99%94%EB%A9%B4%EB%9A%9C%
 
 - argparse : Jupyter Notebook에서 argparse 활용하기
 https://norest73.tistory.com/6
+
+- [리눅스 명령어 / CentOS] 프로세스 확인하기
+https://blog.naver.com/anysecure3/222520551540
