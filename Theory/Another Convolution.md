@@ -9,7 +9,7 @@
 ## Dynamic Convolution
 
 ## Dilated Convolution
-https://gaussian37.github.io/dl-concept-dilated_residual_network/
+- https://gaussian37.github.io/dl-concept-dilated_residual_network/
 
 # Reference
 https://ankle96.tistory.com/59
