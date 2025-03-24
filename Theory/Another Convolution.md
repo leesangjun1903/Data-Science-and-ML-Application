@@ -1,6 +1,6 @@
 ## Standard 1D Convolution
 
-## Depthwise Convolution
+## Depthwise Seperable Convolution
 
 - https://gaussian37.github.io/dl-concept-dwsconv/
 
