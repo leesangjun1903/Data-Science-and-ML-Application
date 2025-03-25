@@ -3,6 +3,7 @@
 ## Depthwise Seperable Convolution
 
 - https://gaussian37.github.io/dl-concept-dwsconv/
+- https://velog.io/@iissaacc/Depthwise-Separable-Convolution
 
 ## Lightweight Convolution
 
