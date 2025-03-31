@@ -93,16 +93,6 @@ Convnet calculator : https://madebyollin.github.io/convnet-calculator/
 - Deep Learning NLP Quora Solutions - https://www.kaggle.com/code/ashishpatel26/deep-learning-nlp-quora-solutions : NowYSM 딥러닝(Keras)을 활용한 악성(사회적으로 문제가 될 수 있는, 질이 나쁜) 질문 판별
 - NLP Quick Start for Newbie😁 with 9steps https://www.kaggle.com/code/songseungwon/nlp-quick-start-for-newbie-with-9steps : Seungwon Song 재난 트위터를 활용한 가짜 뉴스 판별기 구현
 
-## Learning Coding - 언어 실력 기르기
-- Python Documents : https://docs.python.org/ko/3/
-- 파이썬 헤엄치기 : https://wikidocs.net/book/5148
-- Practical Python Programming : https://dabeaz-course.github.io/practical-python/Notes/Contents.html
-- Part of my daily plan for studying Python. https://github.com/jwasham/practice-python
-- 점프 투 파이썬 : https://wikidocs.net/book/1
-- 파이썬으로 배우는 알고리즘 트레이딩 (개정판-2쇄) : https://wikidocs.net/book/110
-- 다빈치코딩 알고리즘 : https://wikidocs.net/book/10280
-- 
-
 ## Lecture
 - Computer Science courses with video lectures https://github.com/Developer-Y/cs-video-courses?tab=readme-ov-file#machine-learning
 - PRML정리 문서 Pattern Recognition & Machien Learning, Bishop http://norman3.github.io/prml/
