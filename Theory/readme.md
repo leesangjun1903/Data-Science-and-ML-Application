@@ -1,4 +1,38 @@
 # Machine Learning Theory
+## UNDERSTANDING MACHINE LEARNING, Shai Shalev-Shwartz
+A Gentle Start  
+A Formal Learning Model  
+Learning via Uniform Convergence  
+The Bias-Complexity Tradeoff  
+The VC-Dimension  
+Nonuniform Learnability  
+The Runtime of Learning  
+Linear Predictors  
+Boosting  
+Model Selection and Validation  
+Convex Learning Problems  
+Regularization and Stability  
+Stochastic Gradient Descent  
+Support Vector Machines  
+Kernel Methods  
+Multiclass, Ranking, and Complex Prediction Problems  
+Decision Trees  
+Nearest Neighbor  
+Neural Networks  
+Online Learning  
+Clustering  
+Dimensionality Reduction  
+Generative Models  
+Feature Selection and Generation  
+Rademacher Complexities  
+Covering Numbers  
+Proof of the Fundamental Theorem of Learning Theory  
+Multiclass Learnability  
+Compression Bounds  
+PAC-Bayes  
+
+
+
 ## 딥러닝과 수학, 오승상
 Introduction to Deep Learning  
 Deep Neural Network  
