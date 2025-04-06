@@ -29,3 +29,4 @@ Videos, Unsupervised Learning
 
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
+An Introduction to Reproducing Kernel Hilbert Spaces and Why They are So Useful, Grace Wahba  
