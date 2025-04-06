@@ -1,4 +1,15 @@
 # Machine Learning Theory
+## 딥러닝과 수학, 오승상
+Introduction to Deep Learning  
+Deep Neural Network  
+Convolutional Neural Network  
+Recurrent Neural Network  
+Attention Mechanism  
+Auto-Encoder & VAE  
+Generative Adversarial Network  
+Natural Language Processing  
+Graph Neural Network  
+
 ## Automated Machine Learning, Frank Hutter
 Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time-consuming, iterative tasks of machine learning model development.  
 
