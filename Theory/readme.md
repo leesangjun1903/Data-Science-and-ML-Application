@@ -13,3 +13,17 @@ Automated machine learning, also referred to as automated ML or AutoML, is the p
 - The Automatic Statistician
 - Analysis of the AutoML Challenge Series 2015–2018 
 
+## cs231n, Fei-Fei Li
+Image Classification pipeline  
+Loss functions and Optimization  
+Backpropagation and Neural Networks  
+Training Neural Networks  
+Convolutional Neural Networks  
+Spatial Localization and Detection  
+Understanding and Visualizing Convolutional Neural Networks  
+Recurrent Neural Networks  
+CNNs in Practice  
+Software Packages: Caffe / Torch / Theano / TensorFlow  
+Segmentation and Attention  
+Videos, Unsupervised Learning  
+
