@@ -264,6 +264,24 @@ World Models
 Multimodal Models  
 Timeline of Generative AI 
 
+## TensorFlow 1.x Deep Learning Cookbook, Antonio Gulli
+TensorFlow - An Introduction  
+Regression  
+Neural Networks - Perceptron  
+Convolutional Neural Networks  
+Advanced Convolutional Neural Networks  
+Recurrent Neural Networks  
+Unsupervised Learning  
+Autoencoders  
+Reinforcement Learning  
+Mobile Computation  
+Generative Models and CapsNet  
+Distributed TensorFlow and Cloud Deep Learning  
+Learning to Learn with AutoML (Meta-Learning)  
+TensorFlow Processing Units  
+
+
+
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
 An Introduction to Reproducing Kernel Hilbert Spaces and Why They are So Useful, Grace Wahba  
