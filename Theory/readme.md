@@ -195,6 +195,15 @@ Using segmentation to find suspected nodules
 End-to-end nodule analysis, and where to go next  
 Deploying to production  
 
+## Pro Deep Learning with TensorFlow 2.0, Santanu Pattanayak
+Chapter 1: Mathematical Foundations  
+Chapter 2: Introduction to Deep-­ Learning Concepts and TensorFlow  
+Chapter 3: Convolutional Neural Networks  
+Chapter 4: Natural Language Processing  
+Chapter 5: Unsupervised Learning with Restricted Boltzmann Machines and Autoencoders  
+Chapter 6: Advanced Neural Networks  
+
+
 ## 딥러닝과 수학, 오승상
 Introduction to Deep Learning  
 Deep Neural Network  
