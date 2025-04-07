@@ -12,3 +12,5 @@ Representing and Mining Text
 Decision Analytic Thinking II: Toward Analytical Engineering  
 Other Data Science Tasks and Techniques  
 Data Science and Business Strategy  
+
+## Data Visualization in Python, Daniel Nelson
