@@ -169,6 +169,15 @@ Multiclass Learnability
 Compression Bounds  
 PAC-Bayes  
 
+## Neural Networks and Deep Learning, Michael Nielsen
+Using neural nets to recognize handwritten digits  
+How the backpropagation algorithm works  
+Improving the way neural networks learn  
+A visual proof that neural nets can compute any function  
+Why are deep neural networks hard to train?  
+Deep learning
+
+
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
 Pretrained networks  
@@ -263,6 +272,24 @@ Music Generation
 World Models  
 Multimodal Models  
 Timeline of Generative AI 
+
+## Python Deep Learning Cookbook, Indra den Bakker
+Programming Environments, GPU Computing, Cloud Solutions, and Deep Learning Frameworks  
+Feed-Forward Neural Networks  
+Convolutional Neural Networks  
+Recurrent Neural Networks  
+Reinforcement Learning  
+Generative Adversarial Networks  
+Computer Vision  
+Natural Language Processing  
+Speech Recognition and Video Analysis  
+Time Series and Structured Data  
+Game Playing Agents and Robotics  
+Hyperparameter Selection, Tuning, and Neural Network Learning  
+Network Internals  
+Pretrained Models  
+
+
 
 ## TensorFlow 1.x Deep Learning Cookbook, Antonio Gulli
 TensorFlow - An Introduction  
