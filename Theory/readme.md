@@ -341,8 +341,6 @@ Hyperparameter Selection, Tuning, and Neural Network Learning
 Network Internals  
 Pretrained Models  
 
-
-
 ## TensorFlow 1.x Deep Learning Cookbook, Antonio Gulli
 TensorFlow - An Introduction  
 Regression  
