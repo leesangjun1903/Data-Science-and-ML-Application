@@ -302,7 +302,6 @@ How to Diagnose and Tune LSTMs
 How to Make Predictions with LSTMs  
 How to Update LSTM Models  
 
-
 ## Deep Learning for Coders with fastai and PyTorch, Jeremy Howard
 Your Deep Learning Journey  
 From Model to Production  
@@ -323,6 +322,32 @@ The Training Process
 A Neural Net from the Foundations  
 CNN Interpretation with CAM  
 A fastai Learner from Scratch  
+
+## Machine Learning with Python Cookbook, Kyle Gallatin
+Working with Vectors, Matrices, and Arrays in NumPy  
+Loading Data  
+Data Wrangling  
+Handling Numerical Data  
+Handling Categorical Data  
+Handling Text  
+Handling Dates and Times  
+Handling Images  
+Dimensionality Reduction Using Feature Extraction  
+Dimensionality Reduction Using Feature Selection  
+Model Evaluation  
+Model Selection  
+Linear Regression  
+Trees and Forests  
+K-Nearest Neighbors  
+Logistic Regression  
+Support Vector Machines  
+Naive Bayes  
+Clustering  
+Tensors with PyTorch  
+Neural Networks  
+Neural Networks for Unstructured Data  
+Saving, Loading, and Serving Trained Models  
+
 
 
 ## Python Deep Learning Cookbook, Indra den Bakker
@@ -376,6 +401,20 @@ Classifying Images with Deep Convolutional Neural Networks
 Modeling Sequential Data Using Recurrent Neural Networks  
 Project one – performing sentiment analysis of IMDb movie reviews using multilayer RNNs  
 Project two – implementing an RNN for character-level language modeling in TensorFlow
+
+## Applied Deep Learning with TensorFlow 2: Learn to Implement Advanced Deep Learning Techniques with Python, Umberto Michelucci
+Chapter 1: Optimization and Neural Networks  
+Chapter 2: Hands-on with a Single Neuron  
+Chapter 3: Feed-Forward Neural Networks  
+Chapter 4: Regularization  
+Chapter 5: Advanced Optimizers  
+Chapter 6: Hyper-Parameter Tuning  
+Chapter 7: Convolutional Neural Networks  
+Chapter 8: A Brief Introduction to Recurrent Neural Networks  
+Chapter 9: Autoencoders  
+Chapter 10: Metric Analysis  
+Chapter 11: Generative Adversarial Networks (GANs)    
+
 
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
