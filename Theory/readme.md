@@ -241,7 +241,20 @@ Chapter 17: Genetic Algorithms in Hybrid Neural Networks
 Chapter 18: Neuromorphic Computing  
 Chapter 19: Quantum Computing  
 
-
+## Fundamentals of Deep Learning, Nikhil Buduma
+Fundamentals of Linear Algebra for Deep Learning  
+Fundamentals of Probability  
+The Neural Network  
+Training Feed-Forward Neural Networks  
+Implementing Neural Networks in PyTorch  
+Beyond Gradient Descent  
+Convolutional Neural Networks  
+Embedding and Representation Learning  
+Models for Sequence Analysis  
+Generative Models  
+Methods in Interpretability  
+Memory Augmented Neural Networks  
+Deep Reinforcement Learning
 
 ## cs231n, Fei-Fei Li
 Image Classification pipeline  
@@ -272,6 +285,45 @@ Music Generation
 World Models  
 Multimodal Models  
 Timeline of Generative AI 
+
+## Long Short-Term Memory Networks With Python, Jason Brownlee
+What are LSTMs  
+How to Train LSTMs  
+How to Prepare Data for LSTMs  
+How to Develop LSTMs in Keras  
+Models for Sequence Prediction  
+How to Develop Vanilla LSTMs  
+How to Develop Stacked LSTMs  
+How to Develop CNN LSTMs  
+How to Develop Encoder-Decoder LSTMs  
+How to Develop Bidirectional LSTMs  
+How to Develop Generative LSTMs  
+How to Diagnose and Tune LSTMs  
+How to Make Predictions with LSTMs  
+How to Update LSTM Models  
+
+
+## Deep Learning for Coders with fastai and PyTorch, Jeremy Howard
+Your Deep Learning Journey  
+From Model to Production  
+Data Ethics  
+Under the Hood: Training a Digit Classifier  
+Image Classification  
+Other Computer Vision Problems  
+Training a State-of-the-Art Model  
+Collaborative Filtering Deep Dive  
+Tabular Modeling Deep Dive  
+NLP Deep Dive: RNNs  
+Data Munging with fastai’s Mid-Level API  
+A Language Model from Scratch  
+Convolutional Neural Networks  
+ResNets  
+Application Architectures Deep Dive  
+The Training Process  
+A Neural Net from the Foundations  
+CNN Interpretation with CAM  
+A fastai Learner from Scratch  
+
 
 ## Python Deep Learning Cookbook, Indra den Bakker
 Programming Environments, GPU Computing, Cloud Solutions, and Deep Learning Frameworks  
