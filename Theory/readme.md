@@ -203,7 +203,6 @@ Chapter 4: Natural Language Processing
 Chapter 5: Unsupervised Learning with Restricted Boltzmann Machines and Autoencoders  
 Chapter 6: Advanced Neural Networks  
 
-
 ## 딥러닝과 수학, 오승상
 Introduction to Deep Learning  
 Deep Neural Network  
@@ -214,6 +213,9 @@ Auto-Encoder & VAE
 Generative Adversarial Network  
 Natural Language Processing  
 Graph Neural Network  
+
+## 모두의 딥러닝, 조태호
+
 
 ## Automated Machine Learning, Frank Hutter
 Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time-consuming, iterative tasks of machine learning model development.  
@@ -279,6 +281,7 @@ Software Packages: Caffe / Torch / Theano / TensorFlow
 Segmentation and Attention  
 Videos, Unsupervised Learning  
 
+# Generative AI
 ## Generative Deep Learning, David Foster
 Generative Modeling  
 Deep Learning  
@@ -358,7 +361,6 @@ Neural Networks for Unstructured Data
 Saving, Loading, and Serving Trained Models  
 
 
-
 ## Python Deep Learning Cookbook, Indra den Bakker
 Programming Environments, GPU Computing, Cloud Solutions, and Deep Learning Frameworks  
 Feed-Forward Neural Networks  
@@ -423,6 +425,20 @@ Chapter 8: A Brief Introduction to Recurrent Neural Networks
 Chapter 9: Autoencoders  
 Chapter 10: Metric Analysis  
 Chapter 11: Generative Adversarial Networks (GANs)    
+
+# Anomaly Detection
+## Beginning Anomaly Detection Using Python-Based Deep Learning, Suman Kalyan Adari
+Chapter 1: Introduction to Anomaly Detection  
+Chapter 2: Introduction to Data Science  
+Chapter 3: Introduction to Machine Learning  
+Chapter 4: Traditional Machine Learning Algorithms  
+Chapter 5: Introduction to Deep Learning  
+Chapter 6: Autoencoders  
+Chapter 7: Generative Adversarial Networks  
+Chapter 8: Long Short-Term Memory Models  
+Chapter 9: Temporal Convolutional Networks  
+Chapter 10: Transformers  
+Chapter 11: Practical Use Cases and Future Trends of Anomaly Detection  
 
 
 # ETC
