@@ -359,7 +359,25 @@ Distributed TensorFlow and Cloud Deep Learning
 Learning to Learn with AutoML (Meta-Learning)  
 TensorFlow Processing Units  
 
-
+## Python Machine Learning, 
+Giving Computers the Ability to Learn from Data  
+Training Simple Machine Learning Algorithms for Classification  
+A Tour of Machine Learning Classifiers Using scikit-learn  
+Building Good Training Sets – Data Preprocessing  
+Compressing Data via Dimensionality Reduction  
+Learning Best Practices for Model Evaluation and Hyperparameter Tuning  
+Combining Different Models for Ensemble Learning  
+Applying Machine Learning to Sentiment Analysis  
+Embedding a Machine Learning Model into a Web Application  
+Predicting Continuous Target Variables with Regression Analysis  
+Working with Unlabeled Data – Clustering Analysis  
+Implementing a Multilayer Artificial Neural Network from Scratch  
+Parallelizing Neural Network Training with TensorFlow  
+Going Deeper – The Mechanics of TensorFlow  
+Classifying Images with Deep Convolutional Neural Networks  
+Modeling Sequential Data Using Recurrent Neural Networks  
+Project one – performing sentiment analysis of IMDb movie reviews using multilayer RNNs  
+Project two – implementing an RNN for character-level language modeling in TensorFlow
 
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
