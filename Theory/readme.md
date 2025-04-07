@@ -210,6 +210,22 @@ Software Packages: Caffe / Torch / Theano / TensorFlow
 Segmentation and Attention  
 Videos, Unsupervised Learning  
 
+## Generative Deep Learning, David Foster
+Generative Modeling  
+Deep Learning  
+Variational Autoencoders  
+Generative Adversarial Networks  
+Autoregressive Models  
+Normalizing Flow Models  
+Energy-Based Models  
+Diffusion Models  
+Transformers  
+Advanced GANs  
+Music Generation  
+World Models  
+Multimodal Models  
+Timeline of Generative AI 
+
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
 An Introduction to Reproducing Kernel Hilbert Spaces and Why They are So Useful, Grace Wahba  
