@@ -169,7 +169,22 @@ Multiclass Learnability
 Compression Bounds  
 PAC-Bayes  
 
-
+## Deep Learning with PyTorch, ELI STEVENS
+Introducing deep learning and the PyTorch Library  
+Pretrained networks  
+It starts with a tensor  
+Real-world data representation using tensors  
+The mechanics of learning  
+Using a neural network to fit the data  
+Telling birds from airplanes: Learning from images  
+Using convolutions to generalize  
+Using PyTorch to fight cancer  
+Combining data sources into a unified dataset  
+Training a classification model to detect suspected tumors  
+Improving training with metrics and augmentation  
+Using segmentation to find suspected nodules  
+End-to-end nodule analysis, and where to go next  
+Deploying to production  
 
 ## 딥러닝과 수학, 오승상
 Introduction to Deep Learning  
@@ -195,6 +210,29 @@ Automated machine learning, also referred to as automated ML or AutoML, is the p
 - TPOT: A Tree-Based Pipeline Optimization Tool for Automating Machine Learning
 - The Automatic Statistician
 - Analysis of the AutoML Challenge Series 2015–2018 
+
+## Artificial Intelligence By Example, Denis Rothman
+Chapter 1: Getting Started with Next-Generation Artificial Intelligence through Reinforcement Learning  
+Chapter 2: Building a Reward Matrix – Designing Your Datasets  
+Chapter 3: Machine Intelligence – Evaluation Functions and Numerical Convergence  
+Chapter 4: Optimizing Your Solutions with K-Means Clustering  
+Chapter 5: How to Use Decision Trees to Enhance K-Means Clustering  
+Chapter 6: Innovating AI with Google Translate  
+Chapter 7: Optimizing Blockchains with Naive Bayes  
+Chapter 8: Solving the XOR Problem with a Feedforward Neural Network  
+Chapter 9: Abstract Image Classification with Convolutional Neural Networks (CNNs)  
+Chapter 10: Conceptual Representation Learning  
+Chapter 11: Combining Reinforcement Learning and Deep Learning  
+Chapter 12: AI and the Internet of Things (IoT)  
+Chapter 13: Visualizing Networks with TensorFlow 2.x and TensorBoard  
+Chapter 14: Preparing the Input of Chatbots with Restricted Boltzmann Machines (RBMs) and Principal Component Analysis (PCA)  
+Chapter 15: Setting Up a Cognitive NLP UI/CUI Chatbot  
+Chapter 16: Improving the Emotional Intelligence Deficiencies of Chatbots  
+Chapter 17: Genetic Algorithms in Hybrid Neural Networks  
+Chapter 18: Neuromorphic Computing  
+Chapter 19: Quantum Computing  
+
+
 
 ## cs231n, Fei-Fei Li
 Image Classification pipeline  
