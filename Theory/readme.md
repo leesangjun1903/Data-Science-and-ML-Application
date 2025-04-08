@@ -727,6 +727,17 @@ Chapter 11: Practical Use Cases and Future Trends of Anomaly Detection
 8 Ensemble Methods  
 9 Algorithms for Time Series Data  
 
+## Model-Based Machine Learning, John Winn and Christopher Bishop
+Chapter 1 ■ A Murder Mystery  
+Chapter 2 ■ Assessing People’s Skills  
+Chapter 3 ■ Meeting Your Match  
+Chapter 4 ■ Uncluttering Your Inbox  
+Chapter 5 ■ Making Recommendations  
+Chapter 6 ■ Understanding Asthma  
+Chapter 7 ■ Harnessing the Crowd  
+Chapter 8 ■ How to Read a Model  
+
+
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
 An Introduction to Reproducing Kernel Hilbert Spaces and Why They are So Useful, Grace Wahba  
