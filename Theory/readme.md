@@ -230,6 +230,18 @@ Using segmentation to find suspected nodules
 End-to-end nodule analysis, and where to go next  
 Deploying to production  
 
+## Deep Learning : A Practitioner’s Approach, Josh Patterson
+1. A Review of Machine Learning
+2. Foundations of Neural Networks and Deep Learning
+3. Fundamentals of Deep Networks
+4. Major Architectures of Deep Networks
+5. Building Deep Networks
+6. Tuning Deep Networks
+7. Tuning Specific Deep Network Architectures
+8. Vectorization
+9. Using Deep Learning and DL4J on Spark
+
+
 ## Pro Deep Learning with TensorFlow 2.0, Santanu Pattanayak
 Chapter 1: Mathematical Foundations  
 Chapter 2: Introduction to Deep-­ Learning Concepts and TensorFlow  
