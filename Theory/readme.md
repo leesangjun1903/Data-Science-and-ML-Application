@@ -21,6 +21,17 @@ Algorithm Chains and Pipelines
 Working with Text Data  
 Wrapping Up  
 
+## Introduction to the Math of Neural Networks, Jeff Heaton
+Neural Network Activation  
+Error Calculation  
+Understanding Derivatives  
+Training with Backpropagation  
+Faster Training with RPROP  
+Weight Initialization  
+LMA Training  
+Self Organizing Maps  
+Normalization  
+
 ## Deep Learning from Scratch, Seth Weidman
 Foundations  
 Fundamentals  
@@ -226,6 +237,24 @@ Improving the way neural networks learn
 A visual proof that neural nets can compute any function  
 Why are deep neural networks hard to train?  
 Deep learning
+
+## Praise for Deep Learning Illustrated, Jon Krohn
+1 Biological and Machine Vision Introducing Deep Learning  
+2 Human and Machine Language  
+3 Machine Art  
+4 Game-Playing Machines  
+5 The (Code) Cart Ahead of the (Theory) Horse  
+6 Artificial Neurons Detecting Hot Dogs  
+7 Artificial Neural Networks  
+8 Training Deep Networks  
+9 Improving Deep Networks  
+10 Machine Vision  
+11 Natural Language Processing  
+12 Generative Adversarial Networks  
+13 Deep Reinforcement Learning  
+14 Moving Forward with Your Own Deep Learning Projects  
+
+
 
 ## Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Aurélien Géron
 1. The Machine Learning Landscape
@@ -597,7 +626,18 @@ Chapter 9: Temporal Convolutional Networks
 Chapter 10: Transformers  
 Chapter 11: Practical Use Cases and Future Trends of Anomaly Detection  
 
+## Anomaly Detection Principles and Algorithms, Kishan G. Mehrotra
+1 Introduction  
+2 Anomaly Detection  
+3 Distance-Based Anomaly Detection Approaches  
+4 Clustering-Based Anomaly Detection Approaches  
+5 Model-Based Anomaly Detection Approaches  
+6 Distance and Density Based Approaches  
+7 Rank Based Approaches  
+8 Ensemble Methods  
+9 Algorithms for Time Series Data  
 
 # ETC
 Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
 An Introduction to Reproducing Kernel Hilbert Spaces and Why They are So Useful, Grace Wahba  
+EVOLUTION OF YOLO ALGORITHM AND YOLOV5: THE STATE-OF-THE-ART OBJECT DETECTION ALGORITHM, Do Thuan
