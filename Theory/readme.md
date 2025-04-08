@@ -158,6 +158,19 @@ Generative Adversarial Networks
 Deep Convolutional Generative Adversarial Networks  
 Overview of Recommender Systems 
 
+## Hands-On Deep Learning Algorithms with Python, Sudharsan Ravichandiran
+Introduction to Deep Learning  
+Getting to Know TensorFlow  
+Gradient Descent and Its Variants  
+Generating Song Lyrics Using RNN  
+Improvements to the RNN  
+Demystifying Convolutional Networks  
+Learning Text Representations  
+Generating Images Using GANs  
+Learning More about GANs  
+Reconstructing Inputs Using Autoencoders  
+Exploring Few-Shot Learning Algorithms  
+
 
 ## UNDERSTANDING MACHINE LEARNING, Shai Shalev-Shwartz
 A Gentle Start  
