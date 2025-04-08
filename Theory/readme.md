@@ -41,12 +41,50 @@ Convolutional Neural Networks
 Recurrent Neural Networks  
 PyTorch  
 
+## grokking Deep Learning, Andrew W. Trask
+Introducing deep learning: why you should learn it  
+Fundamental concepts: how do machines learn?  
+Introduction to neural prediction: forward propagation  
+Introduction to neural learning: gradient descent  
+Learning multiple weights at a time: generalizing gradient descent  
+Building your first deep neural network: introduction to backpropagation  
+How to picture neural networks: in your head and on paper  
+Learning signal and ignoring noise: introduction to regularization and batching  
+Modeling probabilities and nonlinearities: activation functions  
+Neural learning about edges and corners: intro to convolutional neural networks  
+Neural networks that understand language: king – man + woman == ?  
+Neural networks that write like Shakespeare: recurrent layers for variable-length data  
+Introducing automatic optimization: let’s build a deep learning framework  
+Learning to write like Shakespeare: long short-term memory  
+Deep learning on unseen data: introducing federated learning  
+Where to go from here: a brief guide  
+
 ## PYTHON MACHINE LEARNING: MACHINE LEARNING AND DEEP LEARNING FROM SCRATCH ILLUSTRATED WITH PYTHON, SCIKIT-LEARN, KERAS, THEANO AND TENSORFLOW, MOUBACHIR MADANI FADOUL
 Chapter 1. Python Deep Learning Tutorial  
 Chapter 2. Python Deep Basic Machine Learning  
 Chapter 3. Artificial Neural Networks  
 Chapter 4. Training a Neural Network  
 Chapter 5. Python Deep Learning - Implementations  
+
+## Deep Learning, Ian Goodfellow
+Linear Algebra  
+Probability and Information Theory  
+Numerical Computation  
+Machine Learning Basics  
+Deep Feedforward Networks  
+Regularization for Deep Learning  
+Optimization for Training Deep Models  
+Convolutional Networks  
+Sequence Modeling: Recurrent and Recursive Nets  
+Practical Methodology  
+Linear Factor Models  
+Autoencoders  
+Representation Learning  
+Structured Probabilistic Models for Deep Learning  
+Monte Carlo Methods  
+Confronting the Partition Function  
+Approximate Inference  
+Deep Generative Models  
 
 ## Dive into Deep Learning, ASTON ZHANG
 Data Manipulation  
@@ -230,6 +268,45 @@ Multiclass Learnability
 Compression Bounds  
 PAC-Bayes  
 
+## Understanding Deep Learning, Simon J.D. Prince
+1 Introduction  
+2 Supervised learning  
+3 Shallow neural networks  
+4 Deep neural networks  
+5 Loss functions  
+6 Fitting models  
+7 Gradients and initialization  
+8 Measuring performance  
+9 Regularization  
+10 Convolutional networks  
+11 Residual networks  
+12 Transformers  
+13 Graph neural networks  
+14 Unsupervised learning  
+15 Generative Adversarial Networks  
+16 Normalizing flows  
+17 Variational autoencoders  
+18 Diffusion models  
+19 Reinforcement learning  
+20 Why does deep learning work?  
+21 Deep learning and ethics  
+
+
+
+## Neural Networks and Deep Learning, Charu C. Aggarwal
+1 An Introduction to Neural Networks  
+2 The Backpropagation Algorithm  
+3 Machine Learning with Shallow Neural Networks  
+4 Deep Learning: Principles and Training Algorithms  
+5 Teaching Deep Learners to Generalize  
+6 Radial Basis Function Networks  
+7 Restricted Boltzmann Machines  
+8 Recurrent Neural Networks  
+9 Convolutional Neural Networks  
+10 Graph Neural Networks  
+11 Deep Reinforcement Learning  
+12 Advanced Topics in Deep Learning  
+
 ## Neural Networks and Deep Learning, Michael Nielsen
 Using neural nets to recognize handwritten digits  
 How the backpropagation algorithm works  
@@ -253,8 +330,6 @@ Deep learning
 12 Generative Adversarial Networks  
 13 Deep Reinforcement Learning  
 14 Moving Forward with Your Own Deep Learning Projects  
-
-
 
 ## Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Aurélien Géron
 1. The Machine Learning Landscape
@@ -287,6 +362,21 @@ Chapter 6: TensorFlow
 Chapter 7: Improving backpropagation with modern techniques - momentum, adaptive learning rate, and regularization  
 Chapter 8: Unsupervised learning, autoencoders, restricted Boltzmann machines, convolutional neural networks, and LSTMs  
 Chapter 9: You know more than you think you know
+
+## Deep Learning with Python, FRANÇOIS CHOLLET
+1 ■ What is deep learning?  
+2 ■ The mathematical building blocks of neural networks  
+3 ■ Introduction to Keras and TensorFlow  
+4 ■ Getting started with neural networks: Classification and regression  
+5 ■ Fundamentals of machine learning  
+6 ■ The universal workflow of machine learning  
+7 ■ Working with Keras: A deep dive  
+8 ■ Introduction to deep learning for computer vision  
+9 ■ Advanced deep learning for computer vision  
+10 ■ Deep learning for timeseries  
+11 ■ Deep learning for text  
+12 ■ Generative deep learning  
+13 ■ Best practices for the real world  
 
 # Statistics with Machine Learning
 ## Statistics and Machine Learning in Python, Edouard Duchesnay
