@@ -258,12 +258,23 @@ Chapter 7: Improving backpropagation with modern techniques - momentum, adaptive
 Chapter 8: Unsupervised learning, autoencoders, restricted Boltzmann machines, convolutional neural networks, and LSTMs  
 Chapter 9: You know more than you think you know
 
+# Statistics with Machine Learning
 ## Statistics and Machine Learning in Python, Edouard Duchesnay
 Python language  
 Scientific Python  
 Statistics  
 Machine Learning  
 Deep Learning  
+
+## Practical Statistics for Data Scientists, Peter Bruce
+Exploratory Data Analysis  
+Data and Sampling Distributions  
+Statistical Experiments and Significance Testing  
+Regression and Prediction  
+Classification  
+Statistical Machine Learning  
+Unsupervised Learning  
+
 
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
@@ -315,6 +326,7 @@ Chapter 20: Advanced Convolutional Neural Networks
 8. Vectorization
 9. Using Deep Learning and DL4J on Spark
 
+## Neural Networks and Deep Learning, 
 
 ## Pro Deep Learning with TensorFlow 2.0, Santanu Pattanayak
 Chapter 1: Mathematical Foundations  
