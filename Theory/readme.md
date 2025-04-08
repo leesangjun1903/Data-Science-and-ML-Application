@@ -258,6 +258,13 @@ Chapter 7: Improving backpropagation with modern techniques - momentum, adaptive
 Chapter 8: Unsupervised learning, autoencoders, restricted Boltzmann machines, convolutional neural networks, and LSTMs  
 Chapter 9: You know more than you think you know
 
+## Statistics and Machine Learning in Python, Edouard Duchesnay
+Python language  
+Scientific Python  
+Statistics  
+Machine Learning  
+Deep Learning  
+
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
 Pretrained networks  
@@ -365,6 +372,21 @@ Chapter 16: Improving the Emotional Intelligence Deficiencies of Chatbots
 Chapter 17: Genetic Algorithms in Hybrid Neural Networks  
 Chapter 18: Neuromorphic Computing  
 Chapter 19: Quantum Computing  
+
+## Approaching (Almost) Any Machine Learning Problem, ABHISHEK THAKUR
+Setting up your working environment  
+Supervised vs unsupervised learning  
+Cross-validation  
+Evaluation metrics  
+Arranging machine learning projects  
+Approaching categorical variables  
+Feature engineering  
+Feature selection  
+Hyperparameter optimization  
+Approaching image classification & segmentation  
+Approaching text classification/regression  
+Approaching ensembling and stacking  
+Approaching reproducible code & model serving  
 
 ## Fundamentals of Deep Learning, Nikhil Buduma
 Fundamentals of Linear Algebra for Deep Learning  
