@@ -20,6 +20,21 @@ Algorithm Chains and Pipelines
 Working with Text Data  
 Wrapping Up  
 
+## Deep Learning from Scratch, Seth Weidman
+Foundations  
+Fundamentals  
+Deep Learning from Scratch  
+Extensions  
+Convolutional Neural Networks  
+Recurrent Neural Networks  
+PyTorch  
+
+## PYTHON MACHINE LEARNING: MACHINE LEARNING AND DEEP LEARNING FROM SCRATCH ILLUSTRATED WITH PYTHON, SCIKIT-LEARN, KERAS, THEANO AND TENSORFLOW, MOUBACHIR MADANI FADOUL
+Chapter 1. Python Deep Learning Tutorial  
+Chapter 2. Python Deep Basic Machine Learning  
+Chapter 3. Artificial Neural Networks  
+Chapter 4. Training a Neural Network  
+Chapter 5. Python Deep Learning - Implementations  
 
 ## Dive into Deep Learning, ASTON ZHANG
 Data Manipulation  
@@ -171,7 +186,6 @@ Learning More about GANs
 Reconstructing Inputs Using Autoencoders  
 Exploring Few-Shot Learning Algorithms  
 
-
 ## UNDERSTANDING MACHINE LEARNING, Shai Shalev-Shwartz
 A Gentle Start  
 A Formal Learning Model  
@@ -212,6 +226,37 @@ A visual proof that neural nets can compute any function
 Why are deep neural networks hard to train?  
 Deep learning
 
+## Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, Aurélien Géron
+1. The Machine Learning Landscape
+2. End-to-End Machine Learning Project
+3. Classification
+4. Training Models
+5. Support Vector Machines
+6. Decision Trees
+7. Ensemble Learning and Random Forests
+8. Dimensionality Reduction
+9. Unsupervised Learning Techniques
+10. Introduction to Artificial Neural Networks with Keras
+11. Training Deep Neural Networks
+12. Custom Models and Training with TensorFlow
+13. Loading and Preprocessing Data with TensorFlow
+14. Deep Computer Vision Using Convolutional Neural Networks
+15. Processing Sequences Using RNNs and CNNs
+16. Natural Language Processing with RNNs and Attention
+17. Representation Learning and Generative Learning Using Autoencoders and GANs
+18. Reinforcement Learning
+19. Training and Deploying TensorFlow Models at Scale
+
+## Deep Learning in Python, LazyProgrammer
+Chapter 1: What is a neural network?  
+Chapter 2: Biological analogies  
+Chapter 3: Getting output from a neural network  
+Chapter 4: Training a neural network with backpropagation  
+Chapter 5: Theano  
+Chapter 6: TensorFlow  
+Chapter 7: Improving backpropagation with modern techniques - momentum, adaptive learning rate, and regularization  
+Chapter 8: Unsupervised learning, autoencoders, restricted Boltzmann machines, convolutional neural networks, and LSTMs  
+Chapter 9: You know more than you think you know
 
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
@@ -229,6 +274,28 @@ Improving training with metrics and augmentation
 Using segmentation to find suspected nodules  
 End-to-end nodule analysis, and where to go next  
 Deploying to production  
+
+## Deep Learning with TensorFlow and Keras, Amita Kapoor
+Chapter 1: Neural Network Foundations with TF  
+Chapter 2: Regression and Classification  
+Chapter 3: Convolutional Neural Networks  
+Chapter 4: Word Embeddings  
+Chapter 5: Recurrent Neural Networks  
+Chapter 6: Transformers  
+Chapter 7: Unsupervised Learning  
+Chapter 8: Autoencoders  
+Chapter 9: Generative Models  
+Chapter 10: Self-Supervised Learning  
+Chapter 11: Reinforcement Learning  
+Chapter 12: Probabilistic TensorFlow  
+Chapter 13: An Introduction to AutoML  
+Chapter 14: The Math Behind Deep Learning  
+Chapter 15: Tensor Processing Unit  
+Chapter 16: Other Useful Deep Learning Libraries  
+Chapter 17: Graph Neural Networks  
+Chapter 18: Machine Learning Best Practices  
+Chapter 19: TensorFlow 2 Ecosystem  
+Chapter 20: Advanced Convolutional Neural Networks  
 
 ## Deep Learning : A Practitioner’s Approach, Josh Patterson
 1. A Review of Machine Learning
