@@ -276,6 +276,15 @@ Classification
 Statistical Machine Learning  
 Unsupervised Learning  
 
+## Gaussian Processes for Machine Learning, Carl Edward Rasmussen
+Regression  
+Classification  
+Covariance Functions  
+Model Selection and Adaptation of Hyperparameters  
+Relationships between GPs and Other Models  
+Theoretical Perspectives  
+Approximation Methods for Large Datasets  
+Further Issues and Conclusions
 
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
