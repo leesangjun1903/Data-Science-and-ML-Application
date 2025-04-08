@@ -1,3 +1,4 @@
+
 # Machine Learning Theory
 ## Python Machine Learning for Beginners, 
 Chapter 1: Introduction and Environment Set Up  
@@ -326,7 +327,6 @@ Chapter 20: Advanced Convolutional Neural Networks
 8. Vectorization
 9. Using Deep Learning and DL4J on Spark
 
-## Neural Networks and Deep Learning, 
 
 ## Pro Deep Learning with TensorFlow 2.0, Santanu Pattanayak
 Chapter 1: Mathematical Foundations  
