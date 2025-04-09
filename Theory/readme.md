@@ -398,6 +398,22 @@ Chapter 9: You know more than you think you know
 13 ■ Best practices for the real world  
 
 # Statistics with Machine Learning
+## Pattern Recognition and Machine Learning, Christopher M. Bishop
+Introduction  
+Probability Distributions  
+Linear Models for Regression  
+Linear Models for Classification  
+Neural Networks  
+Kernel Methods  
+Sparse Kernel Machines  
+Graphical Models  
+Mixture Models and EM  
+Approximate Inference  
+Sampling Methods  
+Continuous Latent Variables  
+Sequential Data  
+Combining Models
+
 ## Statistics and Machine Learning in Python, Edouard Duchesnay
 Python language  
 Scientific Python  
