@@ -31,4 +31,22 @@ Theoretical Analysis
 Extensions and Related Settings  
 A brief history of Bayesian Optimization 
 
-
+## Machine Learning A Bayesian and Optimization Perspective, Sergios Theodoridis
+What Machine Learning is About
+Probability and Stochastic Processes
+Learning in Parametric Modeling: Basic Concepts and Directions
+Mean-Square Error Linear Estimation
+Stochastic Gradient Descent: The LMS Algorithm and its Family
+The Least-Squares Family
+Classification: A Tour of the Classics
+Parameter Learning: A Convex Analytic Path
+Sparsity-Aware Learning: Concepts and Theoretical Foundations
+Sparsity-Aware Learning: Algorithms and Applications
+Learning in Reproducing Kernel Hilbert Spaces
+Bayesian Learning: Inference and the EM Algorithm
+Bayesian Learning: Approximate Inference and Nonparametric Models
+Monte Carlo Methods
+Probabilistic Graphical Models
+Particle Filtering
+Neural Networks and Deep Learning
+Dimensionality Reduction
