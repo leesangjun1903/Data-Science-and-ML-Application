@@ -477,6 +477,16 @@ Graph Neural Network
 
 ## 모두의 딥러닝, 조태호
 
+## 한동대학교 전산전자공학부 머신러닝 캠프 – 김인중 교수
+Introduction to Machine Learning  
+Neural Networks Basics  
+Deep Learning Overview  
+Convolutional Neural Networks  
+Emerging Topics in Deep Learning  
+PyTorch Tutorial  
+Recurrent Neural Networks  
+Deep Generative Models  
+
 
 ## Automated Machine Learning, Frank Hutter
 Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time-consuming, iterative tasks of machine learning model development.  
