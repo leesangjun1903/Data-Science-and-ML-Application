@@ -50,3 +50,16 @@ Probabilistic Graphical Models
 Particle Filtering
 Neural Networks and Deep Learning
 Dimensionality Reduction
+
+## Linear Algebra and Optimization for Machine Learning
+Linear Algebra and Optimization: An Introduction  
+Linear Transformations and Linear Systems  
+Eigenvectors and Diagonalizable Matrices  
+Optimization Basics: A Machine Learning View  
+Advanced Optimization Solutions  
+Constrained Optimization and Duality  
+Singular Value Decomposition  
+Matrix Factorization  
+The Linear Algebra of Similarity  
+The Linear Algebra of Graphs  
+Optimization in Computational Graphs  
