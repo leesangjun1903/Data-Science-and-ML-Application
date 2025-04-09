@@ -1,6 +1,14 @@
 # Awesome TDA
 https://github.com/lrnzgiusti/awesome-topological-deep-learning?tab=readme-ov-file
 
+## Topos and Stacks of Deep Neural Networks, Jean-Claude Belfiore
+Architectures  
+Stacks of DNNs  
+Dynamics and homology  
+Unfoldings and memories, LSTMs and GRUs  
+A natural 3-category of deep networks  
+
+
 ## Library : 
 - Python Mapper : https://danifold.net/mapper/
 - Persim : https://persim.scikit-tda.org/en/latest/index.html
