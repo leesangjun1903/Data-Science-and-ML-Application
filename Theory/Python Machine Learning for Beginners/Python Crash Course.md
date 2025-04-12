@@ -181,8 +181,8 @@ A class in Python can have a special method called a constructor. The name of th
 
 ```
 def init __ __(self, fruit _ name, fruit _price):
-Fruit.name = fruit name
-Fruit.price = fruit _price
+Fruit.name = fruit_name
+Fruit.price = fruit_price
 ```
 
 ## 2.8. Data Science and Machine Learning Libraries
