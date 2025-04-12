@@ -117,8 +117,73 @@ The while loop keeps executing a certain piece of code unless the evaluation con
 while 루프는 평가 조건이 거짓이 되지 않는 한 특정 코드 조각을 계속 실행합니다.  
 
 ## 2.6. Functions
+In any programming language, functions are used to implement the piece of code that is required to be executed numerous times at different locations in the code. In such cases, instead of writing long pieces of codes again and again, you can simply define a function that contains the piece of code, and then you can call the function wherever you want in the code.
+
+모든 프로그래밍 언어에서 함수는 코드의 여러 위치에서 여러 번 실행해야 하는 코드 조각을 구현하는 데 사용됩니다.  
+이러한 경우 긴 코드 조각을 반복해서 쓰는 대신 코드 조각을 포함하는 함수를 정의한 다음 코드의 원하는 위치에 함수를 호출하기만 하면 됩니다.
+
+To create a function in Python, the def keyword is used, followed by the name of the function and opening and closing parenthesis. Once a function is defined, you have to call it in order to execute the code inside a function body. To call a function, you simply have to specify the name of the function, followed by opening and closing parenthesis. In the following script, we create a function named myfunc, which prints a simple statement on the console using the print() method.
+
+파이썬에서 함수를 만들려면 def 키워드를 사용하고 함수 이름과 열고 닫는 괄호를 붙입니다.  
+함수가 정의되면 함수 본문 내에서 코드를 실행하려면 함수를 호출해야 합니다.  
+함수를 호출하려면 함수의 이름을 지정한 다음 괄호를 열고 닫기만 하면 됩니다.  
+다음 스크립트에서는 print() 메서드를 사용하여 콘솔에 간단한 문을 인쇄하는 myfunc이라는 함수를 만듭니다.
+
+You can also pass values to a function. The values are passed inside the parenthesis of the function call. However, you must specify the parameter name in the function definition, too. In the following script, we define a function named myfuncparam() . The function accepts one parameter, i.e., num. The value passed in the parenthesis of the function call will be stored in this num variable and will be printed by the print() method inside the myfuncparam() method.
+
+값을 함수에 전달할 수도 있습니다. 값은 함수 호출의 괄호 안에 전달됩니다.  
+그러나 함수 정의에서도 매개변수 이름을 지정해야 합니다.  
+다음 스크립트에서는 함수 myfuncparam()이라는 함수를 정의합니다. 함수는 하나의 매개변수, 즉 num을 허용합니다.  
+함수 호출의 괄호 안에 전달된 값은 이 num 변수에 저장되며 myfuncaram() 메서드 내의 print() 메서드에 의해 인쇄됩니다.
+
+```
+1. def myfuncparam(num):
+2. 3. print (“This is a function with parameter value: “+num )
+4. ### function call
+5. myfuncparam(“Parameter 1” )
+```
+
+Finally, a function can also return values to the function call. To do so, you simply have to use the return keyword, followed by the value that you want to return. In the following script, the myreturnfunc() function returns a string value to the calling function.
+
+마지막으로 함수는 함수 호출에 값을 반환할 수도 있습니다. 이를 위해 반환 키워드를 사용한 다음 반환하려는 값을 반환하기만 하면 됩니다.
 
 ## 2.7. Objects and Classes
+Python supports object-oriented programming (OOP). In OOP, any entity that can perform some function and have some attributes is implemented in the form of an object. For instance, a car can be implemented as an object since a car has some attributes such as price, color, model, and can perform some functions such as drive car, change gear, stop car, etc. Similarly, a fruit can also be implemented as an object since a fruit has a price, name, and you can eat a fruit, grow a fruit, and perform functions with a fruit. To create an object, you first have to define a class. For instance, in the following example, a class Fruit has been defined. The class has two attributes, name and price, and one method, eat_fruit(). Next, we create an object f of class Fruit and then call the eat_fruit() method from the f object. We also access the name and price attributes of the f object and print them on the console.
+
+파이썬은 객체 지향 프로그래밍(OOP)을 지원합니다. OOP에서는 어떤 기능을 수행할 수 있고 어떤 속성을 가질 수 있는 모든 엔티티가 객체의 형태로 구현됩니다.  
+예를 들어, 자동차는 가격, 색상, 모델 등의 속성을 가지고 있고 드라이브카, 기어 변경, 스톱카 등의 일부 기능을 수행할 수 있기 때문에 자동차를 객체로 구현할 수 있습니다.  
+마찬가지로 과일에는 가격, 이름이 있고 과일을 먹고, 과일을 재배하고, 과일과 함께 기능을 수행할 수 있기 때문에 과일도 객체로 구현할 수 있습니다.  
+
+객체를 만들려면 먼저 클래스를 정의해야 합니다.  
+예를 들어, 다음 예제에서는 클래스 과일이 정의되었습니다. 클래스에는 이름과 가격이라는 두 가지 속성과 하나의 메서드인 eat_fruit()이 있습니다.  
+다음으로 클래스 과일의 객체 f를 생성한 다음 f 객체에서 eat_fruit() 메서드를 호출합니다. 또한 f 객체의 이름과 가격 속성에 액세스하여 콘솔에 출력합니다.
+
+```
+1. class Fruit:
+2.
+3. name = “apple”
+4. price = 10
+5.
+6. def eat_fruit(self):
+print (“Fruit has been eaten”)
+7. 8.
+9.
+10. f = Fruit()
+11. f.eat_fruit()
+12. print (f.name)
+13. print (f.price)
+```
+
+A class in Python can have a special method called a constructor. The name of the constructor method in Python is __ init __(). The constructor is called whenever an object of a class is created. Look at the following example to see the constructor in action.
+
+파이썬의 클래스에는 생성자라는 특별한 메서드가 있을 수 있습니다. 파이썬의 생성자 메서드 이름은 __init __()입니다.  
+클래스의 객체가 생성될 때마다 생성자가 호출됩니다. 다음 예제를 보면 생성자가 실제로 작동하는지 확인할 수 있습니다.
+
+```
+def init __ __(self, fruit _ name, fruit _price):
+Fruit.name = fruit name
+Fruit.price = fruit _price
+```
 
 ## 2.8. Data Science and Machine Learning Libraries
 
