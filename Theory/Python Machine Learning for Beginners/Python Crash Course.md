@@ -186,6 +186,42 @@ Fruit.price = fruit_price
 ```
 
 ## 2.8. Data Science and Machine Learning Libraries
+### 2.8.1. NumPy
+NumPy is one of the most commonly used libraries for numeric and scientific computing.
+
+NumPy는 숫자 및 과학 컴퓨팅에 가장 일반적으로 사용되는 라이브러리 중 하나입니다.
+### 2.8.2. Matplotlib
+Matplotlib is the de facto standard for static data visualization in Python, which is the first step in data science and machine learning. Being the oldest data visualization library in Python, Matplotlib is the most widely used data visualization library.
+
+Matplotlib은 파이썬에서 정적 데이터 시각화를 위한 사실상의 표준으로, 데이터 과학과 머신 러닝의 첫 번째 단계입니다.  
+Python에서 가장 오래된 데이터 시각화 라이브러리인 Matplotlib은 가장 널리 사용되는 데이터 시각화 라이브러리입니다.
+
+### 2.8.3. Seaborn
+Seaborn library is built on top of the Matplotlib library and contains all the plotting capabilities of Matplotlib. However, with Seaborn, you can plot much more pleasing and aesthetic graphs with the help of Seaborn default styles and color palettes.
+
+Seaborn 라이브러리는 Matplotlib 라이브러리 위에 구축되어 있으며 Matplotlib 의 모든 플롯 기능을 포함하고 있습니다.  
+하지만 Seaborn을 사용하면 Seaborn 기본 스타일과 색상 팔레트를 사용하여 훨씬 더 만족스럽고 미적인 그래프를 플롯할 수 있습니다.
+
+### 2.8.4. Pandas
+Pandas library, like Seaborn, is based on the Matplotlib library and offers utilities that can be used to plot different types of static plots in a single line of codes.
+
+Pandas 라이브러리는 Seaborn과 마찬가지로 Matplotlib 라이브러리를 기반으로 하며, 단일 코드 라인에서 다양한 유형의 정적 플롯을 플롯하는 데 사용할 수 있는 유틸리티를 제공합니다.
+
+### 2.8.5. Scikit Learn
+Scikit Learn, also called sklearn, is an extremely useful library for data science and machine learning in Python.
+
+Scikit Learn, 또는 sklearn이라고도 불리는 이 라이브러리는 파이썬에서 데이터 과학과 머신 러닝에 매우 유용합니다.
+
+### 2.8.6. TensorFlow
+TensorFlow is one of the most frequently used libraries for deep learning.
+
+텐서플로우는 딥러닝에 가장 자주 사용되는 라이브러리 중 하나입니다.
+
+### 2.8.7. Keras
+Keras is a high-level TensorFlow library that implements complex TensorFlow functionalities under the hood.
+
+Keras는 복잡한 텐서플로우 기능을 후드 아래에 구현하는 고수준 텐서플로우 라이브러리입니다.
+
 
 
 
