@@ -56,4 +56,71 @@ Comparison operators, as the name suggests, are used to compare two or more than
 
 <img width="908" alt="스크린샷 2025-04-12 오후 3 31 36" src="https://github.com/user-attachments/assets/9af993d0-05a8-4fc9-817d-f41ba88a9003" />
 
+### Assignment Operators
+Assignment operators are used to assign values to variables. The following table summarizes the assignment operators.
+
+할당 연산자는 변수에 값을 할당하는 데 사용됩니다. 다음 표는 할당 연산자를 요약한 것입니다.
+<img width="908" alt="스크린샷 2025-04-12 오후 3 33 31" src="https://github.com/user-attachments/assets/e2a9158a-0f81-496c-ae1b-7b77421c6cb9" />
+
+<img width="908" alt="스크린샷 2025-04-12 오후 3 33 46" src="https://github.com/user-attachments/assets/f13e20c5-d7a3-4fce-a515-bcea3f8b3784" />
+
+### Membership Operators
+Membership operators are used to find if an item is a member of a collection of items or not. There are two types of membership operators: the in operator and the not in operator. The following script shows the in operator in action.
+
+멤버십 연산자는 아이템이 아이템 컬렉션의 멤버인지 아닌지를 찾는 데 사용됩니다.  
+멤버십 연산자에는 두 가지 유형이 있습니다:  
+in operator and the not in operator. 
+
+```
+1. days = (“Sunday”
+,
+“Monday”
+,
+“Saturday” )
+2. print (‘Xunday’ not in days)
+,
+“Tuesday”
+,
+“Wednesday”
+,
+“Thursday”
+,
+“Friday”
+Output:
+True
+```
+
+## 2.4. Conditional Statements
+Conditional statements in Python are used to implement conditional logic in Python. Conditional statements help you decide whether to execute a certain code block or not. There are three main types of conditional statements in Python: a. If statement b. If-else statement c. If-elif statement
+
+파이썬의 조건문은 파이썬에서 조건 논리를 구현하는 데 사용됩니다.  
+조건문은 특정 코드 블록을 실행할지 여부를 결정하는 데 도움이 됩니다. 파이썬에는 세 가지 주요 유형의 조건문이 있습니다:  
+a. if 문 b. if-else 문 c. if-elif 문
+
+## 2.5. Iteration Statements
+Iteration statements, also known as loops, are used to iteratively execute a certain piece of code. There are two main types of iteration statements in Python: a. For loop b. While Loop
+
+반복문(루프라고도 함)은 특정 코드 조각을 반복적으로 실행하는 데 사용됩니다.  
+파이썬에는 두 가지 주요 유형의 반복문이 있습니다:  
+a. For loop b. While Loop
+
+### For Loop
+The for loop is used to iteratively execute a piece of code for a certain number of times. You should typically use for loop when you know the exact number of iterations or repetitions for which you want to run your code. A for loop iterates over a collection of items. In the following example, we create a collection of five integers using the range() method. Next, a for loop iterates five times and prints each integer in the collection.
+
+for 루프는 코드 조각을 일정 횟수 동안 반복적으로 실행하는 데 사용됩니다.  
+일반적으로 코드를 실행하려는 반복 횟수나 반복 횟수를 정확히 알 때 for 루프를 사용해야 합니다.  
+for 루프는 항목 모음에서 반복됩니다. 
+
+### While Loop
+The while loop keeps executing a certain piece of code unless the evaluation condition becomes false. For instance, the while loop in the following script keeps executing unless the variable c becomes greater than 10.
+
+while 루프는 평가 조건이 거짓이 되지 않는 한 특정 코드 조각을 계속 실행합니다.  
+
+## 2.6. Functions
+
+## 2.7. Objects and Classes
+
+## 2.8. Data Science and Machine Learning Libraries
+
+
 
