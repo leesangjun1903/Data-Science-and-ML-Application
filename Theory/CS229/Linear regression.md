@@ -22,7 +22,8 @@ To describe the supervised learning problem slightly more formally, our goal is,
 
 <img width="405" alt="스크린샷 2025-04-13 오후 9 57 33" src="https://github.com/user-attachments/assets/8bc24b6a-0c7d-4287-8e95-e943b9f7727a" />
 
-When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.
+When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning proble
+m a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.
 
 우리가 예측하려는 목표 변수가 연속적인 경우, 예를 들어 주택 예시와 같이 학습 문제를 회귀 문제라고 부릅니다.  
 y가 소수의 이산 값(예: 거주 지역이 주어졌을 때 주택이 주택인지 아파트인지 예측하고자 했을 때)만을 가질 수 있는 경우를 분류 문제라고 합니다.
@@ -356,7 +357,8 @@ A fairly standard choice for the weights is
 
 If xis vector-valued, this is generalized to be w(i) = exp(−(x(i)−x)T(x(i)−x)/(2τ2)), or w(i) = exp(−(x(i)−x)TΣ−1(x(i)−x)/(2τ2)), for an appropriate choice of τ or Σ.
 
-x가 벡터 값인 경우 이는 w(i) = exp(−(x(i)−x)T(x(i)−x)/(2τ2)) 또는 w(i) = exp(−(x(i)−x)TΣ−1(x(i)−x)/(2τ2))로 일반화되어 적절한 τ 또는 Σ를 선택할 수 있습니다.
+x가 벡터 값인 경우 이는 <img width="368" alt="스크린샷 2025-04-14 오전 12 02 59" src="https://github.com/user-attachments/assets/bdd1ab22-aece-47a8-a7f0-300df8701fd8" /> 또는 <img width="410" alt="스크린샷 2025-04-14 오전 12 04 14" src="https://github.com/user-attachments/assets/475c0153-dba2-4eed-8088-534c6c7ef99e" />
+로 일반화되어 적절한 τ 또는 Σ를 선택할 수 있습니다.
 
 Note that the weights depend on the particular point xat which we’re trying to evaluate x. Moreover, if |x(i)−x|is small, then w(i) is close to 1; and if |x(i)−x|is large, then w(i) is small. Hence, θ is chosen giving a much higher “weight” to the (errors on) training examples close to the query point x. (Note also that while the formula for the weights takes a form that is cosmetically similar to the density of a Gaussian distribution, the w(i)’s do not directly have anything to do with Gaussians, and in particular the w(i) are not random variables, normally distributed or otherwise.) The parameter τ controls how quickly the weight of a training example falls oﬀ with distance of its x(i) from the query point x; τ is called the bandwidth parameter, and is also something that you’ll get to experiment with in your homework.
 
