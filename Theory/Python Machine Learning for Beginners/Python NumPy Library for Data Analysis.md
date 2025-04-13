@@ -6,3 +6,23 @@ NumPy(Numerical Python)는 데이터 과학 및 수치적 컴퓨팅을 위한 �
 이 장에서는 NumPy 배열에서 가장 일반적으로 사용되는 몇 가지 기능을 배우게 될 것입니다.  
 NumPy는 Anaconda의 Python 배포판과 함께 미리 구축되어 있습니다.  
 또는 터미널이나 명령 프롬프트에 다음과 같은 pip 명령어로 NumPy를 설치할 수 있습니다: pip install numpy
+
+## 3.1. Advantages of NumPy Library
+
+## 3.2. Creating NumPy Arrays
+
+### 3.2.1. Using Array Methods
+
+### 3.2.2. Using Arrange Method
+
+### 3.2.3. Using Ones Method
+
+### 3.2.4. Using Zeros Method
+
+### 3.2.5. using Eyes Method
+
+### 3.2.6. Using Random Method
+
+## 3.3. Reshaping NumPy Arrays
+
+## 3.4. Array Indexing And Slicing
