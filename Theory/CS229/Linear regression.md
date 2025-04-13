@@ -62,7 +62,7 @@ where on the right-hand side above we are viewing θ and x both as vectors, and 
 이를 공식화하기 위해 θ의 각 값에 대해 h(x(i))가 해당 y(i)에 얼마나 가까운지 측정하는 함수를 정의할 것입니다. 우리는 비용 함수를 정의합니다:  
 
 ```math
-J(\theta) = 1/2\sum^n_{i=1} (h_\theta(x^(i))-y^(i))^2
+J(\theta) = \frac{1}{2}\sum^n_{i=1} (h_\theta(x^(i))-y^(i))^2
 ```
 If you’ve seen linear regression before, you may recognize this as the familiar least-squares cost function that gives rise to the ordinary least squares regression model. Whether or not you have seen it previously, let’s keep going, and we’ll eventually show this to be a special case of a much broader family of algorithms.
 
