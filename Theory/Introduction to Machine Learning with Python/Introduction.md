@@ -122,6 +122,8 @@ Jupyter 노트북 내부에서 작업할 때는 %matplotlib 노트북과 %matplo
 이러한 버전을 정확하게 맞추는 것은 중요하지 않지만, 우리가 사용한 것만큼 최신 버전의 scikit-learn 이 있어야 합니다. 이제 모든 것을 설정했으니 머신러닝의 첫 번째 응용 프로그램에 대해 살펴보겠습니다.
 
 ## A First Application: Classifying Iris Species
+Introduction to Machine Learning with Python_1.ipynb 로 진행합니다.
+
 이 섹션에서는 간단한 머신러닝 애플리케이션을 통해 첫 번째 모델을 만들겠습니다.  
 이 과정에서 몇 가지 핵심 개념과 용어를 소개합니다.  
 취미 식물학자가 자신이 발견한 홍채 꽃의 종을 구별하는 데 관심이 있다고 가정해 보겠습니다.  
@@ -142,7 +144,6 @@ Jupyter 노트북 내부에서 작업할 때는 %matplotlib 노트북과 %matplo
 특정 데이터 포인트에 대해 이 꽃이 속한 종을 레이블이라고 합니다.
 
 ### Meet the Data
-Introduction to Machine Learning with Python_1.ipynb
 
 ### Measuring Success: Training and Testing Data
 우리는 이 데이터를 바탕으로 새로운 측정 세트의 홍채 종을 예측할 수 있는 기계 학습 모델을 구축하고자 합니다.  
