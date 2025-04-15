@@ -1,4 +1,5 @@
 # Deep Learning from Scratch
+https://github.com/SethHWeidman/DLFS_code/tree/master
 
 ## Content
 ### Foundations
