@@ -96,6 +96,7 @@
 - Optimizing Millions of Hyperparameters by Implicit Differentiation | 2019 · 564회 인용
 - On Model Stability as a Function of Random Seed | 2019 · 102회 인용
 - Transformers without Normalization | 2025 · 105회 인용
+- Symbolic Discovery of Optimization Algorithms | 2023 · 707회 인용
 
 
 
