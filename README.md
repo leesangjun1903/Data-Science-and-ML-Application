@@ -103,6 +103,7 @@
 - AI 양재 허브 인공지능 오픈소스 경진대회 : https://dacon.io/en/competitions/official/235977/codeshare?page=1&dtype=view&ptype=pub&keyword
 - 카메라 이미지 품질 향상 AI 경진대회 : https://dacon.io/en/competitions/official/235746/codeshare?page=1&dtype=view&ptype=pub&keyword
 - ARC Prize 2024 : https://www.kaggle.com/competitions/arc-prize-2024/code?competitionId=67357&sortBy=voteCount&excludeNonAccessedDatasources=true
+- ADD 2022: the First Audio Deep Synthesis Detection Challenge
 
 # ETC
 - The Future of Data Science: Predictions and Trends : https://www.appliedaicourse.com/blog/future-of-data-science/
