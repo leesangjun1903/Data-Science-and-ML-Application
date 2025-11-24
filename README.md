@@ -26,10 +26,11 @@
 
 - Papers in 100 Lines of Code : https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code
 
-
 - Must Read Papers for Data Science, ML, and DL : https://github.com/hurshd0/must-read-papers-for-ml
 
-- Awesome AI & Data GitHub-Repos https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
+- Awesome AI Papers ⭐️(2022~2023)(E) : https://github.com/aimerou/awesome-ai-papers
+
+- Awesome AI & Data GitHub-Repos : https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
 
 
 ## Models
