@@ -17,16 +17,16 @@
 # Awesome series
 
 ## Awesome AI
-- Awesome Deep Learning : https://github.com/ChristosChristofidis/awesome-deep-learning
+- Awesome Deep Learning(~2021) : https://github.com/ChristosChristofidis/awesome-deep-learning
 
 - Awesome - Most Cited Deep Learning Papers(~2017) : https://github.com/terryum/awesome-deep-learning-papers
 
 
 - Awesome Deep learning papers(~2020) and other resources : https://github.com/endymecy/awesome-deeplearning-resources
 
-- Papers in 100 Lines of Code : https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code
+- Papers in 100 Lines of Code(2020~2024 E) : https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code
 
-- Must Read Papers for Data Science, ML, and DL : https://github.com/hurshd0/must-read-papers-for-ml
+- Must Read Papers for Data Science, ML, and DL(E) : https://github.com/hurshd0/must-read-papers-for-ml
 
 - Awesome AI Papers ⭐️(2022~2023)(E) : https://github.com/aimerou/awesome-ai-papers
 
@@ -34,7 +34,6 @@
 
 
 ## Models
-- Awesome - Most Cited Deep Learning Papers https://github.com/terryum/awesome-deep-learning-papers
 
 ### Spiking Neural Networks
 > Spiking Neural Networks, SNN은 인간의 뇌 신경망 작동 방식을 가장 유사하게 모방한 차세대 인공 신경망 모델입니다. 기존의 인공 신경망(ANN)이나 딥러닝(DNN)과는 달리, 정보를 이산적인 전기 신호인 '스파이크(Spike)'의 발생 타이밍과 빈도를 이용해 전달하고 처리합니다.
