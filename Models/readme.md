@@ -8,3 +8,5 @@
 > Knowledge Graph Embedding Model(KGE)
 
 > Fourier Neural Operator
+
+> CapsNet
