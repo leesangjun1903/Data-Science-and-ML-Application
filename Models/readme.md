@@ -10,3 +10,5 @@
 > Fourier Neural Operator
 
 > CapsNet
+
+> Spiking Neural Networks
