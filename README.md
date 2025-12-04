@@ -113,9 +113,9 @@
 - Top 13 Data Science Programming Languages in 2025 : https://www.appliedaicourse.com/blog/data-science-programming-languages/
 
 ## Gen AI
-- https://www.appliedaicourse.com/blog/generative-ai-models/
-- https://hbr.org/2022/11/how-generative-ai-is-changing-creative-work
-- https://www.techtarget.com/searchenterpriseai/definition/generative-AI
+- Generative AI Models : https://www.appliedaicourse.com/blog/generative-ai-models/
+- How Generative AI Is Changing Creative Work : https://hbr.org/2022/11/how-generative-ai-is-changing-creative-work
+- What is GenAI? Generative AI explained : https://www.techtarget.com/searchenterpriseai/definition/generative-AI
 
 - Computer Vision, NLP 논문 리뷰 대가. 220이 넘음. https://kimjy99.github.io/
 - 어쩐지 오늘은, Machine Learning Engineer : https://zzsza.github.io/
