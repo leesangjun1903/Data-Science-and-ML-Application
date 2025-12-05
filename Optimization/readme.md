@@ -98,6 +98,7 @@
 - Transformers without Normalization | 2025 · 105회 인용
 - Symbolic Discovery of Optimization Algorithms | 2023 · 707회 인용
 - Few-Shot Diffusion Models | 2022 · 69회 인용, Few-Shot Learning
+- D2C: Diffusion-Decoding Models for Few-Shot Conditional Generation | 2021 · 187회 인용, Few-Shot Learning
 
 
 
