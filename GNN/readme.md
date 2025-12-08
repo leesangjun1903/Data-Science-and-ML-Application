@@ -38,6 +38,7 @@
 - MAGNET: Multi-Label Text Classification using Attention-based Graph Neural Network : 2020 · 158회 인용
 - Scaling Deep Learning for Materials Discovery | 2023 · 1339회 인용
 - Discovery of a structural class of antibiotics with explainable deep learning | 2024 · 327회 인용
+- Learning to Simulate Complex Physics with Graph Networks | 2020 · 1703회 인용
 
 
 - Application(Computer Vision, NLP, Social Network(Internet), Recommend System, Healthcare, Chemistry, Physics)
