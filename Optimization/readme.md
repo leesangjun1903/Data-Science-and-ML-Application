@@ -30,13 +30,13 @@
 - Active Learning for Domain Adaptation: An Energy-Based Approach | 2021 · 172회 인용, Image Classification, Domain Adaption
 - Oops I Took A Gradient: Scalable Sampling for Discrete Distributions | 2021 · 123회 인용. Discrete Sampling
 - Learning the Stein Discrepancy for Training and Evaluating Energy-Based Models without Sampling | 2020 · 114회 인용, Sampling Technique
-- ICE-BeeM: Identifiable Conditional Energy-Based Deep Models Based on Nonlinear ICA | 2020 · 172회 인용
-- On the Anatomy of MCMC-Based Maximum Likelihood Learning of Energy-Based Models | 2019 · 206회 인용
+- ICE-BeeM: Identifiable Conditional Energy-Based Deep Models Based on Nonlinear ICA | 2020 · 172회 인용, Conditional EBM
+- On the Anatomy of MCMC-Based Maximum Likelihood Learning of Energy-Based Models | 2019 · 206회 인용, EBM, MCMC Sampling, Maximum Likelihood Estimation (MLE)
 - Your GAN is Secretly an Energy-based Model and You Should Use Discriminator Driven Latent Sampling | 2020 · 151회 인용, GAN Technique
 - Provably Robust Boosted Decision Stumps and Trees against Adversarial Attacks | 2019 · 335회 인용, Tree-based Model Robustness
 - Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning | 2016 · 1513회 인용, Semi-Supervised Learning
-- A Tutorial on Bayesian Optimization | 2018 · 3458회 인용, Optimization
-- Taking the Human Out of the Loop: A Review of Bayesian Optimization | 2015 · 7154회 인용, Optimization
+- A Tutorial on Bayesian Optimization | 2018 · 3458회 인용, Bayesian Optimization
+- Taking the Human Out of the Loop: A Review of Bayesian Optimization | 2015 · 7154회 인용, Bayesian Optimization
 - Maxout Networks | 2013 · 3283회 인용
 - Representation Learning with Contrastive Predictive Coding | 2018 · 13290회 인용
 - Bridging Theory and Algorithm for Domain Adaptation | 2019 · 1024회 인용
