@@ -84,19 +84,19 @@
 - Regularized Evolution for Image Classifier Architecture Search | 2018 · 4029회 인용, Evolutionary Algorithm, Regularized Evolution
 - ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware | 2018 · 2555회 인용, NAS, Path-level Binarization, Latency Regularization Loss, Proxy-less Search
 - Progressive Neural Architecture Search | 2017 · 2694회 인용, NAS, SMBO, Sequential Model-Based Optimization
-- Neural Architecture Search with Reinforcement Learning | 2016 · 7690회 인용
-- NASNet : Learning Transferable Architectures for Scalable Image Recognition | 2017 · 8417회 인용
-- MnasNet: Platform-Aware Neural Architecture Search for Mobile | 2018 · 4416회 인용
-- Hierarchical Representations for Efficient Architecture Search | 2017 · 1246회 인용
-- DARTS: Differentiable Architecture Search | 2018 · 6289회 인용
-- Gryﬃn: An algorithm for Bayesian optimization of categorical variables informed by expert knowledge | 2020 · 178회 인용
-- Learned Initializations for Optimizing Coordinate-Based Neural Representations | 2020 · 366회 인용
-- Multiplicative Filter Networks | 2021 . 202회 인용
-- Likelihood-Free MCMC with Amortized Approximate Ratio Estimators | 2019 · 248회 인용
-- Optimizing Millions of Hyperparameters by Implicit Differentiation | 2019 · 564회 인용
-- On Model Stability as a Function of Random Seed | 2019 · 102회 인용
-- Transformers without Normalization | 2025 · 105회 인용
-- Symbolic Discovery of Optimization Algorithms | 2023 · 707회 인용
+- Neural Architecture Search with Reinforcement Learning | 2016 · 7690회 인용, NAS, Policy Gradient (REINFORCE)
+- NASNet : Learning Transferable Architectures for Scalable Image Recognition | 2017 · 8417회 인용, NAS, RNN Controller, Cell-based Search
+- MnasNet: Platform-Aware Neural Architecture Search for Mobile | 2018 · 4416회 인용, NAS, Multi-Objective Optimization, Factorized Hierarchical Search Space, Reinforcement Learning
+- Hierarchical Representations for Efficient Architecture Search | 2017 · 1246회 인용, Evolutionary Algorithm
+- DARTS: Differentiable Architecture Search | 2018 · 6289회 인용, NAS, Bilevel Optimization, Discretization
+- Gryﬃn: An algorithm for Bayesian optimization of categorical variables informed by expert knowledge | 2020 · 178회 인용, Bayesian Optimization
+- Learned Initializations for Optimizing Coordinate-Based Neural Representations | 2020 · 366회 인용, Meta-Learning
+- Multiplicative Filter Networks | 2021 . 202회 인용, Multiscale Optimization, Tailored Initialization
+- Likelihood-Free MCMC with Amortized Approximate Ratio Estimators | 2019 · 248회 인용, MCMC Sampling
+- Optimizing Millions of Hyperparameters by Implicit Differentiation | 2019 · 564회 인용, Implicit Function Theorem, IFT, Gradient-based Hyperparameter Optimization
+- On Model Stability as a Function of Random Seed | 2019 · 102회 인용, ASWA(Aggressive Stochastic Weight Averaging), NASWA(Norm-filtered Aggressive Stochastic Weight Averaging)
+- Transformers without Normalization | 2025 · 105회 인용, Dynamic Tanh (DyT)
+- Symbolic Discovery of Optimization Algorithms | 2023 · 707회 인용, Program Search, Lion(EvoLved Sign Momentum)
 - Few-Shot Diffusion Models | 2022 · 69회 인용, Few-Shot Learning
 - D2C: Diffusion-Decoding Models for Few-Shot Conditional Generation | 2021 · 187회 인용, Few-Shot Learning
 - Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation | Score-based diffusion model Optimization
