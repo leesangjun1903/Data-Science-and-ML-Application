@@ -27,7 +27,7 @@
 - Transductive Information Maximization for Few-Shot Learning | 2020 · 245회 인용, Image classificaiton, Few-Shot Learning
 - LCM-LoRA: A Universal Stable-Diffusion Acceleration Module | 2023 · 180회 인용, Accelerate Sampling
 - Agent Attention: On the Integration of Softmax and Linear Attention | 2023 · 216회 인용, Attention Mechanism
-- Active Learning for Domain Adaptation: An Energy-Based Approach | 2021 · 172회 인용, Image Classification, Domain Adaption
+- Active Learning for Domain Adaptation: An Energy-Based Approach | 2021 · 172회 인용, Image Classification, Domain Adaptation
 - Oops I Took A Gradient: Scalable Sampling for Discrete Distributions | 2021 · 123회 인용. Discrete Sampling
 - Learning the Stein Discrepancy for Training and Evaluating Energy-Based Models without Sampling | 2020 · 114회 인용, Sampling Technique
 - ICE-BeeM: Identifiable Conditional Energy-Based Deep Models Based on Nonlinear ICA | 2020 · 172회 인용, Conditional EBM
@@ -40,50 +40,50 @@
 - Maxout Networks | 2013 · 3283회 인용, Activation Function
 - Representation Learning with Contrastive Predictive Coding | 2018 · 13290회 인용, InfoNCE(Information Noise-Contrastive Estimation), Self-Supervised Learning
 - Bridging Theory and Algorithm for Domain Adaptation | 2019 · 1024회 인용, Domain Adaption, Minimax Optimization
-- On Learning Invariant Representation for Domain Adaptation | 2019 · 811회 인용
-- Reusing the Task-specific Classifier as a Discriminator: Discriminator-free Adversarial Domain Adaptation | 2022 · 252회 인용
-- A Closer Look at Smoothness in Domain Adversarial Training | 2022 · 187회 인용
-- ToAlign: Task-oriented Alignment for Unsupervised Domain Adaptation | 2021 · 111회 인용
-- Adversarial Unsupervised Domain Adaptation with Conditional and Label Shift: Infer, Align and Iterate | 2021 · 106회 인용
-- Cross-Domain Gradient Discrepancy Minimization for Unsupervised Domain Adaptation | 2021 · 242회 인용
-- MetaAlign: Coordinating Domain Alignment and Classification for Unsupervised Domain Adaptation | 2021 · 158회 인용
-- Classes Matter: A Fine-grained Adversarial Approach to Cross-domain Semantic Segmentation | 2020 · 406회 인용
-- Gradually Vanishing Bridge for Adversarial Domain Adaptation | 2020 · 380회 인용
-- Implicit Class-Conditioned Domain Alignment for Unsupervised Domain Adaptation | 2020 · 169회 인용
-- Adversarial-Learned Loss for Domain Adaptation | 2020 · 243회 인용
-- Adversarial Domain Adaptation with Domain Mixup | 2019 · 556회 인용
-- Discriminative Adversarial Domain Adaptation | 2019 · 258회 인용
-- Transfer Learning with Dynamic Adversarial Adaptation Network | 2019 · 469회 인용
-- Joint Adversarial Domain Adaptation | 2019 · 144회 인용
-- Learning Disentangled Semantic Representation for Domain Adaptation | 2020 · 182회 인용
-- Transferability vs. Discriminability: Batch Spectral Penalization for Adversarial Domain Adaptation | 2019 · 690회 인용
-- Transferable Adversarial Training: A General Approach to Adapting Deep Classifiers | 2019 · 326회 인용
-- Drop to Adapt: Learning Discriminative Features for Unsupervised Domain Adaptation | 2019 · 249회 인용
-- Cluster Alignment with a Teacher for Unsupervised Domain Adaptation | 2019 · 319회 인용
-- Unsupervised Domain Adaptation via Regularized Conditional Alignment | 2019 · 168회 인용
-- Attending to Discriminative Certainty for Domain Adaptation | 2019 · 134회 인용
-- GCAN: Graph Convolutional Adversarial Network for Unsupervised Domain Adaptation | 2019 · 177회 인용
-- Domain-Symmetric Networks for Adversarial Domain Adaptation | 2019 · 468회 인용
-- Transferable Representation Learning with Deep Adaptation Networks | 2018 · 711회 인용
-- Robust Unsupervised Domain Adaptation for Neural Networks via Moment Alignment | 2017 · 122회 인용
-- Domain Conditioned Adaptation Network | 2020 · 144회 인용
-- HoMM: Higher-order Moment Matching for Unsupervised Domain Adaptation | 2019 · 282회 인용
-- Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation | 2018 · 289회 인용
-- Unbalanced minibatch Optimal Transport; applications to Domain Adaptation | 2021 · 215회 인용
-- Graph Optimal Transport for Cross-Domain Alignment | 2020 · 240회 인용
-- Reliable Weighted Optimal Transport for Unsupervised Domain Adaptation | 2020 · 194회 인용
-- Enhanced Transport Distance for Unsupervised Domain Adaptation | 2020 · 276회 인용
-- DeepJDOT: Deep Joint Distribution Optimal Transport for Unsupervised Domain Adaptation | 2018 · 628회 인용
-- Cycle Self-Training for Domain Adaptation | 2021 · 255회 인용
-- Instance Adaptive Self-Training for Unsupervised Domain Adaptation | 2020 · 412회 인용
-- Self-training Avoids Using Spurious Features Under Domain Shift | 2020 · 100회 인용
-- Fast Differentiable Sorting and Ranking | 2020 · 318회 인용
-- Learning with Diﬀerentiable Perturbed Optimizers | 2020 · 353회 인용
-- The Large Learning Rate Phase of Deep Learning: The Catapult Mechanism | 2020 · 300회 인용
-- When NAS Meets Robustness: In Search of Robust Architectures against Adversarial Attacks | 2019 · 226회 인용
-- Regularized Evolution for Image Classifier Architecture Search | 2018 · 4029회 인용
-- ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware | 2018 · 2555회 인용
-- Progressive Neural Architecture Search | 2017 · 2694회 인용
+- On Learning Invariant Representation for Domain Adaptation | 2019 · 811회 인용, Domain Adaption, Adversarial Training
+- Reusing the Task-specific Classifier as a Discriminator: Discriminator-free Adversarial Domain Adaptation | 2022 · 252회 인용, Domain Adaption, NWD(Nuclear-norm Wasserstein Discrepancy)
+- A Closer Look at Smoothness in Domain Adversarial Training | 2022 · 187회 인용, Adversarial Training, SDAT (Smooth Domain Adversarial Training)
+- ToAlign: Task-oriented Alignment for Unsupervised Domain Adaptation | 2021 · 111회 인용, Domain Adaption, Task-oriented Alignment
+- Adversarial Unsupervised Domain Adaptation with Conditional and Label Shift: Infer, Align and Iterate | 2021 · 106회 인용, Domain Adaption, Alternative Optimization Scheme
+- Cross-Domain Gradient Discrepancy Minimization for Unsupervised Domain Adaptation | 2021 · 242회 인용, Domain Adaption, Domain Generalization
+- MetaAlign: Coordinating Domain Alignment and Classification for Unsupervised Domain Adaptation | 2021 · 158회 인용, Domain Adaption, Meta-optimization
+- Classes Matter: A Fine-grained Adversarial Approach to Cross-domain Semantic Segmentation | 2020 · 406회 인용, Domain Adaption, FADA(Fine-grained Adversarial Domain Adaptation)
+- Gradually Vanishing Bridge for Adversarial Domain Adaptation | 2020 · 380회 인용, Domain Adaption, Adversarial Learning
+- Implicit Class-Conditioned Domain Alignment for Unsupervised Domain Adaptation | 2020 · 169회 인용, Domain Adaption, Sampling-based Implicit Alignment, Domain-Adversarial Learning
+- Adversarial-Learned Loss for Domain Adaptation | 2020 · 243회 인용, Domain Adaption, Adversarial Learning 
+- Adversarial Domain Adaptation with Domain Mixup | 2019 · 556회 인용, Domain Adaption, Adversarial Learning + Pixel & Feature Level Mixup
+- Discriminative Adversarial Domain Adaptation | 2019 · 258회 인용, Domain Adaption, Adversarial Learning, Minimax Optimization
+- Transfer Learning with Dynamic Adversarial Adaptation Network | 2019 · 469회 인용, Domain Adaptation, Dynamic Adversarial Factor
+- Joint Adversarial Domain Adaptation | 2019 · 144회 인용, Domain Adaption, Adversarial Learning
+- Learning Disentangled Semantic Representation for Domain Adaptation | 2020 · 182회 인용, Domain Adaption, Dual Adversarial Network, Gradient Reversal Layer
+- Transferability vs. Discriminability: Batch Spectral Penalization for Adversarial Domain Adaptation | 2019 · 690회 인용, Domain Adaption, Batch Spectral Penalization
+- Transferable Adversarial Training: A General Approach to Adapting Deep Classifiers | 2019 · 326회 인용, Domain Adaption, Adversarial Training, Min-Max Optimization
+- Drop to Adapt: Learning Discriminative Features for Unsupervised Domain Adaptation | 2019 · 249회 인용, Domain Adaption, Adversarial Dropout, Adversarial Training
+- Cluster Alignment with a Teacher for Unsupervised Domain Adaptation | 2019 · 319회 인용, Domain Adaptation, Implicit Ensemble, Ramp-up Scheduling
+- Unsupervised Domain Adaptation via Regularized Conditional Alignment | 2019 · 168회 인용, Domain Adaptation, Regularized Conditional Alignment, Adversarial Regularization
+- Attending to Discriminative Certainty for Domain Adaptation | 2019 · 134회 인용, Domain Adaptation, Certainty Activation Maps, Adversarial Learning
+- GCAN: Graph Convolutional Adversarial Network for Unsupervised Domain Adaptation | 2019 · 177회 인용, Domain Adaptation, Structure-aware Alignment, Domain Alignment, Class Centroid Alignment
+- Domain-Symmetric Networks for Adversarial Domain Adaptation | 2019 · 468회 인용, Adversarial Learning, Two-level Domain Confusion
+- Transferable Representation Learning with Deep Adaptation Networks | 2018 · 711회 인용, Domain Adaptation, Multi-Kernel Maximum Mean Discrepancy
+- Robust Unsupervised Domain Adaptation for Neural Networks via Moment Alignment | 2017 · 122회 인용, Domain Adaptation, Central Moment Discrepancy, CMD
+- Domain Conditioned Adaptation Network | 2020 · 144회 인용, Domain Adaptation, Domain Conditioned Channel Attention
+- HoMM: Higher-order Moment Matching for Unsupervised Domain Adaptation | 2019 · 282회 인용, Domain Adaptation, Higher-order Moment Matching
+- Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation | 2018 · 289회 인용, Domain Adaptation, CORAL (Correlation Alignment), Discriminative Feature Learning
+- Unbalanced minibatch Optimal Transport; applications to Domain Adaptation | 2021 · 215회 인용, Domain Adaptation, Stochastic Optimization
+- Graph Optimal Transport for Cross-Domain Alignment | 2020 · 240회 인용, Graph Matching, Wasserstein Distance, Gromov-Wasserstein Distance
+- Reliable Weighted Optimal Transport for Unsupervised Domain Adaptation | 2020 · 194회 인용, Domain Adaptation, Shrinking Subspace Reliability (SSR), Weighted Optimal Transport, Discriminative Centroid Clustering
+- Enhanced Transport Distance for Unsupervised Domain Adaptation | 2020 · 276회 인용, Domain Adaptation, Optimal Transport, Attention-aware Transport Distance
+- DeepJDOT: Deep Joint Distribution Optimal Transport for Unsupervised Domain Adaptation | 2018 · 628회 인용, Domain Adaptation, Optimal Transport, Joint Distribution Alignment
+- Cycle Self-Training for Domain Adaptation | 2021 · 255회 인용, Domain Adaptation, Cycle Self-Training, Tsallis Entropy Regularization
+- Instance Adaptive Self-Training for Unsupervised Domain Adaptation | 2020 · 412회 인용, Domain Adaptation, Instance Adaptive Selector, IAS, Region-guided Regularization
+- Self-training Avoids Using Spurious Features Under Domain Shift | 2020 · 100회 인용, Conditional Entropy Minimization, Pseudo-labeling
+- Fast Differentiable Sorting and Ranking | 2020 · 318회 인용, Permutahedron Projection, Convex Regularization, Isotonic Optimization
+- Learning with Diﬀerentiable Perturbed Optimizers | 2020 · 353회 인용, Stochastic Perturbation, Differentiable Optimizers
+- The Large Learning Rate Phase of Deep Learning: The Catapult Mechanism | 2020 · 300회 인용, Large Learning Rate, Catapult Mechanism
+- When NAS Meets Robustness: In Search of Robust Architectures against Adversarial Attacks | 2019 · 226회 인용, One-shot Neural Architecture Search (NAS), Adversarial Training
+- Regularized Evolution for Image Classifier Architecture Search | 2018 · 4029회 인용, Evolutionary Algorithm, Regularized Evolution
+- ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware | 2018 · 2555회 인용, NAS, Path-level Binarization, Latency Regularization Loss, Proxy-less Search
+- Progressive Neural Architecture Search | 2017 · 2694회 인용, NAS, SMBO, Sequential Model-Based Optimization
 - Neural Architecture Search with Reinforcement Learning | 2016 · 7690회 인용
 - NASNet : Learning Transferable Architectures for Scalable Image Recognition | 2017 · 8417회 인용
 - MnasNet: Platform-Aware Neural Architecture Search for Mobile | 2018 · 4416회 인용
@@ -100,7 +100,8 @@
 - Few-Shot Diffusion Models | 2022 · 69회 인용, Few-Shot Learning
 - D2C: Diffusion-Decoding Models for Few-Shot Conditional Generation | 2021 · 187회 인용, Few-Shot Learning
 - Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation | Score-based diffusion model Optimization
-- Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, Domain Adaption, CORAL (Correlation Alignment)
+- Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, Domain Adaptation, CORAL (Correlation Alignment)
+- CORAL: Correlation Alignment for Unsupervised Domain Adaptation | 2016 · 589회 인용, Domain Adaptation, Correlation Alignment (CORAL)
 
 
 
