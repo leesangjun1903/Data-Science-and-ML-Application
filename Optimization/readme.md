@@ -100,7 +100,7 @@
 - Few-Shot Diffusion Models | 2022 · 69회 인용, Few-Shot Learning
 - D2C: Diffusion-Decoding Models for Few-Shot Conditional Generation | 2021 · 187회 인용, Few-Shot Learning
 - Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation | Score-based diffusion model Optimization
-- Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, CORAL (Correlation Alignment)
+- Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, Domain Adaption, CORAL (Correlation Alignment)
 
 
 
