@@ -37,9 +37,9 @@
 - Regularization With Stochastic Transformations and Perturbations for Deep Semi-Supervised Learning | 2016 · 1513회 인용, Semi-Supervised Learning
 - A Tutorial on Bayesian Optimization | 2018 · 3458회 인용, Bayesian Optimization
 - Taking the Human Out of the Loop: A Review of Bayesian Optimization | 2015 · 7154회 인용, Bayesian Optimization
-- Maxout Networks | 2013 · 3283회 인용
-- Representation Learning with Contrastive Predictive Coding | 2018 · 13290회 인용
-- Bridging Theory and Algorithm for Domain Adaptation | 2019 · 1024회 인용
+- Maxout Networks | 2013 · 3283회 인용, Activation Function
+- Representation Learning with Contrastive Predictive Coding | 2018 · 13290회 인용, InfoNCE(Information Noise-Contrastive Estimation), Self-Supervised Learning
+- Bridging Theory and Algorithm for Domain Adaptation | 2019 · 1024회 인용, Domain Adaption, Minimax Optimization
 - On Learning Invariant Representation for Domain Adaptation | 2019 · 811회 인용
 - Reusing the Task-specific Classifier as a Discriminator: Discriminator-free Adversarial Domain Adaptation | 2022 · 252회 인용
 - A Closer Look at Smoothness in Domain Adversarial Training | 2022 · 187회 인용
