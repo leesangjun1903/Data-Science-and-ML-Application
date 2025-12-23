@@ -105,7 +105,7 @@
 - Domain Generalisation via Risk Distribution Matching | 2023 · 20회 인용, Risk Distribution Matching (RDM), MMD(Maximum Mean Discrepancy)
 - f-Domain-Adversarial Learning: Theory and Algorithms | 2021 · 105회 인용, f-divergence(Variational Characterization of f-divergences), Stackelberg Equilibrium, Min-Max Optimization, Aggressive Extra-Gradient
 - Correlation feature distribution matching for fault diagnosis of machines | 2023 · 27회 인용, CFDM(Correlation Feature Distribution Matching), Transfer Learning, Correlation Feature Matching, Second-order Feature Alignment, Weight Matching
-- 
+- From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domains | 2014 . 217회 인용, Decorrelated Features Domain Adaptation, Whitened HOG, WHO
 
 
 
