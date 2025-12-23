@@ -1,5 +1,20 @@
 # Optimization
-> ## Learning Hyperparameter Tuning, Loss function(Cost function), Objective function optimization, Representation Learning, Meta-Learning, Few-Shot Learning, Multi-task Learning, Domain Adaptation, Active Learning, Metric Learning, NAS(Neural Architecture Search), PU-Learning(Positive-Unlabeled Learning), Curriculum Learning, Activation function, Layer Fine-Tuning, Topos and stacks(Not verified)
+> - ### Hyperparameter Tuning,
+> - ### Loss function(Cost function),
+> - ### Objective function optimization,
+> - ### Representation Learning,
+> - ### Meta-Learning,
+> - ### Few-Shot Learning,
+> - ### Multi-task Learning,
+> - ### Domain Adaptation,
+> - ### Active Learning,
+> - ### Metric Learning,
+> - ### NAS(Neural Architecture Search),
+> - ### PU-Learning(Positive-Unlabeled Learning),
+> - ### Curriculum Learning,
+> - ### Activation function,
+> - ### Fine-Tuning,
+> - Topos and stacks(Not verified)
 
 ## Awesome Series
 - awesome-domain-adaptation : https://github.com/zhaoxin94/awesome-domain-adaptation
