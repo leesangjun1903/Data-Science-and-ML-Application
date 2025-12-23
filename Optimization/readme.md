@@ -125,6 +125,7 @@
 - Improvements on Cross-Validation: The .632+ Bootstrap Method | 1997 · 2436회 인용, Cross-Validation, Weighting Mechanism, Relative Overfitting
 - On f-Divergence Principled Domain Adaptation: An Improved Framework | 2019 · 618회 인용, Domain Adaptation, f-Domain Discrepancy, f-DD, Advanced Variational Representation, Localization Technique, f-DAL(f-Domain Adversarial Learning)
 - Information-Theoretic Analysis of Unsupervised Domain Adaptation | 2022 · 30회 인용, Domain Adaptation, Mutual Information, Algorithm-dependent Bounds Optimization, SGLD (Stochastic Gradient Langevin Dynamics), Information-Theoretic Regularization
+- Connecting sufficient conditions for domain adaptation: source-guided uncertainty, relaxed divergences and discrepancy localization | 2022 · 3회 인용, Domain Adaptation, Relaxed Divergences, Discrepancy Localization, Adversarial Learning
 
 
 
