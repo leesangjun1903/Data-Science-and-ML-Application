@@ -103,6 +103,7 @@
 - Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, Domain Adaptation, CORAL (Correlation Alignment)
 - CORAL: Correlation Alignment for Unsupervised Domain Adaptation | 2016 · 589회 인용, Domain Adaptation, Correlation Alignment (CORAL)
 - Domain Generalisation via Risk Distribution Matching | 2023 · 20회 인용, Risk Distribution Matching (RDM), MMD(Maximum Mean Discrepancy)
+- f-Domain-Adversarial Learning: Theory and Algorithms | 2021 · 105회 인용, f-divergence(Variational Characterization of f-divergences), Stackelberg Equilibrium, Min-Max Optimization, Aggressive Extra-Gradient
 
 
 
