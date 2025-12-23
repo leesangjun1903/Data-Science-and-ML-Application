@@ -124,6 +124,7 @@
 - An Open-Set Domain Adaptation Framework for Hyperspectral Image Classification With Pixel-Aware Weighting and Decoupled Alignment | 2025 · 3회 인용, Pixel-Aware Weighting and Decoupled Alignment, Adversarial Learning, decoupled dual alignment (DDA)
 - Improvements on Cross-Validation: The .632+ Bootstrap Method | 1997 · 2436회 인용, Cross-Validation, Weighting Mechanism, Relative Overfitting
 - On f-Divergence Principled Domain Adaptation: An Improved Framework | 2019 · 618회 인용, Domain Adaptation, f-Domain Discrepancy, f-DD, Advanced Variational Representation, Localization Technique, f-DAL(f-Domain Adversarial Learning)
+- Information-Theoretic Analysis of Unsupervised Domain Adaptation | 2022 · 30회 인용, Domain Adaptation, Mutual Information, Algorithm-dependent Bounds Optimization, SGLD (Stochastic Gradient Langevin Dynamics), Information-Theoretic Regularization
 
 
 
