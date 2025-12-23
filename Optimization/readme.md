@@ -102,6 +102,7 @@
 - Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation | Score-based diffusion model Optimization
 - Return of Frustratingly Easy Domain Adaptation | 2015 · 2498회 인용, Domain Adaptation, CORAL (Correlation Alignment)
 - CORAL: Correlation Alignment for Unsupervised Domain Adaptation | 2016 · 589회 인용, Domain Adaptation, Correlation Alignment (CORAL)
+- Domain Generalisation via Risk Distribution Matching | 2023 · 20회 인용, Risk Distribution Matching (RDM), MMD(Maximum Mean Discrepancy)
 
 
 
