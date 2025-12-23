@@ -107,6 +107,7 @@
 - Correlation feature distribution matching for fault diagnosis of machines | 2023 · 27회 인용, CFDM(Correlation Feature Distribution Matching), Transfer Learning, Correlation Feature Matching, Second-order Feature Alignment, Weight Matching
 - From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domains | 2014 . 217회 인용, Decorrelated Features Domain Adaptation, Whitened HOG, WHO
 - An Open-Set Domain Adaptation Framework for Hyperspectral Image Classification With Pixel-Aware Weighting and Decoupled Alignment | 2025 · 3회 인용, Pixel-Aware Weighting and Decoupled Alignment, Adversarial Learning, decoupled dual alignment (DDA)
+- Improvements on Cross-Validation: The .632+ Bootstrap Method | 1997 · 2436회 인용, Cross-Validation, Weighting Mechanism, Relative Overfitting
 
 
 
