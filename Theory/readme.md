@@ -1,5 +1,8 @@
 
 
+## Papers
+- No Unbiased Estimator of the Variance of K-Fold Cross-Validation : 머신러닝의 성능 평가 도구인 '교차 검증(Cross-Validation)'이 가진 통계적 한계를 규명
+
 # Machine Learning Theory
 
 - Basic-Mathematics-for-Machine-Learning : https://github.com/hrnbot/Basic-Mathematics-for-Machine-Learning
