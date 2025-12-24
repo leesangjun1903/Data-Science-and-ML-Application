@@ -127,6 +127,7 @@
 - Information-Theoretic Analysis of Unsupervised Domain Adaptation | 2022 · 30회 인용, Domain Adaptation, Mutual Information, Algorithm-dependent Bounds Optimization, SGLD (Stochastic Gradient Langevin Dynamics), Information-Theoretic Regularization
 - Connecting sufficient conditions for domain adaptation: source-guided uncertainty, relaxed divergences and discrepancy localization | 2022 · 3회 인용, Domain Adaptation, Relaxed Divergences, Discrepancy Localization, Adversarial Learning
 - Domain-Adversarial Training of Neural Networks | 2015 · 12787회 인용, Adversarial Learning, Domain Adaptation
+- Bootstrapping the Cross-Validation Estimate | 2023 · 14회 인용, Bootstrapping + Cross-Validation, Resampling, Standard Error, Confidence Interval
 
 
 
