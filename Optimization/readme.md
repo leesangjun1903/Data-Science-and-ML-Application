@@ -128,6 +128,7 @@
 - Connecting sufficient conditions for domain adaptation: source-guided uncertainty, relaxed divergences and discrepancy localization | 2022 · 3회 인용, Domain Adaptation, Relaxed Divergences, Discrepancy Localization, Adversarial Learning
 - Domain-Adversarial Training of Neural Networks | 2015 · 12787회 인용, Adversarial Learning, Domain Adaptation
 - Bootstrapping the Cross-Validation Estimate | 2023 · 14회 인용, Bootstrapping + Cross-Validation, Resampling, Standard Error, Confidence Interval
+- One-Step Generalization Ratio Guided Optimization for Domain Generalization | GENIE (Generalization-ENhancing Iterative Equalizer), Domain Generalization
 
 
 
