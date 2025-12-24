@@ -129,6 +129,7 @@
 - Domain-Adversarial Training of Neural Networks | 2015 · 12787회 인용, Adversarial Learning, Domain Adaptation
 - Bootstrapping the Cross-Validation Estimate | 2023 · 14회 인용, Bootstrapping + Cross-Validation, Resampling, Standard Error, Confidence Interval
 - One-Step Generalization Ratio Guided Optimization for Domain Generalization | GENIE (Generalization-ENhancing Iterative Equalizer), Domain Generalization
+- Sharpness-Aware Minimization for Efficiently Improving Generalization | 2020 · 2136회 인용, Sharpness-Aware Minimization (SAM), Generalization Performance Imporvement, Flat Minima, 
 
 
 
