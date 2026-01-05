@@ -16,7 +16,19 @@
 
 # Awesome series
 
-## Awesome AI
+## Preprocessing
+
+- awesome-imbalanced-learning : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
+
+- Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
+
+### Learning with Noisy Labels
+- Awesome Learning with Noisy Labels : https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise
+
+
+## Models
+
+### Awesome AI
 - Awesome Deep Learning(~2021) : https://github.com/ChristosChristofidis/awesome-deep-learning
 
 - Awesome - Most Cited Deep Learning Papers(~2017) : https://github.com/terryum/awesome-deep-learning-papers
@@ -32,16 +44,6 @@
 
 - Awesome AI & Data GitHub-Repos : https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
 
-
-## Preprocessing
-
-- awesome-imbalanced-learning : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
-
-- Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
-
-
-## Models
-
 ### Spiking Neural Networks
 > Spiking Neural Networks, SNN은 인간의 뇌 신경망 작동 방식을 가장 유사하게 모방한 차세대 인공 신경망 모델입니다. 기존의 인공 신경망(ANN)이나 딥러닝(DNN)과는 달리, 정보를 이산적인 전기 신호인 '스파이크(Spike)'의 발생 타이밍과 빈도를 이용해 전달하고 처리합니다.
 - Awesome Spiking Neural Networks : https://github.com/TheBrainLab/Awesome-Spiking-Neural-Networks
@@ -55,7 +57,7 @@
 ### State Space Model
 - Awesome-state-space-models : https://github.com/radarFudan/Awesome-state-space-models
 
-## Optimization
+## Optimization : Optimization Repository
 
 ## MLops
 - MLOps Zoomcamp: A Free 9-Week Course on Productionizing ML Services : https://github.com/DataTalksClub/mlops-zoomcamp
@@ -69,16 +71,12 @@
 - Top-down learning path: Machine Learning for Software Engineers : https://github.com/ZuzooVn/machine-learning-for-software-engineers
 - Awesome Machine Learning On Source Code : https://github.com/src-d/awesome-machine-learning-on-source-code
 
-## Learning with Noisy Labels
-- Awesome Learning with Noisy Labels : https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise
-
 ## Federated Machine Learning
 - Awesome Federated Machine Learning : https://github.com/innovation-cat/Awesome-Federated-Machine-Learning
 
 ## Application
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 - Winning solutions of kaggle competitions : https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions/notebook
-- Awesome Vector Search : https://github.com/currentslab/awesome-vector-search
 
 ### Fashion
 - awesome-fashion-ai : https://github.com/ayushidalmia/awesome-fashion-ai
