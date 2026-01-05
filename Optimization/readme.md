@@ -19,6 +19,7 @@
 ## Awesome Series
 - awesome-domain-adaptation : https://github.com/zhaoxin94/awesome-domain-adaptation
 
+- Awesome Test-Time Adaptation : https://github.com/tim-learn/awesome-test-time-adaptation
 
 - Awesome Machine Learning for Combinatorial Optimization Resources : https://github.com/Thinklab-SJTU/awesome-ml4co
 - Awesome Pruning : https://github.com/he-y/Awesome-Pruning
