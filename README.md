@@ -33,6 +33,13 @@
 - Awesome AI & Data GitHub-Repos : https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos?tab=readme-ov-file
 
 
+## Preprocessing
+
+- awesome-imbalanced-learning : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
+
+- Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
+
+
 ## Models
 
 ### Spiking Neural Networks
@@ -48,6 +55,8 @@
 ### State Space Model
 - Awesome-state-space-models : https://github.com/radarFudan/Awesome-state-space-models
 
+## Optimization
+
 ## MLops
 - MLOps Zoomcamp: A Free 9-Week Course on Productionizing ML Services : https://github.com/DataTalksClub/mlops-zoomcamp
 - Awesome MLOps : https://github.com/visenger/awesome-mlops
@@ -59,9 +68,6 @@
 ## Software & Programming
 - Top-down learning path: Machine Learning for Software Engineers : https://github.com/ZuzooVn/machine-learning-for-software-engineers
 - Awesome Machine Learning On Source Code : https://github.com/src-d/awesome-machine-learning-on-source-code
-
-## Feature Engineering
-- Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
 
 ## Learning with Noisy Labels
 - Awesome Learning with Noisy Labels : https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise
