@@ -134,9 +134,8 @@
 - Sharpness-Aware Minimization for Efficiently Improving Generalization | 2020 · 2136회 인용, Sharpness-Aware Minimization (SAM), Generalization Performance Imporvement, Flat Minima
 - Adversarial Data Augmentation for Single Domain Generalization via Lyapunov Exponent-Guided Optimization | LEAwareSGD(Lyapunov Exponent-Aware Stochastic Gradient Descent), Lyapunov Exponent, LE, Domain Generalization
 - Estimating classification error rate: Repeated cross-validation, repeated hold-out and bootstrap | 2009 · 1044회 인용, Cross-Validation, Resampling Technique, Repeated K-fold Cross-Validation, Repeated Hold-out, Bootstrap : .632+
-- Bayesian Convolutional Neural Networks with Bernoulli Approximate Variational Inference | 2015 · 1091회 인용, Bayesian Variational Inference, Monte Carlo Dropout, Out-of-distribution detection
-- Practical Bayesian Optimization of Machine Learning Algorithms | 2012 · 13124회 인용, Bayesian Optimization, Surrogate Model, Acquisition Function, AutoML
 - Bayesian Convolutional Neural Networks with Bernoulli Approximate Variational Inference | 2015 · 1095회 인용, Bayesian Inference, Monte Carlo Dropout, Bernoulli Approximate Variational Inference, Bayesian CNN
+- Practical Bayesian Optimization of Machine Learning Algorithms | 2012 · 13124회 인용, Bayesian Optimization, Surrogate Model, Acquisition Function, AutoML
 
 
 
