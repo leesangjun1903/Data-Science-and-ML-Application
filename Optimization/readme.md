@@ -23,6 +23,7 @@
 
 - Awesome Machine Learning for Combinatorial Optimization Resources : https://github.com/Thinklab-SJTU/awesome-ml4co
 - Awesome Pruning : https://github.com/he-y/Awesome-Pruning
+- Awesome Vector Search : https://github.com/currentslab/awesome-vector-search
 
 
 ## Papers
