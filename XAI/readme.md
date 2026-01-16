@@ -1,5 +1,46 @@
 > # Feature Selection Methods, Explainable AI Methods
 
+## Feature Selection, Feature Interpretation
+- Feature Importance
+- Weight/Frequency
+- Information Gain
+- RFE, Recursive Feature Elimination
+- Boruta
+- Permutation Feature Importance
+- SHAP (SHapley Additive exPlanations), TreeSHAP
+- Lasso, Ridge (L1, L2)
+- ACE (Alternating Conditional Expectations)
+- Banzhaf Value
+- PDP(Partial Dependence Plot)
+- ALE (Accumulated Local Effects)
+- ReliefF
+- MRMR (Maximum Relevance Minimum Redundancy)
+- VIF (Variance Inflation Factor)
+- Fisher Score
+- Boruta-SHAP
+- Regularized Random Forest (RRF)
+- Tree Model Built-in Importance
+- Genetic Algorithm
+- Particle Swarm Optimization, PSO
+- Simulated Annealing
+- LOFO (Leave One Feature Out) Importance
+- Feature Impurity Importance (Conditional Inference Trees)
+- Local Interpretable Model-agnostic Explanations (LIME)
+- JMI (Joint Mutual Information)
+- CIFE (Conditional Independence Feature Extraction)
+- FCBF (Fast Correlation-Based Filter)
+- Laplacian Score
+- SPEC (Spectral Feature Selection)
+- NDFS (Nonnegative Discriminative Feature Selection)
+- SCAD (Smoothly Clipped Absolute Deviation)
+- MCP (Minimax Concave Penalty)
+- ACO (Ant Colony Optimization)
+- BFO (Bacterial Foraging Optimization)
+- Grey Wolf Optimizer (GWO)
+- Concrete Autoencoder
+- FSNet (Feature Selection Network)
+- STG (Stochastic Gates)
+
 # Awesome series
 - Awesome Machine Learning Interpretability : https://github.com/jphall663/awesome-machine-learning-interpretability
 
