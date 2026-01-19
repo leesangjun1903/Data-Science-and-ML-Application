@@ -56,6 +56,10 @@ $$\phi_i^{\text{banz}} = \frac{1}{2^{n-1}} \sum_{S \subseteq [n] \backslash \{i\
 \hat{\phi }_{i}^{\text{banz}}=\frac{1}{M}\sum_{k=1}^{M}[v(S_{k}\cup \{i\})-v(S_{k})]
 ```
 
+보통 Monte-Carlo 샘플링으로 근사시키지만, 이 논문에서 소개된 Kernel Banzhaf 알고리즘을 이용하게 된다 :  
+이 알고리즘은 최근 SHAP 연구에서 파생된 기법으로, 가중 최소제곱회귀(Weighted Least Squares)를 이용하여 여러 특성의 반자프 값을 동시에 효율적으로 추정합니다.  
+이 방식은 특성 간의 상관관계를 고려하면서도 계산 효율성을 극대화합니다.
+
 ### 2.2 제안하는 방법: Kernel Banzhaf 알고리즘
 
 #### 2.2.1 선형 회귀 등가성 (Theorem 3.1)
