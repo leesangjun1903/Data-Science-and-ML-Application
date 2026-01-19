@@ -71,6 +71,10 @@
 - Relevance-CAM: Your Model Already Knows Where to Look | 2021 · 108회 인용
 - RFE : Recursive Feature Elimination by Sensitivity Testing | 2018 · 72회 인용
 - Feature Selection in the Contrastive Analysis Setting | 2023 · 8회 인용
+- Kernel Banzhaf: A Fast and Robust Estimator for Banzhaf Values | 2024 · 5회 인용
+- Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf* | 2021 · 10회 인용
+- Data Banzhaf: A Robust Data Valuation Framework for Machine Learning | 2022 · 180회 인용
+
 
 
 ## Interpretable Machine Learning, Christoph Molnar
