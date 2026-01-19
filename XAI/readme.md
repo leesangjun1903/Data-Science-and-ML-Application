@@ -41,6 +41,7 @@
 - FSNet (Feature Selection Network)
 - STG (Stochastic Gates)
 - ContrastFS : A Contrast Based Feature Selection Algorithm for High-dimensional Data set in Machine Learning
+- Banzhaf
 
 # Awesome series
 - Awesome Machine Learning Interpretability : https://github.com/jphall663/awesome-machine-learning-interpretability
