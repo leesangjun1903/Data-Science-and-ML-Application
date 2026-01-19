@@ -75,6 +75,7 @@
 - Kernel Banzhaf: A Fast and Robust Estimator for Banzhaf Values | 2024 · 5회 인용
 - Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf* | 2021 · 10회 인용
 - Data Banzhaf: A Robust Data Valuation Framework for Machine Learning | 2022 · 180회 인용
+- InfluenceNet: AI Models for Banzhaf and Shapley Value Prediction
 
 
 
