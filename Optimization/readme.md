@@ -139,6 +139,7 @@
 
 ## Diffusion Model Optimization
 - Efficient Diffusion Training via Min-SNR Weighting Strategy | 2023 · 235회 인용
+- Input Perturbation Reduces Exposure Bias in Diffusion Models | 2023 · 95회 인용
 
 ## Reference
 - Advancing medical Imaging Informatics by Deep Learning-Based Domain Adaptation : https://ballentain.tistory.com/m/69
