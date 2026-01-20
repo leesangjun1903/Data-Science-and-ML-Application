@@ -27,15 +27,30 @@
 
 
 ## Papers
+### Few-Shot Learning
 - Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation | 2020 · 552회 인용, Few-Shot Learning, Learning-to-Learn Approach (Meta-Learning)
+- PT-MAP : Leveraging the Feature Distribution in Transfer-based Few-Shot Learning | 2020 · 233회 인용, Few-shot learning
+
+
+### Domain adaption
 - DMTRL : Deep Multi-task Representation Learning: A Tensor Factorisation Approach | 2016 · 341회 인용, Domain adaption
 - Efficient Parametrization of Multi-Domain Deep Neural Networks | 2018 · 488회 인용, Domain apaption
-- Episodic Training for Domain Generalization | 2019 · 585회 인용, Domain Generalization, Episodic Training, Meta-Learning
-- Incremental Learning Through Deep Adaptation | 2017 · 342회 인용, Incremental Learning
 - Incremental Multi-domain Learning with Network Latent Tensor Factorization | 2019 · 45회 인용, Domain adaption
 - Latent Domain Learning with Dynamic Residual Adapters | 2020 · 5회 인용, Domain adaption, Dynamic Residual Adapters
 - Learning multiple visual domains with residual adapters | 2017 · 1158회 인용, Domain adaption, residual apapters
-- PT-MAP : Leveraging the Feature Distribution in Transfer-based Few-Shot Learning | 2020 · 233회 인용, Few-shot learning
+
+
+### Meta Learning
+- Episodic Training for Domain Generalization | 2019 · 585회 인용, Domain Generalization, Episodic Training, Meta-Learning
+
+### Incremental Learning
+- Incremental Learning Through Deep Adaptation | 2017 · 342회 인용, Incremental Learning
+
+
+
+
+
+
 - Matching Networks for One Shot Learning | 2016 · 9832회 인용, Image classification, One shot learning, Meta-Learning
 - MetaReg: Towards Domain Generalization using Meta-Regularization | 2018 · 897회 인용, Domain Generalization, Meta-Learning
 - Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights | 2018 · 876회 인용, Domain adaption
