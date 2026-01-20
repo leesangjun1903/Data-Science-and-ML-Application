@@ -152,6 +152,9 @@
 - Bayesian Convolutional Neural Networks with Bernoulli Approximate Variational Inference | 2015 · 1095회 인용, Bayesian Inference, Monte Carlo Dropout, Bernoulli Approximate Variational Inference, Bayesian CNN
 - Practical Bayesian Optimization of Machine Learning Algorithms | 2012 · 13124회 인용, Bayesian Optimization, Surrogate Model, Acquisition Function, AutoML
 
+## CNN Technique
+- Clustering Convolutional Kernels to Compress Deep Neural Networks
+
 ## Diffusion Model Optimization
 - Efficient Diffusion Training via Min-SNR Weighting Strategy | 2023 · 235회 인용
 - Input Perturbation Reduces Exposure Bias in Diffusion Models | 2023 · 95회 인용
