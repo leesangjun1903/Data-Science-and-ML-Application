@@ -153,7 +153,7 @@
 - Practical Bayesian Optimization of Machine Learning Algorithms | 2012 · 13124회 인용, Bayesian Optimization, Surrogate Model, Acquisition Function, AutoML
 
 ## CNN Technique
-- Clustering Convolutional Kernels to Compress Deep Neural Networks
+- Clustering Convolutional Kernels to Compress Deep Neural Networks | 2018 · 114회 인용
 
 ## Diffusion Model Optimization
 - Efficient Diffusion Training via Min-SNR Weighting Strategy | 2023 · 235회 인용
