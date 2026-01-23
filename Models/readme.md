@@ -1,5 +1,5 @@
 # Other Models Except DNN. New Architectures.
-> PINN
+> Physics-Informed Neural Networks (PINNs)
 
 > Genetic Algorithm
 
