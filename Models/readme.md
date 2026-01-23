@@ -14,3 +14,5 @@
 > Spiking Neural Networks
 
 > Scalable Adaptive Computation for Iterative Generation(Recurrent Interface Networks (RINs))
+
+> HTM(HIERARCHICAL temporal memory (HTM))
