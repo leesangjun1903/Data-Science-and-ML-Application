@@ -39,6 +39,8 @@
 - Latent Domain Learning with Dynamic Residual Adapters | 2020 · 5회 인용, Domain adaption, Dynamic Residual Adapters
 - Learning multiple visual domains with residual adapters | 2017 · 1158회 인용, Domain adaption, residual apapters
 
+#### Domain Expansion
+- Domain Expansion of Image Generators | 2023 · 18회 인용, Domain Expansion, Dormant Directions
 
 ### Meta Learning
 - Episodic Training for Domain Generalization | 2019 · 585회 인용, Domain Generalization, Episodic Training, Meta-Learning
