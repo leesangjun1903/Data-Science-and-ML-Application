@@ -38,6 +38,7 @@
 - Incremental Multi-domain Learning with Network Latent Tensor Factorization | 2019 · 45회 인용, Domain adaption
 - Latent Domain Learning with Dynamic Residual Adapters | 2020 · 5회 인용, Domain adaption, Dynamic Residual Adapters
 - Learning multiple visual domains with residual adapters | 2017 · 1158회 인용, Domain adaption, residual apapters
+- Model Adaptation: Unsupervised Domain Adaptation without Source Data | 2025 · 952회 인용, Domain Adaption, Collaborative Class Conditional GAN (3C-GAN)
 
 #### Domain Expansion
 - Domain Expansion of Image Generators | 2023 · 18회 인용, Domain Expansion, Dormant Directions
