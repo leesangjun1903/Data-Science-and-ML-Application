@@ -40,6 +40,7 @@
 - Learning multiple visual domains with residual adapters | 2017 · 1158회 인용, Domain adaption, residual apapters
 - Model Adaptation: Unsupervised Domain Adaptation without Source Data | 2025 · 952회 인용, Domain Adaption, Collaborative Class Conditional GAN (3C-GAN)
 - Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation | 2020 · 2030회 인용, Domain Adaptation, SHOT (Source HypOthesis Transfer)
+- Domain Confused Contrastive Learning for Unsupervised Domain Adaptation | 2022 · 23회 인용, Domain Adaptation, Domain Confused Contrastive Learning (DCCL)
 
 #### Domain Expansion
 - Domain Expansion of Image Generators | 2023 · 18회 인용, Domain Expansion, Dormant Directions
