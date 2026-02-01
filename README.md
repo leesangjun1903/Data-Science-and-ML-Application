@@ -74,6 +74,9 @@
 ## Federated Machine Learning
 - Awesome Federated Machine Learning : https://github.com/innovation-cat/Awesome-Federated-Machine-Learning
 
+## Active Learning
+- Awesome Active Learning : https://github.com/baifanxxx/awesome-active-learning
+
 ## Application
 - Project Based Learning https://github.com/tuvtran/project-based-learning
 - Winning solutions of kaggle competitions : https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions/notebook
