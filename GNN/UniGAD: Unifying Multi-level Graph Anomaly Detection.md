@@ -1,15 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# 1. 당신은 AI 분야의 연구자입니다. "UniGAD: Unifying Multi-level Graph Anomaly Detection"의 핵심 주장과 주요 기여를 간결하게 요약하세요.
-
-2. 이 논문이 "해결하고자 하는 문제, 제안하는 방법(수식 포함), 모델 구조, 성능 향상 및 한계"를 중심으로 자세하게 설명하세요.
-3.특히 "모델의 일반화 성능 향상 가능성"과 관련된 내용을 중점적으로 다뤄 주세요.
-4.요약 후에는 "해당 논문이 앞으로의 연구에 미치는 영향과 앞으로 연구 시 고려할 점"도 자세히 기술해 주세요.
-“2020년 이후 관련 최신 연구 비교 분석”
-수식을 LaTeX 코드로 답변 형식을 맞춰주고, LaTeX 렌더링을 위해 마크다운에 달러 기호를 사용해 주세요.
-
-답변을 제시할 때, 참고한 사이트의 출처 또는 참고자료의 제목을 반드시 모두 적어주세요.
-답변의 정확도가 100% 확신이 서지 않는다면, 억지로 답변을 지어내지 말고 정확한 답변만 제시하세요.
+# UniGAD: Unifying Multi-level Graph Anomaly Detection
 
 UniGAD는 노드·엣지·그래프를 한꺼번에 다루는 최초의 “통합 그래프 이상 탐지(GAD) 프레임워크”로, 스펙트럴 기반 서브그래프 샘플러(MRQSampler)와 다중 레벨 공훈련용 GraphStitch 네트워크를 통해 단일 레벨 전용 모델과 프롬프트 기반 멀티태스크 모델보다 높은 성능과 강한 제로샷 전이 성능을 보이는 것이 핵심 주장입니다.[^1_1][^1_2]
 
@@ -77,7 +66,6 @@ $$
 RQ(x, L) = \frac{x^\top L x}{x^\top x} 
 = \frac{\sum_{(i,j)\in E} A_{ij} (x_j - x_i)^2}
 {\sum_{i\in V} x_i^2}.
-\tag{1}
 $$
 
 - 선행 연구를 인용한 Lemma 1에 따르면, **Rayleigh quotient는 이상 정도와 단조 증가 관계**를 가진다고 주장합니다.[^1_1]
@@ -94,7 +82,6 @@ S^\star = \arg\max_{S \subseteq G}
 {\sum_{p\in S} x_p^2},
 \quad
 \text{s.t. } v \in S,\ \forall v_p \in S,\ (v, v_p)\ \text{reachable}.
-\tag{2}
 $$
 
 - 일반 그래프에서는 유사 문제가 NP-hard이지만, **트리 구조**(루트드 서브트리)에 한정하면 동적 계획법으로 해결 가능함을 보입니다.[^1_1]
@@ -125,8 +112,11 @@ Corollary 1은 이를 **노드 집합 $V_{\text{new}}$**로 확장한 것으로,
 Theorem 2는 “최종 최적 서브그래프 $S^\star$에 반드시 포함되어야 하는 노드 집합”의 조건을 제시합니다.[^1_1]
 
 - 현재 서브그래프 $S$에서, 가능한 연결 노드 집합들 중
-$\Delta_{\max}(\tilde{V}_{\text{new}}) = \max_{\tilde{V}_{\text{new}}} \Delta(\tilde{V}_{\text{new}})$이며
+
+$\Delta_{\max}(\tilde{V}\_{\text{new}}) = \max_{\tilde{V}\_{\text{new}}} \Delta(\tilde{V}_{\text{new}})$이며
+
 $\Delta_{\max}(\tilde{V}_{\text{new}}) > RQ(S)$ 를 만족하면,
+
 이 $\tilde{V}_{\text{new}}$는 최적해 $S^\star$에 포함된다는 것입니다.[^1_1]
 
 이를 이용해 MRQSampler는 다음 두 단계를 수행합니다.[^1_1]
@@ -152,10 +142,10 @@ $\Delta_{\max}(\tilde{V}_{\text{new}}) > RQ(S)$ 를 만족하면,
 
 GraphStitch Unit은 다음과 같이 정의됩니다.[^1_1]
 
-$$
+```math
 (\tilde{e}_N, \tilde{e}_E, \tilde{e}_G)
 =
-\operatorname{diag}
+\text{diag}
 \begin{pmatrix}
 \alpha_{nn} & \alpha_{ne} & \alpha_{ng} \\
 \alpha_{en} & \alpha_{ee} & \alpha_{eg} \\
@@ -163,8 +153,7 @@ $$
 \end{pmatrix}
 \cdot
 (e_N, e_E, e_G).
-\tag{3}
-$$
+```
 
 - $\alpha_{nn}$ 등 대각 원소는 **자기 레벨 유지**,
 $\alpha_{ne}, \alpha_{ng}$ 등 비대각 원소는 **다른 레벨 정보 유입량**을 조절합니다.[^1_1]
@@ -185,7 +174,6 @@ L = \sum_{\{N,E,G\}} \sum_i
 +
 (1 - y_i^{\{N,E,G\}}) \log (1 - p_i^{\{N,E,G\}})
 \Big),
-\tag{4}
 $$
 
 - 여기서 $\gamma$는 이상(1) : 정상(0) 비율에 기반한 가중치,
