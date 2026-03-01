@@ -1,15 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# 1. 당신은 AI 분야의 연구자입니다. "AnomalyGFM: Graph Foundation Model for Zero/Few-shot Anomaly Detection"의 핵심 주장과 주요 기여를 간결하게 요약하세요.
-
-2. 이 논문이 "해결하고자 하는 문제, 제안하는 방법(수식 포함), 모델 구조, 성능 향상 및 한계"를 중심으로 자세하게 설명하세요.
-3.특히 "모델의 일반화 성능 향상 가능성"과 관련된 내용을 중점적으로 다뤄 주세요.
-4.요약 후에는 "해당 논문이 앞으로의 연구에 미치는 영향과 앞으로 연구 시 고려할 점"도 자세히 기술해 주세요.
-“2020년 이후 관련 최신 연구 비교 분석”
-수식을 LaTeX 코드로 답변 형식을 맞춰주고, LaTeX 렌더링을 위해 마크다운에 달러 기호를 사용해 주세요.
-
-답변을 제시할 때, 참고한 사이트의 출처 또는 참고자료의 제목을 반드시 모두 적어주세요.
-답변의 정확도가 100% 확신이 서지 않는다면, 억지로 답변을 지어내지 말고 정확한 답변만 제시하세요.
+# AnomalyGFM: Graph Foundation Model for Zero/Few-shot Anomaly Detection
 
 AnomalyGFM은 그래프 이상 탐지(GAD)에 특화된 그래프 파운데이션 모델을 제안하여, 하나의 모델로 서로 다른 그래프 데이터셋에 대해 **zero‑shot / few‑shot 이상 탐지**를 높은 성능으로 수행할 수 있다는 점이 핵심 주장입니다. 이를 위해 **노드 표현의 “잔차(residual)”와 두 개의 그래프 비의존(normal/abnormal) 프로토타입**을 학습해 공통 특성 공간에서 이상도를 측정하는 새로운 패러다임을 제시합니다.[^1_1]
 
@@ -212,8 +201,8 @@ $$
     - GCN, $\Phi$, $p_a$, 원래 $p_n$은 동결.
     - 정상 노드 few‑shot 라벨에 대해 $g(\cdot;\phi)$, $\Psi_{p_n}$만 업데이트하여 $p'_n$ 획득.[^1_1]
 - **추론 단계**
-    - zero‑shot: 잔차–$p_n, p_a$ 유사도로 이상 점수 계산.
-    - few‑shot: 잔차–$p'_n, p_a$ 유사도로 이상 점수 계산.
+    - zero‑shot: 잔차– $p_n, p_a$ 유사도로 이상 점수 계산.
+    - few‑shot: 잔차– $p'_n, p_a$ 유사도로 이상 점수 계산.
     - 필요 시, 서브그래프 기반으로 스케일업.[^1_1]
 
 ***
