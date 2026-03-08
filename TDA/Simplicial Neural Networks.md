@@ -1,15 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# 1. 당신은 AI 분야의 연구자입니다. "Simplicial Neural Networks"의 핵심 주장과 주요 기여를 간결하게 요약하세요.
-
-2. 이 논문이 "해결하고자 하는 문제, 제안하는 방법(수식 포함), 모델 구조, 성능 향상 및 한계"를 중심으로 자세하게 설명하세요.
-3.특히 "모델의 일반화 성능 향상 가능성"과 관련된 내용을 중점적으로 다뤄 주세요.
-4.요약 후에는 "해당 논문이 앞으로의 연구에 미치는 영향과 앞으로 연구 시 고려할 점"도 자세히 기술해 주세요.
-“2020년 이후 관련 최신 연구 비교 분석”
-수식을 LaTeX 코드로 답변 형식을 맞춰주고, LaTeX 렌더링을 위해 마크다운에 달러 기호를 사용해 주세요.
-
-답변을 제시할 때, 참고한 사이트의 출처 또는 참고자료의 제목을 반드시 모두 적어주세요.
-답변의 정확도가 100% 확신이 서지 않는다면, 억지로 답변을 지어내지 말고 정확한 답변만 제시하세요.
+# Simplicial Neural Networks
 
 논문은 그래프 신경망을 단순 복합체(simplicial complex)로 일반화한 심플리셜 신경망(SNN) 프레임워크를 제안하고, 공저자 인용수 결측 보정 과제에서 구조를 활용한 학습이 단순 베이스라인보다 더 잘 일반화함을 보인다. 이후 SCNN, GSAN, COSIMO, Dir‑SNN, SaNN 등으로 이어지는 고차 GNN·토폴로지 딥러닝의 기본 틀을 제공했다.[^1_1][^1_2][^1_3][^1_4][^1_5]
 
@@ -64,7 +53,7 @@ $$
 - **코경계 연산자** $\delta_p : C_p(K) \to C_{p+1}(K)$:
 
 $$
-\delta_p(f)([v_0,\dots,v_{p+1}]) = \sum_{i=0}^{p+1} (-1)^i f([v_0,\dots,\hat v_i,\dots,v_{p+1}]) \tag{1}
+\delta_p(f)([v_0,\dots,v_{p+1}]) = \sum_{i=0}^{p+1} (-1)^i f([v_0,\dots,\hat v_i,\dots,v_{p+1}]) 
 $$
 
 이는 p‑공사슬의 지지가 상위 차수 심플렉스(코페이스) 방향으로 확산되도록 하는 국소 선형 연산이다.[^1_1]
@@ -75,14 +64,14 @@ $$
 - 표준 내적 아래에서 $\delta_i$의 수반을 $\delta_i^*$라 할 때, i‑차 심플리셜 라플라시안은
 
 $$
-L_i = L_i^{\mathrm{up}} + L_i^{\mathrm{down}} = \delta_i^* \delta_i + \delta_{i-1} \delta_{i-1}^* : C_i(K) \to C_i(K) \tag{2}
+L_i = L_i^{\mathrm{up}} + L_i^{\mathrm{down}} = \delta_i^* \delta_i + \delta_{i-1} \delta_{i-1}^* : C_i(K) \to C_i(K) 
 $$
 
 로 정의된다.[^1_1]
 - 행렬 형태로는 희소 코경계 행렬 $B_i$를 이용해
 
 $$
-L_i = B_i^\top B_i + B_{i-1} B_{i-1}^\top \tag{3}
+L_i = B_i^\top B_i + B_{i-1} B_{i-1}^\top
 $$
 
 로 계산되며, $L_0$는 통상적인 그래프 라플라시안이다.[^1_1]
@@ -102,14 +91,14 @@ $$
 - p‑공사슬 $c \in C_p(K)$의 푸리에 변환:
 
 $$
-\mathcal{F}_p(c) = \big(\langle c, e_1 \rangle_p, \dots, \langle c, e_{|K_p|} \rangle_p\big) \in \mathbb{R}^{|K_p|} \tag{4}
+\mathcal{F}_p(c) = \big(\langle c, e_1 \rangle_p, \dots, \langle c, e_{|K_p|} \rangle_p\big) \in \mathbb{R}^{|K_p|}
 $$
 
 역변환은 $\mathcal{F}_p^{-1}(x) = U x$ 로 구현된다.[^1_1]
 - 두 p‑공사슬 $c, c'$의 **심플리셜 합성곱**:
 
 $$
-c *_p c' = \mathcal{F}_p^{-1}\big( \mathcal{F}_p(c) \odot \mathcal{F}_p(c') \big) \tag{5}
+c *_p c' = \mathcal{F}_p^{-1}\big( \mathcal{F}_p(c) \odot \mathcal{F}_p(c') \big)
 $$
 
 여기서 $\odot$는 성분별 곱이다.[^1_1]
@@ -122,7 +111,7 @@ $$
 
 $$
 \varphi_W(\Lambda) = \sum_{i=0}^N W_i \Lambda^i
-= \sum_{i=0}^N W_i (\lambda_1^i,\dots,\lambda_{|K_p|}^i) \tag{6}
+= \sum_{i=0}^N W_i (\lambda_1^i,\dots,\lambda_{|K_p|}^i) 
 $$
 
 여기서 $N$은 필터 차수(degree)이며, 학습 파라미터는 스칼라 계수 $W_i$들이다.
@@ -130,13 +119,13 @@ $$
 
 $$
 z = \mathcal{F}_p^{-1}(\varphi_W) *_p c, \quad
-\mathrm{SConv}_p(c) = \psi(z) \tag{7}
+\mathrm{SConv}_p(c) = \psi(z) 
 $$
 
 으로 정의되며, 행렬 형태로 전개하면
 
 $$
-z = \sum_{i=0}^N W_i L_p^i c \tag{8}
+z = \sum_{i=0}^N W_i L_p^i c 
 $$
 
 이 된다.[^1_1]
