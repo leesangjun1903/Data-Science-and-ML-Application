@@ -54,7 +54,9 @@ $$|E(A) - E(B)| \leq r_p(A, B) \cdot \log_2\left(\frac{n_{\gamma_r}}{r_p(A, B)}\
 
 Betti curve는 시간 $t$에서 "살아있는" 간격의 수를 세는 함수이다:
 
-$$\beta(A)(t) = \sum_{i=1}^{n} \delta_i(t), \quad \delta_i(t) = \begin{cases} 1 & \text{if } t \in [a_i, b_i) \\ 0 & \text{otherwise} \end{cases}$$
+```math
+\beta(A)(t) = \sum_{i=1}^{n} \delta_i(t), \quad \delta_i(t) = \begin{cases} 1 & \text{if } t \in [a_i, b_i) \\ 0 & \text{otherwise} \end{cases}
+```
 
 #### (4) ES-function (Entropy Summary Function)
 
