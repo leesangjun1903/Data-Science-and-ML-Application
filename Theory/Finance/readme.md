@@ -1,5 +1,10 @@
 ##
 # Quant
+## Awesome Series
+- Awesome Quant : https://github.com/wilsonfreitas/awesome-quant
+- Awesome-Quant-Machine-Learning-Trading : https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading
+- Stock-Prediction-Models : https://github.com/huseinzol05/Stock-Prediction-Models
+
 Cherry Quant : https://wikidocs.net/book/7089 : 퀀트란 무엇인가?
 - https://wikidocs.net/148475
 - 파이썬 증권 데이터 분석 (Stock Analysis in Python) https://github.com/INVESTAR/StockAnalysisInPython
