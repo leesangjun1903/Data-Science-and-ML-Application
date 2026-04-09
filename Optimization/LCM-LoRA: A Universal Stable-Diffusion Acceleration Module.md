@@ -1,4 +1,4 @@
-# LCM-LoRA: A Universal Stable-Diffusion Acceleration Module — 종합 분석
+# LCM-LoRA: A Universal Stable-Diffusion Acceleration Module
 
 ---
 
