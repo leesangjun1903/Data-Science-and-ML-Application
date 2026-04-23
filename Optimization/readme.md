@@ -165,6 +165,9 @@
 - Efficient Diffusion Training via Min-SNR Weighting Strategy | 2023 · 235회 인용
 - Input Perturbation Reduces Exposure Bias in Diffusion Models | 2023 · 95회 인용
 
+## 3D Gaussian Splatting
+- 3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes | 2024 · 139회 인용
+
 ## Reference
 - Advancing medical Imaging Informatics by Deep Learning-Based Domain Adaptation : https://ballentain.tistory.com/m/69
 - MMD : https://bommbom.tistory.com/entry/Maximum-Mean-DiscrepancyMMD-%EC%B5%9C%EB%8C%80-%ED%8F%89%EA%B7%A0-%EB%B6%88%EC%9D%BC%EC%B9%98-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC
