@@ -1,3 +1,262 @@
+
+# DoRA: Weight-Decomposed Low-Rank Adaptation
+
+---
+
+## 📌 1. 핵심 주장 및 주요 기여 (간결 요약)
+
+DoRA는 ICML 2024 Oral 논문으로, FT(Full Fine-Tuning)와 LoRA 사이의 근본적 차이를 규명하기 위한 새로운 가중치 분해(weight decomposition) 분석을 제안하고, 그 결과를 바탕으로 Weight-Decomposed Low-Rank Adaptation(DoRA)를 제안합니다.
+
+### 세 가지 핵심 기여
+
+DoRA는 다음 세 가지 핵심 지점에 기여합니다:
+1. **LoRA vs. 완전 파인튜닝 분석**: 가중치 행렬을 크기(magnitude)와 방향(direction)으로 분해하여 LoRA와 Full Fine-Tuning의 주요 차이를 밝힙니다.
+2. **크기와 방향의 분리 최적화**: DoRA는 크기와 방향을 독립적으로 최적화하여 LoRA의 낮은 자원 요구를 유지하면서 Full Fine-Tuning에 가까운 결과를 달성합니다.
+3. **다양한 방법과의 결합 평가**: DoRA는 LoRA 외에도 VeRA, QLoRA와의 결합 가능성을 탐구합니다.
+
+---
+
+## 📌 2. 문제 정의 / 제안 방법 (수식) / 모델 구조 / 성능 / 한계
+
+---
+
+### 2-1. 해결하고자 하는 문제
+
+PEFT(파라미터 효율적 파인튜닝) 방법 중 LoRA와 그 변형들은 추가적인 추론 비용 없이 파인튜닝이 가능하여 널리 활용되고 있습니다. 그러나 이 방법들과 완전 파인튜닝(FT) 사이에는 여전히 정확도 격차(accuracy gap)가 존재합니다.
+
+DoRA 개발의 동기는 LoRA와 완전 파인튜닝의 학습 패턴을 분석·비교하는 것에서 출발합니다. 저자들은 LoRA가 크기(magnitude)와 방향(direction) 업데이트를 비례적으로 증가 또는 감소시킬 뿐, 미세한 방향 변화만 일으키는 것이 불가능하다는 것을 발견했습니다.
+
+---
+
+### 2-2. 제안하는 방법 (수식 포함)
+
+#### ① LoRA의 기존 가중치 업데이트 공식
+
+LoRA에서는 사전학습 가중치 $W_0 \in \mathbb{R}^{d \times k}$에 저랭크 행렬의 곱 $\Delta W = BA$ 를 더하여 업데이트합니다:
+
+$$W' = W_0 + \Delta W = W_0 + BA$$
+
+여기서 $B \in \mathbb{R}^{d \times r}$, $A \in \mathbb{R}^{r \times k}$ 이며 $r \ll \min(d, k)$입니다.
+
+#### ② DoRA의 가중치 분해 (Weight Decomposition)
+
+DoRA는 두 단계로 설명됩니다. 첫 번째 단계는 사전학습 가중치 행렬을 크기 벡터(magnitude vector) $m$과 방향 행렬(directional matrix) $V$로 분해하는 것입니다. 두 번째 단계는 LoRA를 방향 행렬 $V$에 적용하고 크기 벡터 $m$을 별도로 학습하는 것입니다.
+
+가중치 행렬 $W$를 아래와 같이 분해합니다:
+
+$$W = m \cdot \frac{V}{\|V\|_c}$$
+
+여기서:
+- $m \in \mathbb{R}^{1 \times k}$: 각 열(column)의 크기를 나타내는 벡터 (학습 가능)
+- $V \in \mathbb{R}^{d \times k}$: 방향 행렬 (초기에는 고정, LoRA로 업데이트)
+- $\|\cdot\|_c$: 각 열 벡터에 대한 벡터 노름(column-wise norm)
+
+DoRA는 사전학습 가중치 $W_0$으로 초기화되며, 초기화 시 $m = \|W_0\|_c$, $V = W_0$으로 설정됩니다. 이후 $V$는 고정(frozen)되고 $m$은 학습 가능한 벡터가 됩니다. 방향 성분은 LoRA를 통해 업데이트됩니다.
+
+#### ③ DoRA의 최종 파인튜닝 공식
+
+$$W' = m \cdot \frac{V + \Delta V}{\|V + \Delta V\|_c} = m \cdot \frac{W_0 + BA}{\|W_0 + BA\|_c}$$
+
+여기서 $\Delta V = BA$ 는 LoRA 방식의 저랭크 업데이트입니다.
+
+DoRA는 LoRA를 구체적으로 방향 성분의 업데이트에만 사용하며, 크기 성분은 직접 파인튜닝합니다. 이 접근법은 완전 파인튜닝의 학습 능력을 더욱 가깝게 모방하는 것을 목표로 합니다.
+
+#### ④ 학습 비용 절감을 위한 수정
+
+학습 비용을 줄이기 위해 $\|V + \Delta V\|_c$를 상수(constant)로 처리하여 그래디언트 그래프에서 분리(detach)합니다. 이는 $\|V + \Delta V\|_c$가 $\Delta V$의 업데이트를 동적으로 반영하지만, 역전파 시 어떠한 그래디언트도 수신하지 않음을 의미합니다.
+
+---
+
+### 2-3. 모델 구조
+
+DoRA의 전체적인 개요는 사전학습 가중치를 크기(magnitude)와 방향(direction) 성분으로 분해하여 파인튜닝하되, 특히 방향 성분을 LoRA로 효율적으로 업데이트하는 구조를 취합니다.
+
+**DoRA의 Forward Pass 흐름:**
+
+```
+입력 x
+  ↓
+기본 선형 변환: F.linear(x, W)
+  ↓
+LoRA 업데이트: new_weight_v = W + (B @ A) * scaling
+  ↓
+정규화 스케일 계산: norm_scale = m / ‖new_weight_v‖ (detach)
+  ↓
+최종 출력 = norm_scale * (W_forward + LoRA_forward)
+```
+
+DoRA는 추론 전 분해된 크기와 방향 성분을 사전학습 가중치에 병합할 수 있으므로, 추가적인 추론 지연(latency)이 발생하지 않습니다.
+
+DoRA와 가중치 정규화(weight normalization)의 주요 차이점은 학습 방식에 있습니다. 가중치 정규화는 두 성분 모두를 처음부터 학습하여 초기화에 민감하지만, DoRA는 두 성분 모두 사전학습 가중치로 초기화하므로 초기화 문제를 방지합니다.
+
+---
+
+### 2-4. 성능 향상
+
+DoRA는 LoRA의 학습 능력과 학습 안정성을 향상시키면서도 추가적인 추론 오버헤드를 방지합니다. DoRA는 LLaMA, LLaVA, VL-BART의 파인튜닝에서 상식 추론, 시각 명령 튜닝, 이미지/비디오-텍스트 이해 등 다양한 다운스트림 태스크에서 LoRA를 일관되게 능가합니다.
+
+DoRA는 다양한 LLM 및 VLM 태스크에서 LoRA를 일관되게 능가하며, 예를 들어 상식 추론에서 Llama 7B/13B 대비 각각 +3.7/+1.0의 성능 향상을 보입니다.
+
+8개의 서로 다른 추론 데이터셋과 4개의 백본 모델로 평가했을 때, DoRA는 모든 태스크에서 LoRA를 일관되게 능가했습니다. 특히 절반의 랭크 크기(DoRA†)를 사용하여 절반의 학습 가능한 파라미터로도 DoRA는 LoRA 대비 성능 우위를 유지했습니다.
+
+훈련 샘플 수를 1000개로 줄였을 때에도 DoRA와 DVoRA는 LoRA와 VeRA 대비 각각 0.29, 0.22의 우위를 유지했습니다. 이는 우리의 방법이 훈련 샘플 수에 관계없이 지속적으로 성능을 향상시킴을 보여줍니다.
+
+DoRA는 낮은 랭크 설정에서도 강건하며, 더 낮은 파라미터 예산에서 LoRA 대비 더 높은 정확도를 유지합니다. 또한 실제 생성 AI 환경에서 DoRA는 LoRA(85.5%) 및 RAG(81.2%)보다 높은 정확도(90.1%)를 달성합니다.
+
+---
+
+### 2-5. 한계점
+
+1. **추가 메모리 사용**: DoRA에서 저랭크 적응이 방향 성분으로 재지향되므로, 저랭크 업데이트의 그래디언트가 $W'$의 그래디언트와 달라집니다. 이 차이로 인해 역전파 시 추가 메모리가 필요합니다.
+
+2. **과적합 위험성**: DoRA는 크기 벡터 또는 행렬이라는 추가 파라미터를 도입하므로, 약간의 과적합 위험성이 증가할 수 있습니다.
+
+3. **하이퍼파라미터 민감성**: DoRA로 파인튜닝할 때 LoRA 설정을 사용하면 대부분의 경우 더 나은 결과를 얻을 수 있지만, LoRA 대비 최적 성능을 위해 하이퍼파라미터 조정이 필요합니다. 특히 LoRA보다 약간 낮은 학습률로 시작하는 것이 권장됩니다.
+
+4. **수렴 속도**: LoRA는 DoRA보다 더 빠르게 수렴하는 경향이 있어, LoRA에서 과적합을 유발하는 파라미터 설정이 DoRA에서는 잘 동작할 수 있습니다.
+
+---
+
+## 📌 3. 일반화 성능 향상 가능성
+
+DoRA의 일반화 성능 향상 가능성은 여러 측면에서 확인됩니다.
+
+### 3-1. 크기-방향 분리 학습의 일반화 효과
+
+저자들은 완전 파인튜닝이 자연스럽게 음의 기울기(negative slope)를 보이는 이유를 설명합니다. 사전학습 모델 가중치는 이미 다운스트림 태스크에 관련된 광범위한 지식을 포함하고 있어, 크기나 방향 중 하나만 크게 변화시켜도 효과적인 적응이 가능합니다. 이것이 DoRA가 달성하는 것과 정확히 일치하며, LoRA보다 완전 파인튜닝에 더 가까운 동작을 보여줍니다.
+
+LoRA는 무엇을 변경할지(what to change)를 학습하는 반면, DoRA는 무엇을 변경하고 얼마나 강하게 변경할지(what to change and how strongly)를 학습합니다.
+
+### 3-2. 저데이터 환경에서의 일반화
+
+LoRA와 VeRA 대비 0.3, 0.33의 마진 차이를 보이며, 샘플 수를 1000개로 줄이더라도 DoRA와 DVoRA는 성능 우위를 유지합니다. 이는 훈련 샘플 양에 관계없이 방법이 일관되게 성능을 향상시킴을 보여줍니다.
+
+### 3-3. 저랭크 환경에서의 강건성
+
+DoRA 품질은 특히 낮은 랭크에서 LoRA보다 우수합니다. 예를 들어 랭크 8에서 DoRA와 LoRA의 품질 차이는 랭크 32나 64에서의 차이보다 훨씬 더 유의미합니다.
+
+### 3-4. 다중 도메인 일반화
+
+DoRA의 성능 향상은 언어, 비전, 다중 도메인 벤치마크 전반에 걸쳐 확장됩니다.
+
+DoRA는 특히 모델이 전문 용어, 작성 스타일 또는 지식 도메인에 적응해야 하는 도메인 적응 시나리오에서 성공적입니다. DoRA의 명시적 크기 제어는 중요한 수정이 필요한 레이어의 업데이트를 더욱 효과적으로 스케일링할 수 있게 합니다.
+
+### 3-5. 다운스트림 태스크 성능
+
+DoRA는 LoRA와 FT 모두에 대해 우수한 성능을 보이며, LoRA 대비 평균 0.7%, FT 대비 1.1% 향상을 달성합니다.
+
+---
+
+## 📌 4. 2020년 이후 관련 최신 연구 비교 분석
+
+| 방법 | 연도 | 핵심 아이디어 | DoRA와의 차이점 |
+|------|------|-------------|--------------|
+| **LoRA** | 2021 | 저랭크 행렬로 가중치 변화 근사 | 크기/방향 분리 없음 |
+| **AdaLoRA** | 2023 | SVD 기반 동적 랭크 할당 | 랭크 적응적 조정, 방향 분리 없음 |
+| **QLoRA** | 2023 | 4-bit 양자화 + LoRA | 메모리 효율 중심, 크기 분리 없음 |
+| **VeRA** | 2023 | 공유 랜덤 행렬 + 스케일링 벡터 | 매우 적은 파라미터, 표현력 제한 |
+| **DoRA** | 2024 | 크기+방향 분해, LoRA로 방향 업데이트 | 학습 능력/안정성 향상 |
+| **DVoRA** | 2024 | DoRA + VeRA 결합 | 파라미터 효율 극대화 |
+| **QDoRA** | 2024 | QLoRA + DoRA 결합 | 소비자용 GPU에서 DoRA 적용 |
+
+AdaLoRA(Zhang et al., 2023)는 각 레이어의 중요도에 따라 랭크 예산을 동적으로 할당합니다. SVD 기반으로 어떤 가중치 행렬이 더 높은 랭크 업데이트에서 이점을 얻는지 식별하며, 중요 레이어에는 더 높은 랭크를, 덜 민감한 레이어에는 더 낮은 랭크를 할당합니다. AdaLoRA는 제한된 예산에서 기본 LoRA보다 우수한 성능을 보입니다.
+
+DoRA가 LoRA와 FT 사이의 간극을 좁히면서, DoRA가 QLoRA 프레임워크 내에서 LoRA의 정확도를 향상시킬 수 있는지 탐색하는 것이 자연스러웠습니다. 최근 Answer.AI 팀과의 협업으로 QLoRA의 LoRA 성분을 DoRA로 대체한 QDoRA 프로젝트가 진행되었으며, QDoRA는 Llama 2와 Llama 3 모두에서 FT와 QLoRA를 능가했습니다.
+
+DoRAN은 DoRA의 새로운 변형으로, 훈련을 더욱 안정화하고 DoRA의 샘플 효율성을 높이기 위해 설계되었으며, LoRA, DoRA 및 기타 PEFT 기준선을 일관되게 능가합니다.
+
+DeLoRA(Decoupled Low-rank Adaptation)는 학습 가능한 저랭크 행렬을 정규화하고 스케일링하여 각도 학습(angular learning)을 적응 강도(adaptation strength)로부터 효과적으로 분리하는 새로운 파인튜닝 방법으로, 성능을 저해하지 않으면서 강건성을 향상시킵니다.
+
+DoRA(Liu et al., 2024), MiSS, AdaLoRA(Zhang et al., 2023b)와 같은 구조적 변형들은 DoRA가 RLVR(Reinforcement Learning with Verifiable Rewards) 환경에서 표준 LoRA를 능가하며 우수한 추론 정확도를 달성함을 보여줍니다.
+
+---
+
+## 📌 5. 앞으로의 연구에 미치는 영향 및 고려할 점
+
+### 5-1. 연구에 미치는 영향
+
+**① 가중치 분해 패러다임의 확산**
+
+DoRA의 핵심 혁신인 각 가중치 행렬을 독립적인 크기와 방향 성분으로 명시적으로 분해하는 방법은 더욱 세밀한 적응과 향상된 학습 안정성을 가능하게 합니다. DoRA와 그 확장들은 자연어, 멀티모달, 바이오메디컬 태스크 전반에 걸쳐 뛰어난 성능을 보여주었으며, PEFT 전략 설계에서 빠른 발전을 이끌어냈습니다.
+
+**② LoRA 생태계의 기본 대체재 가능성**
+
+NVIDIA Research Taiwan과 NVIDIA Learning and Perception Research Group이 개발한 DoRA는 LoRA의 기본 대체재(default replacement)가 될 수 있으며, 추가적인 추론 오버헤드 없이 LoRA의 학습 능력과 안정성을 향상시킵니다.
+
+DoRA는 현재 HuggingFace PEFT 패키지에서 지원되며, LoRAConfig의 `use_dora` 인수를 True로 설정하는 것만으로 간단히 적용할 수 있습니다.
+
+**③ 다양한 LoRA 변형과의 결합 확장**
+
+다수의 DoRA 파생 연구들이 핵심 원칙을 확장하고 있습니다: Dynamic Rank DoRA는 성분 중요도 기반으로 런타임 가지치기와 할당을 수행하고, BoRA는 행과 열에 독립적인 학습 가능한 스케일링을 적용하며, EDoRA와 DuDe는 SVD 기반 초기화를 사용하여 학습 가능한 파라미터 수를 크게 줄입니다.
+
+**④ 멀티모달 및 확산 모델로의 확장**
+
+DoRA는 압축 인식 LLM 및 텍스트-이미지 생성을 포함한 기타 태스크에서도 적용 가능성이 입증되었습니다.
+
+---
+
+### 5-2. 향후 연구 시 고려할 점
+
+**① 적응적 랭크 + 크기-방향 분리의 결합**
+
+LoRA는 모델의 도메인 특화 지식 기억 및 다운스트림 태스크 일반화 능력을 제한할 수 있습니다. 핵심 한계는 모든 레이어에 고정된 랭크를 사용하는 것으로, 이는 레이어마다 모델 적응에 기여하는 정도가 다르다는 사실을 무시합니다. 이 균일한 할당은 학습 가능한 파라미터의 비효율적 사용으로 이어질 수 있습니다.
+
+DoRA가 AdaLoRA의 동적 랭크 할당과 결합된다면, 레이어별로 최적의 랭크와 크기-방향 분리를 동시에 달성하는 연구가 기대됩니다.
+
+**② 양자화 환경에서의 최적화**
+
+메모리 요구를 줄이기 위해 QLoRA는 사전학습 모델을 4-bit으로 양자화하고 얼어붙은 저비트 백본 위에서 LoRA를 파인튜닝합니다. DoRA가 LoRA와 FT 사이의 간극을 좁히므로, DoRA가 QLoRA 프레임워크 내에서 LoRA의 정확도를 향상시킬 수 있는지 탐색이 필요합니다.
+
+**③ 과적합 위험성 대비 정규화 전략**
+
+DoRA 파인튜닝 시 LoRA보다 약간 낮은 학습률로 시작하는 것을 권장하며, LoRA 설정의 절반 랭크로 시작해도 종종 LoRA에 비견되거나 우월한 정확도를 달성할 수 있습니다.
+
+DoRA의 추가 파라미터로 인한 과적합 위험을 억제할 수 있는 체계적인 정규화 전략 연구가 필요합니다.
+
+**④ 다양한 모달리티와 아키텍처로의 확장**
+
+EDoRA는 EEG 기반 BCI 응용을 위한 파라미터 효율적 전이 학습을 가능하게 하며, Zero-shot HOI 탐지에서 가중치 분해 저랭크 분해는 이전 VLM 적응 방법들을 크게 능가합니다.
+
+**⑤ RLVR(강화학습 기반 추론) 환경에서의 적용**
+
+대규모 경험적 분석은 표준 LoRA의 기본 채택에 도전합니다. 표준 LoRA는 RLVR에서 최적이 아니며, DoRA 같은 구조적 변형들이 지속적으로 우수한 추론 정확도를 달성합니다.
+
+---
+
+## 📚 참고 자료 (출처)
+
+1. **원본 논문 (arXiv)**: Liu, S.-Y., Wang, C.-Y., Yin, H., Molchanov, P., Wang, Y.-C. F., Cheng, K.-T., & Chen, M.-H. (2024). *DoRA: Weight-Decomposed Low-Rank Adaptation*. arXiv:2402.09353. https://arxiv.org/abs/2402.09353
+
+2. **ICML 2024 공식 게재본**: Proceedings of the 41st ICML, PMLR 235:32100–32121, 2024. https://proceedings.mlr.press/v235/liu24bn.html
+
+3. **NVIDIA Research 공식 발표**: *DoRA: Weight-Decomposed Low-Rank Adaptation*. NVIDIA Research Publication (2024-07). https://research.nvidia.com/publication/2024-07_dora-weight-decomposed-low-rank-adaptation
+
+4. **NVIDIA Technical Blog**: *Introducing DoRA, a High-Performing Alternative to LoRA for Fine-Tuning*. https://developer.nvidia.com/blog/introducing-dora-a-high-performing-alternative-to-lora-for-fine-tuning/
+
+5. **GitHub 공식 구현 (NVlabs)**: https://github.com/NVlabs/DoRA
+
+6. **DoRA 프로젝트 페이지**: https://nbasyl.github.io/DoRA-project-page/
+
+7. **HuggingFace Paper 페이지**: https://huggingface.co/papers/2402.09353
+
+8. **Sebastian Raschka 튜토리얼**: *Improving LoRA: Implementing Weight-Decomposed Low-Rank Adaptation (DoRA) from Scratch*. https://magazine.sebastianraschka.com/p/lora-and-dora-from-scratch
+
+9. **Towards AI 해설**: *DoRA Explained: Next Evolution of LoRA?* https://towardsai.net/p/l/dora-explained-next-evolution-of-lora
+
+10. **Emergent Mind 연구 요약**: *Weight-Decomposed Low-Rank Adaptation*. https://www.emergentmind.com/topics/weight-decomposed-low-rank-adaptation-dora
+
+11. **Moonlight 문헌 리뷰**: *[Literature Review] DoRA: Weight-Decomposed Low-Rank Adaptation*. https://www.themoonlight.io/en/review/dora-weight-decomposed-low-rank-adaptation
+
+12. **Michael Brenndoerfer 가이드**: *PEFT Beyond LoRA: Advanced Parameter-Efficient Fine-Tuning Techniques*. https://mbrenndoerfer.com/writing/peft-beyond-lora-advanced-parameter-efficient-finetuning-techniques
+
+13. **ElaLoRA 관련 연구 (arXiv)**: *ElaLoRA: Elastic & Learnable Low-Rank Adaptation for Efficient Model Fine-Tuning*. arXiv:2504.00254. https://arxiv.org/html/2504.00254v1
+
+14. **RLVR PEFT 평가 연구**: *Evaluating Parameter Efficient Methods for RLVR*. arXiv:2512.23165. https://arxiv.org/pdf/2512.23165
+
+15. **ACL 2024 Dynamic DoRA**: Mao et al. (2024). *DoRA: Enhancing Parameter-Efficient Fine-Tuning with Dynamic Rank Distribution*. ACL 2024. https://aclanthology.org/2024.acl-long.626/
+
+16. **Semantic Scholar**: https://www.semanticscholar.org/paper/DoRA:-Weight-Decomposed-Low-Rank-Adaptation-Liu-Wang/da053e2a4ba1b244940c8f2cad5dcdf0d730f85f
+
 # DoRA: Weight-Decomposed Low-Rank Adaptation
 
 ---
