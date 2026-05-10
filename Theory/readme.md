@@ -449,6 +449,253 @@ Theoretical Perspectives
 Approximation Methods for Large Datasets  
 Further Issues and Conclusions
 
+# Statistics with Machine Learning
+## Statistics and Machine Learning in Python, Edouard Duchesnay
+Python language  
+Scientific Python  
+Statistics  
+Machine Learning  
+Deep Learning  
+
+## Practical Statistics for Data Scientists, Peter Bruce
+Exploratory Data Analysis  
+Data and Sampling Distributions  
+Statistical Experiments and Significance Testing  
+Regression and Prediction  
+Classification  
+Statistical Machine Learning  
+Unsupervised Learning  
+
+## Gaussian Processes for Machine Learning, Carl Edward Rasmussen
+Regression  
+Classification  
+Covariance Functions  
+Model Selection and Adaptation of Hyperparameters  
+Relationships between GPs and Other Models  
+Theoretical Perspectives  
+Approximation Methods for Large Datasets  
+Further Issues and Conclusions
+
+## An Introduction to Statistical Learning With Applications in Python, 
+- Statistical Learning  
+- Linear Regression
+- Classification
+- Resampling Methods
+- Linear Model Selection and Regularization
+- Moving Beyond Linearity
+- Tree-Based Methods
+- Support Vector Machines
+- Deep Learning
+- Survival Analysis and Censored Data
+- Unsupervised Learning
+- Multiple Testing
+
+## Machine Learning: A Probabilistic Perspective, Kevin P. Murphy
+1 Introduction  
+2 Probability  
+3 Generative models for discrete data  
+4 Gaussian models  
+5 Bayesian statistics  
+6 Frequentist statistics  
+7 Linear regression  
+8 Logistic regression  
+9 Generalized linear models and the exponential family  
+10 Directed graphical models (Bayes nets)  
+11 Mixture models and the EM algorithm  
+12 Latent linear models  
+13 Sparse linear models  
+14 Kernels  
+15 Gaussian processes  
+16 Adaptive basis function models  
+17 Markov and hidden Markov models  
+18 State space models  
+19 Undirected graphical models (Markov random fields)  
+20 Exact inference for graphical models  
+21 Variational inference  
+22 More variational inference  
+23 Monte Carlo inference  
+24 Markov chain Monte Carlo (MCMC) inference  
+25 Clustering  
+26 Graphical model structure learning  
+27 Latent variable models for discrete data  
+28 Deep learning  
+
+## Probabilistic Graphical Models Principles and Techniques, Daphne Koller
+1 Introduction  
+2 Foundations  
+3 The Bayesian Network Representation  
+4 Undirected Graphical Models  
+5 Local Probabilistic Models  
+6 Template-Based Representations  
+7 Gaussian Network Models  
+8 The Exponential Family  
+9 Exact Inference: Variable Elimination  
+10 Exact Inference: Clique Trees  
+11 Inference as Optimization  
+12 Particle-Based Approximate Inference  
+13 MAP Inference  
+14 Inference in Hybrid Networks  
+15 Inference in Temporal Models  
+16 Learning Graphical Models: Overview  
+17 Parameter Estimation  
+18 Structure Learning in Bayesian Networks  
+19 Partially Observed Data  
+20 Learning Undirected Models  
+21 Causality  
+22 Utilities and Decisions  
+23 Structured Decision Problems  
+
+## Probabilistic Machine Learning, Kevin P. Murphy
+I Foundations  
+II Linear Models  
+III Deep Neural Networks  
+IV Nonparametric Models  
+V Beyond Supervised Learning
+
+## Probabilistic Machine Learning Advanced Topics, Kevin P. Murphy
+I Foundations  
+II Linear Models  
+III Deep Neural Networks  
+IV Nonparametric Models  
+V Beyond Supervised Learning
+
+## Machine Learning A Bayesian and Optimization Perspective, Sergios Theodoridis
+What Machine Learning is About  
+Probability and Stochastic Processes  
+Learning in Parametric Modeling: Basic Concepts and Directions  
+Mean-Square Error Linear Estimation  
+Stochastic Gradient Descent: The LMS Algorithm and its Family  
+The Least-Squares Family  
+Classification: A Tour of the Classics  
+Parameter Learning: A Convex Analytic Path  
+Sparsity-Aware Learning: Concepts and Theoretical Foundations  
+Sparsity-Aware Learning: Algorithms and Applications  
+Learning in Reproducing Kernel Hilbert Spaces  
+Bayesian Learning: Inference and the EM Algorithm  
+Bayesian Learning: Approximate Inference and Nonparametric Models  
+Monte Carlo Methods  
+Probabilistic Graphical Models  
+Particle Filtering  
+Neural Networks and Deep Learning  
+Dimensionality Reduction  
+
+## Introduction to linear regression analysis, Douglas C. Montgomery
+CHAPTER 1. INTRODUCTION  
+CHAPTER 2. SIMPLE LINEAR REGRESSION  
+CHAPTER 3. MULTIPLE LINEAR REGRESSION  
+CHAPTER 4. MODEL ADEQUACY CHECKING  
+CHAPTER 5. TRANSFORMATIONS AND WEIGHTING TO CORRECT MODEL INADEQUACIES  
+CHAPTER 6. DIAGNOSTICS FOR LEVERAGE AND INFLUENCE  
+CHAPTER 7. POLYNOMIAL REGRESSION MODELS  
+CHAPTER 8. INDICATOR VARIABLES  
+CHAPTER 9. MULTICOLLINEARITY  
+CHAPTER 10. VARIABLE SELECTION AND MODEL BUILDING  
+CHAPTER 11. VALIDATION OF REGRESSION MODELS  
+CHAPTER 12. INTRODUCTION TO NONLINEAR REGRESSION  
+CHAPTER 13. GENERALIZED LINEAR MODELS  
+CHAPTER 14. REGRESSION ANALYSIS OF TIME SERIES DATA  
+CHAPTER 15. OTHER TOPICS IN THE USE OF REGRESSION ANALYSIS  
+
+
+## The Elements of Statistical Learning, Trevor Hastie
+Overview of Supervised Learning  
+Linear Methods for Regression  
+Linear Methods for Classification  
+Basis Expansions and Regularization  
+Kernel Smoothing Methods  
+Model Assessment and Selection  
+Model Inference and Averaging  
+Additive Models, Trees, and Related Methods  
+Boosting and Additive Trees  
+Neural Networks  
+Support Vector Machines and Flexible Discriminants  
+Prototype Methods and Nearest-Neighbors  
+Unsupervised Learning  
+Random Forests  
+Ensemble Learning  
+Undirected Graphical Models  
+High-Dimensional Problems: p ≫ N  
+
+## An Introduction to Statistical Learning with applications in R
+-- Statistical Learning  
+Estimate f  
+Supervised Versus Unsupervised Learning  
+Assessing Model Accuracy
+
+-- Linear Regression
+Simple Linear Regression  
+Multiple Linear Regression  
+Other Considerations in the Regression Model  
+The Marketing Plan  
+Comparison of Linear Regression with K-Nearest Neighbors  
+
+-- Classification
+Why Not Linear Regression?  
+Logistic Regression  
+Generative Models for Classification  
+A Comparison of Classification Methods  
+Generalized Linear Models  
+
+-- Resampling Methods
+Cross-Validation  
+The Bootstrap  
+
+-- Linear Model Selection and Regularization 
+Subset Selection  
+Shrinkage Methods  
+Dimension Reduction Methods  
+Considerations in High Dimensions  
+
+-- Moving Beyond Linearity
+Polynomial Regression, Step Functions, Basis Functions  
+Regression Splines  
+Smoothing Splines  
+Local Regression  
+Generalized Additive Models  
+
+-- Tree-Based Methods 
+The Basics of Decision Trees  
+Bagging, Random Forests, Boosting, and Bayesian Additive Regression Trees  
+
+-- Support Vector Machines
+Maximal Margin Classifier  
+Support Vector Classifiers  
+Support Vector Machines  
+SVMs with More than Two Classes  
+Relationship to Logistic Regression  
+
+-- Deep Learning
+Single Layer Neural Networks, Multilayer Neural Networks  
+Convolutional Neural Networks  
+Document Classification  
+Recurrent Neural Networks  
+When to Use Deep Learning  
+Fitting a Neural Network  
+Interpolation and Double Descent
+
+-- Survival Analysis and Censored Data 
+Survival and Censoring Times  
+A Closer Look at Censoring  
+The Kaplan-Meier Survival Curve  
+The Log-Rank Test  
+Regression Models With a Survival Response  
+Shrinkage for the Cox Model  
+Additional Topics  
+
+-- Unsupervised Learning
+The Challenge of Unsupervised Learning  
+Principal Components Analysis  
+Missing Values and Matrix Completion  
+Clustering Methods  
+
+-- Multiple Testing
+A Quick Review of Hypothesis Testing  
+The Challenge of Multiple Testing  
+The Family-Wise Error Rate  
+The False Discovery Rate  
+A Re-Sampling Approach to p-Values and False Discovery Rates  
+
+# ML/DL with Code
 ## Deep Learning with PyTorch, ELI STEVENS
 Introducing deep learning and the PyTorch Library  
 Pretrained networks  
@@ -790,7 +1037,6 @@ Chapter 5 ■ Making Recommendations
 Chapter 6 ■ Understanding Asthma  
 Chapter 7 ■ Harnessing the Crowd  
 Chapter 8 ■ How to Read a Model  
-
 
 # ETC
 - Reproducing Kernel Hilbert Space, Mercer’s Theorem, Eigenfunctions, Nystr¨ om Method, and Use of Kernels in Machine Learning: Tutorial and Survey, Benyamin Ghojogh  
