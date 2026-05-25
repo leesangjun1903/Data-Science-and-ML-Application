@@ -1,4 +1,4 @@
-# RFE 및 RFECV: 재귀적 특성 제거 기법의 종합 분석
+# RFE(Recursive Feature Elimination), RFECV(RFE with Cross-Validation)
 
 > **참고 사이트**: https://process-mining.tistory.com/138 (프로세스 마이닝 블로그 - RFE/RFECV 관련 포스트)
 
