@@ -16,6 +16,8 @@
 
 # Awesome series
 
+- Awesome Open Source AI : https://github.com/alvinreal/awesome-opensource-ai
+
 ## Preprocessing
 
 - awesome-imbalanced-learning : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
