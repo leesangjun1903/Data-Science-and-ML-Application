@@ -28,7 +28,7 @@
 - Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
 
 ### Learning with Noisy Labels
-- Awesome Learning with Noisy Labels : https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise
+- Awesome Learning with Noisy Labels(E, Suvey : ) : https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise
 
 
 ## Models
