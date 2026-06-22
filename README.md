@@ -23,7 +23,7 @@
 
 ## Preprocessing
 
-- awesome-imbalanced-learning : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
+- awesome-imbalanced-learning(E) : https://github.com/ZhiningLiu1998/awesome-imbalanced-learning
 
 - Feature Engineering & Feature Selection : https://github.com/ashishpatel26/Amazing-Feature-Engineering
 
