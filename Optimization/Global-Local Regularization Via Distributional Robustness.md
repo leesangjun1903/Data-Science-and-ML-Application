@@ -28,7 +28,7 @@
 
 기존 WDR(Wasserstein Distributional Robustness)의 표준 공식은 다음과 같다:
 
-$$\sup_{\tilde{\mathbb{P}}: \mathcal{W}_c(\mathbb{P}, \tilde{\mathbb{P}}) < \epsilon} \mathbb{E}_{\tilde{Z} \sim \tilde{\mathbb{P}}} \left[ r\left(\tilde{Z}\right) \right] \tag{1}$$
+$$\sup_{\tilde{\mathbb{P}}: \mathcal{W}_c(\mathbb{P}, \tilde{\mathbb{P}}) < \epsilon} \mathbb{E}_{\tilde{Z} \sim \tilde{\mathbb{P}}} \left[ r\left(\tilde{Z}\right) \right] $$
 
 이의 쌍대형(dual form)은:
 
@@ -50,9 +50,9 @@ $$\sup_{\tilde{\mathbb{P}}: \mathcal{W}_c(\mathbb{P}, \tilde{\mathbb{P}}) < \eps
 
 원본 확률변수 $Z$와 섭동 확률변수 $\tilde{Z}$를 다음과 같이 정의한다:
 
-$$Z := \left[ \left[ \left[ X^S_{kij}, Y^S_{kij} \right]^K_{k=1} \right]^{B^S_k}_{i=1} \right]^{n^S}_{j=0}, \quad \left[ \left[ X^T_{ij} \right]^{B^T}_{i=1} \right]^{n^T}_{j=0} \tag{3}$$
+$$Z := \left[ \left[ \left[ X^S_{kij}, Y^S_{kij} \right]^K_{k=1} \right]^{B^S_k}_{i=1} \right]^{n^S}_{j=0}, \quad \left[ \left[ X^T_{ij} \right]^{B^T}_{i=1} \right]^{n^T}_{j=0} $$
 
-$$\tilde{Z} := \left[ \left[ \left[ \tilde{X}^S_{kij}, \tilde{Y}^S_{kij} \right]^K_{k=1} \right]^{B^S_k}_{i=1} \right]^{n^S}_{j=0}, \quad \left[ \left[ \tilde{X}^T_{ij} \right]^{B^T}_{i=1} \right]^{n^T}_{j=0} \tag{4}$$
+$$\tilde{Z} := \left[ \left[ \left[ \tilde{X}^S_{kij}, \tilde{Y}^S_{kij} \right]^K_{k=1} \right]^{B^S_k}_{i=1} \right]^{n^S}_{j=0}, \quad \left[ \left[ \tilde{X}^T_{ij} \right]^{B^T}_{i=1} \right]^{n^T}_{j=0} $$
 
 - $j=0$: **앵커 샘플** (섭동 없음, $\tilde{X}^S_{ki0} = X^S_{ki}$)
 - $j \geq 1$: **섭동 샘플** ($\epsilon$-ball 내 섭동 허용)
@@ -65,7 +65,7 @@ $$\rho\left(Z, \tilde{Z}\right) := \underbrace{\infty \sum_{k=1}^{K}\sum_{i=1}^{
 
 #### 2.2.3 핵심 최적화 문제 (DR)
 
-$$\min_{\theta, \phi} \max_{\tilde{\mathbb{P}}: \mathcal{W}_\rho(\mathbb{P}, \tilde{\mathbb{P}}) \leq \epsilon} \mathbb{E}_{\tilde{Z} \sim \tilde{\mathbb{P}}} \left[ r\left(\tilde{Z}; \phi, \theta\right) \right] \tag{5}$$
+$$\min_{\theta, \phi} \max_{\tilde{\mathbb{P}}: \mathcal{W}_\rho(\mathbb{P}, \tilde{\mathbb{P}}) \leq \epsilon} \mathbb{E}_{\tilde{Z} \sim \tilde{\mathbb{P}}} \left[ r\left(\tilde{Z}; \phi, \theta\right) \right] $$
 
 비용 함수:
 
@@ -79,7 +79,7 @@ $$r\left(\tilde{Z}; \phi, \theta\right) := \alpha r^l\left(\tilde{Z}; \phi, \the
 
 Eq. (5)를 결합 분포 $\gamma$에 대한 탐색으로 변환 (Lemma 3.1):
 
-$$\min_{\theta, \phi} \max_{\gamma \in \Gamma_\epsilon} \mathbb{E}_{(Z, \tilde{Z}) \sim \gamma} \left[ r\left(\tilde{Z}; \phi, \theta\right) \right] \tag{6}$$
+$$\min_{\theta, \phi} \max_{\gamma \in \Gamma_\epsilon} \mathbb{E}_{(Z, \tilde{Z}) \sim \gamma} \left[ r\left(\tilde{Z}; \phi, \theta\right) \right] $$
 
 엔트로픽 정규화 추가:
 
@@ -91,7 +91,7 @@ $$\min_{\theta, \phi} \max_{\gamma \in \Gamma_\epsilon} \mathbb{E}_{(Z, \tilde{Z
 
 $q = \infty$ 조건에서 내부 최대화 문제의 최적 결합 분포 $\gamma^*$:
 
-$$\gamma^*\left(Z, \tilde{Z}\right) = \prod_{k=1}^{K}\prod_{i=1}^{B^S_k}\prod_{j=0}^{n^S_k} p^S_k\left(X^S_{ki}, Y^S_{ki}\right) \prod_{i=1}^{B^T}\prod_{j=0}^{n^T} p^T\left(X^T_i\right) \cdot \prod_{k=1}^{K}\prod_{i=1}^{B^S_k}\prod_{j=0}^{n^S_k} q^S_{ki}\left(\tilde{X}^S_{kij} \mid X^S_{ki}, Y^S_{ki}; \psi\right) \prod_{i=1}^{B^T}\prod_{j=1}^{n^T} q^T_i\left(\tilde{X}^T_{ij} \mid X^T_i; \psi\right) \tag{8}$$
+$$\gamma^*\left(Z, \tilde{Z}\right) = \prod_{k=1}^{K}\prod_{i=1}^{B^S_k}\prod_{j=0}^{n^S_k} p^S_k\left(X^S_{ki}, Y^S_{ki}\right) \prod_{i=1}^{B^T}\prod_{j=0}^{n^T} p^T\left(X^T_i\right) \cdot \prod_{k=1}^{K}\prod_{i=1}^{B^S_k}\prod_{j=0}^{n^S_k} q^S_{ki}\left(\tilde{X}^S_{kij} \mid X^S_{ki}, Y^S_{ki}; \psi\right) \prod_{i=1}^{B^T}\prod_{j=1}^{n^T} q^T_i\left(\tilde{X}^T_{ij} \mid X^T_i; \psi\right) $$
 
 여기서 **지역 분포**:
 
@@ -105,9 +105,9 @@ q^T_i\left(\tilde{X}^T_{ij} \mid X^T_i; \psi\right) \propto \exp\left\{\lambda \
 
 #### 2.2.6 최종 최적화 목적함수 (Eq. 9, 10)
 
-$$\min_{\psi} \mathbb{E}_{\forall k: (X^S_{ki}, Y^S_{ki})^{B^S_k}_{i=1} \overset{iid}{\sim} \mathbb{P}^S_k,\ X^T_{1:B^T} \overset{iid}{\sim} \mathbb{P}^T} \left[ r\left(\tilde{Z}; \psi\right) \right] \tag{9}$$
+$$\min_{\psi} \mathbb{E}_{\forall k: (X^S_{ki}, Y^S_{ki})^{B^S_k}_{i=1} \overset{iid}{\sim} \mathbb{P}^S_k,\ X^T_{1:B^T} \overset{iid}{\sim} \mathbb{P}^T} \left[ r\left(\tilde{Z}; \psi\right) \right] $$
 
-$$r\left(\tilde{Z}; \psi\right) = \underbrace{\mathbb{E}_{[\tilde{X}^S_{kij}]_j \sim q^S_{ki}} \left[\alpha s(X^S_{ki}, \tilde{X}^S_{kij}; \psi) + \ell(\tilde{X}^S_{kij}, Y^S_{ki}; \psi)\right]}_{\text{지역 정규화 + 분류 손실}} + \underbrace{\mathbb{E}_{[\tilde{X}^T_{ij}]_j \sim q^T_i} \left[\alpha s\left(X^T_i, \tilde{X}^T_{ij}; \psi\right)\right]}_{\text{타겟 지역 정규화}} + \underbrace{\beta r^g\left(\left[X^S_{ki}\right]_{k,i}, \left[X^T_i\right]_i; \psi\right)}_{\text{전역 정규화}} \tag{10}$$
+$$r\left(\tilde{Z}; \psi\right) = \underbrace{\mathbb{E}_{[\tilde{X}^S_{kij}]_j \sim q^S_{ki}} \left[\alpha s(X^S_{ki}, \tilde{X}^S_{kij}; \psi) + \ell(\tilde{X}^S_{kij}, Y^S_{ki}; \psi)\right]}_{\text{지역 정규화 + 분류 손실}} + \underbrace{\mathbb{E}_{[\tilde{X}^T_{ij}]_j \sim q^T_i} \left[\alpha s\left(X^T_i, \tilde{X}^T_{ij}; \psi\right)\right]}_{\text{타겟 지역 정규화}} + \underbrace{\beta r^g\left(\left[X^S_{ki}\right]_{k,i}, \left[X^T_i\right]_i; \psi\right)}_{\text{전역 정규화}} $$
 
 **지역 정규화 함수 $s$:** 대칭 KL 발산 사용
 
@@ -119,7 +119,7 @@ $$s\left(X, \tilde{X}; \psi\right) = \frac{1}{2} KL\left(f_\psi(X) \| f_\psi\lef
 
 #### Domain Adaptation (DA) / Semi-Supervised Learning (SSL)
 
-$$r^g = \mathcal{W}_d\left(\frac{1}{B^S}\sum_{i=1}^{B^S}\delta_{U^S_i},\ \frac{1}{B^T}\sum_{j=1}^{B^T}\delta_{U^T_j}\right) \tag{11}$$
+$$r^g = \mathcal{W}_d\left(\frac{1}{B^S}\sum_{i=1}^{B^S}\delta_{U^S_i},\ \frac{1}{B^T}\sum_{j=1}^{B^T}\delta_{U^T_j}\right) $$
 
 $$d\left(U^S_i, U^T_j\right) := \rho_d\left(g_\phi(X^S_i), g_\phi(X^T_j)\right) + \gamma \rho_l\left(h_\theta(g_\phi(X^S_i)), h_\theta(g_\phi(X^T_j))\right)$$
 
@@ -127,13 +127,13 @@ $$d\left(U^S_i, U^T_j\right) := \rho_d\left(g_\phi(X^S_i), g_\phi(X^T_j)\right) 
 
 #### Domain Generalization (DG)
 
-$$r^g = \sum_{m=1}^{M} \sum_{k=1}^{K} \frac{1}{K} \mathcal{W}_d\left(\tilde{\mathbb{P}}_{km}, \tilde{\mathbb{P}}_m\right) \tag{13}$$
+$$r^g = \sum_{m=1}^{M} \sum_{k=1}^{K} \frac{1}{K} \mathcal{W}_d\left(\tilde{\mathbb{P}}_{km}, \tilde{\mathbb{P}}_m\right) $$
 
 → 클래스별로 도메인 간 특징 분포를 정렬하여 도메인 불변 표현 학습
 
 #### Adversarial Machine Learning (AML)
 
-$$r^g = \mathcal{W}_d\left(\frac{1}{B^S_1}\sum_{i=1}^{B^S_1}\delta_{U^S_i},\ \frac{1}{B^S_1 n^S}\sum_{i=1}^{B^S_1}\sum_{j=1}^{n^S}\delta_{U^S_{ij}}\right) \tag{14}$$
+$$r^g = \mathcal{W}_d\left(\frac{1}{B^S_1}\sum_{i=1}^{B^S_1}\delta_{U^S_i},\ \frac{1}{B^S_1 n^S}\sum_{i=1}^{B^S_1}\sum_{j=1}^{n^S}\delta_{U^S_{ij}}\right) $$
 
 $$d\left(U^S_i, U^S_{\bar{i}j}\right) = \mathbb{I}_{Y^S_{1i} = Y^S_{1\bar{i}}} \left[\rho_d\left(g_\phi(X^S_{1i}), g_\phi(X^S_{1\bar{i}j})\right) + \gamma \rho_l\left(h_\theta(g_\phi(X^S_{1i})), h_\theta(g_\phi(X^S_{1\bar{i}j}))\right)\right]$$
 
