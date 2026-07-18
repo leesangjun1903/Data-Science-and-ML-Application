@@ -95,6 +95,9 @@
 ### Community Detection
 - Awesome Community Detection Research Papers : https://github.com/benedekrozemberczki/awesome-community-detection
 
+### Anomaly Detection
+- Anomaly Detection Learning Resources : https://github.com/yzhao062/anomaly-detection-resources
+
 ### Projects
 - Data Science Projects : https://github.com/veb-101/Data-Science-Projects
 - Randy Olson's data analysis and machine learning projects : https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects
