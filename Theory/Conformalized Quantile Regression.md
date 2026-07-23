@@ -1,200 +1,180 @@
-# Conformalized Quantile Regression (CQR) 
-
----
+# Conformalized Quantile Regression
 
 ## 1. Executive Summary (10문장 이내)
 
-본 논문은 Conformal Prediction의 유한 표본 커버리지 보장과 Quantile Regression의 이분산성(heteroscedasticity) 적응력을 결합한 새로운 예측구간 생성 방법인 CQR을 제안한다.  
-기존 conformal 방법들은 입력 공간 전체에서 거의 일정한 폭의 구간을 생성하여 비효율적인 반면, quantile regression은 국소적으로 적응적이지만 유한 표본에서 커버리지가 보장되지 않는 문제가 있었다.  
-CQR은 calibration set에서 conformity score $E_i = \max\{\hat{q}\_{\alpha_{lo}}(X_i) - Y_i, Y_i - \hat{q}\_{\alpha_{hi}}(X_i)\}$를 계산하여 quantile 추정치를 보정함으로써 두 방법의 장점을 모두 취한다.  
-저자들은 exchangeability 가정 하에서 $P\{Y_{n+1} \in C(X_{n+1})\} \geq 1-\alpha$가 성립함을 증명하였다(Theorem 1).  
-11개의 회귀 벤치마크 데이터셋에 대한 2,200회의 실험에서 CQR은 표준 conformal 및 locally adaptive conformal 방법보다 평균적으로 더 짧은 구간을 생성하였다(Table 1).  
-흥미롭게도 CQR은 calibration을 위해 데이터를 분할함에도 불구하고, 전체 데이터로 학습한 비정규화(non-conformalized) quantile regression보다도 더 우수한 성능을 보였다.  
-CQR은 random forest, neural network 등 임의의 quantile regression 알고리즘에 wrapping 가능한 모델-불가지론적(model-agnostic) 프레임워크이다.  
-논문은 또한 좌우 tail을 독립적으로 제어하는 비대칭 conformalization(Theorem 2)도 제시하였으나, 이는 구간 길이 증가를 대가로 한다. 이 연구는 2019년 5월 arXiv에 게재된 preprint("Work in progress")이다.
+1. 이 논문은 예측 구간(prediction interval)을 구성하는 **Conformalized Quantile Regression (CQR)** 기법을 제안한다 (초록, p.1).
+2. Conformal prediction은 분포 가정 없이 유한 표본에서 유효한 커버리지를 보장하지만, 구간 길이가 입력 공간 전반에서 거의 일정해 불필요하게 보수적이다 (초록; §3, p.4).
+3. Quantile regression은 이질분산(heteroscedasticity)에 적응적이지만, 유효 커버리지는 특정 모델·점근 조건에서만 보장된다 (p.1–2).
+4. CQR은 두 접근을 결합해 **conformal의 유한 표본 보장**과 **quantile regression의 적응성**을 동시에 얻는다 (p.2).
+5. 데이터를 proper training set과 calibration set으로 나눈 뒤, 훈련셋에서 하위·상위 조건부 분위수 $\hat q_{\alpha_{lo}}, \hat q_{\alpha_{hi}}$를 추정한다 (§4, p.4).
+6. Calibration set에서 conformity score $E_i$(식 9)를 계산해 초기 구간을 보정(conformalize)한다 (식 10–11, p.5).
+7. Theorem 1은 교환가능성(exchangeability)만 가정하면 커버리지 $\geq 1-\alpha$가 성립함을 증명한다 (p.5–6).
+8. 임의의 quantile regression 알고리즘(random forest, neural net 등)을 감쌀 수 있어 방법론적으로 유연하다 (p.2, p.6).
+9. 11개 벤치마크 · 20회 분할 · 총 2,200회 실험에서 CQR이 평균적으로 가장 짧은 구간을 생성했다 (Table 1, p.10; §6.3).
+10. 즉 CQR은 "분포 무관 + 유한 표본 유효 + 이질분산 적응"이라는 세 조건을 동시에 만족하는 절차를 제시한다 (§7 결론, p.11).
 
 ### 1-1. 연구의 목적과 필요성
-
-**목적**: 분포에 대한 가정 없이(distribution-free) 유한 표본에서 명목 커버리지($1-\alpha$)를 보장하면서도, 이분산적 데이터에서 입력값에 따라 폭이 적응적으로 변하는 짧은 예측구간을 생성하는 방법을 개발하는 것이다(p.1, Introduction).
-
-**필요성**: 저자들은 "이상적인 예측구간 생성 절차는 두 가지 속성을 만족해야 한다"고 명시한다: 
-
-(1) 강한 분포 가정 없이 유한 표본에서 유효한 커버리지를 제공해야 하고, (2) 각 지점에서 구간이 가능한 짧아야 한다(p.1).  
-신약의 효능 추정, 신용 부도 위험 평가와 같은 고위험 의사결정에서 이러한 요구가 특히 중요하다고 설명한다(p.1).  
-기존 conformal 방법은 첫 번째 조건은 만족하나 두 번째 조건에서 취약하고("[6, 15, 17]에서 주장된 바와 같이, 기존 방법들은 고정된 길이 또는 예측변수에 약하게만 의존하는 길이의 conformal 구간을 산출한다", p.1), quantile regression은 두 번째 조건은 만족하나 특정 모델과 점근적 조건 하에서만 첫 번째 조건이 보장된다(p.1-2).
+목적은 **① 강한 분포 가정(예: 정규성) 없이 유한 표본에서 유효한 커버리지를 보장하면서, ② 각 지점에서 가능한 한 짧은(정보량이 큰) 예측 구간**을 만드는 절차를 세우는 것이다 (§1, p.1). 필요성은 신약 효능·신용 부도 위험처럼 고위험 의사결정에서 "예측값"뿐 아니라 "예측의 불확실성"을 정량화해야 하기 때문이다 (§1 첫 문단). 기존 conformal은 길이가 고정적이라 이질분산 데이터에서 비효율적이고, 순수 quantile regression은 유효성 보장이 약하다는 공백을 메우려는 동기다 (§1).
 
 ---
 
-## 2. 핵심 주장과 근거 표
+## 2. 핵심 주장 · 근거 표
 
-| 핵심 주장 | 근거 | 페이지/Figure/Table |
+| 핵심 주장 | 근거 (저자 보고) | 위치 |
 |---|---|---|
-| CQR은 유한 표본에서 marginal coverage를 보장한다 | Theorem 1 증명 (exchangeability 기반 Lemma 2 활용) | p.5, Theorem 1 |
-| CQR은 기존 conformal 방법보다 짧은 구간을 생성한다 | 11개 데이터셋, 20회 반복 실험, 평균 길이 비교 | Table 1 (p.10), Figure 3-6 |
-| CQR은 비정규화 quantile regression보다도 우수하다 | Table 1에서 CQR Neural Net(1.40) vs Quantile Neural Net(1.49, coverage 88.51%) | Table 1 (p.10) |
-| Locally adaptive 방법은 근본적 통계적 한계를 가짐 | training residual이 test residual보다 편향되어 과소추정 초래 | p.8, Section 5 "Limitations" |
-| 비대칭 conformalization(Theorem 2)은 더 강한 보장이나 더 긴 구간 초래 | CQR NN: 1.40→1.58, CQR RF: 1.41→1.57 | p.10, Section 6.2 |
-| 시뮬레이션에서 CQR이 outlier가 있는 이분산 데이터에 특히 효과적 | Split 2.91 vs Local 2.86 vs CQR 1.99 | Figure 2 (p.5) |
+| 기존 split conformal 구간은 길이가 $2Q_{1-\alpha}(R,\mathcal{I}\_2)$로 고정되어 $X_{n+1}$에 무관 | 식 (8) 분석, "length is fixed" | §3, p.4 |
+| 순수 quantile regression은 유한 표본 커버리지 보장이 없어 undercover 가능 | NN 구간이 "substantially undercover" | p.4 |
+| CQR은 conformity score로 초기 구간을 보정해 유효성 확보 | 식 (9)(10)(11) | §4, p.5 |
+| CQR은 임의 QR 알고리즘 래핑 가능(RF, NN, 딥러닝) | "wrap around any algorithm" | p.2, p.6 |
+| 교환가능성만으로 커버리지 $\geq 1-\alpha$ 보장 | Theorem 1 증명 (Lemma 2 활용) | p.5–6 |
+| 상한 커버리지 $\leq 1-\alpha + \frac{1}{ \mid \mathcal{I}_2 \mid +1}$ (score 서로 다를 때) | Theorem 1 후반부 | p.6 |
+| 좌·우 꼬리 독립 제어(비대칭 보정) 가능 | Theorem 2 | p.7 |
+| CQR이 평균 구간 길이에서 최고 성능 | Table 1: CQR NN 1.40, CQR RF 1.41 | p.10 |
+| 11개 중 10개 데이터셋에서 두 경쟁 기법 모두 능가 | §6.3 | p.10–11 |
+
+### 2-1. 상세 설명
+
+**(A) 해결하고자 하는 문제.** 식 (1)의 marginal 커버리지 $P\{Y_{n+1}\in C(X_{n+1})\} \geq 1-\alpha$를 유한 표본·분포 무관으로 보장하면서, 이질분산에 맞춰 구간 길이를 국소적으로 조정하는 것 (§1).
+
+**(B) 제안 방법 (수식).**
+분위수 함수 정의:
+
+$$q_\alpha(x) := \inf\{y\in\mathbb{R}: F(y\mid X=x)\geq \alpha\}$$
+
+Pinball(check) loss로 분위수 추정 (식 5–6):
+
+$$\hat q_\alpha(x)=f(x;\hat\theta),\quad \hat\theta=\arg\min_\theta \frac{1}{n}\sum_{i=1}^n \rho_\alpha(Y_i, f(X_i;\theta))+\mathcal{R}(\theta)$$
+
+$$\rho_\alpha(y,\hat y)=\begin{cases}\alpha(y-\hat y) & y-\hat y>0\\ (1-\alpha)(\hat y - y) & \text{otherwise}\end{cases}$$
+
+Conformity score (식 9):
+
+$$E_i := \max\{\hat q_{\alpha_{lo}}(X_i)-Y_i,\ Y_i-\hat q_{\alpha_{hi}}(X_i)\}$$
+
+보정된 구간 (식 10–11):
+
+$$C(X_{n+1})=\Big[\hat q_{\alpha_{lo}}(X_{n+1})-Q_{1-\alpha}(E,\mathcal{I}_2),\ \hat q_{\alpha_{hi}}(X_{n+1})+Q_{1-\alpha}(E,\mathcal{I}_2)\Big]$$
+
+$$Q_{1-\alpha}(E,\mathcal{I}_2):=(1-\alpha)\Big(1+\tfrac{1}{|\mathcal{I}_2|}\Big)\text{-th empirical quantile of } \{E_i\}$$
+
+$E_i$는 언더커버리지(구간 밖)일 때 양수 오차, 오버커버리지(구간 안)일 때 음수가 되어 **양방향 오차를 모두 부호로 반영**한다 (p.5).
+
+**(C) 모델 구조.** 
+
+① 데이터를 $\mathcal{I}\_1$(proper training), $\mathcal{I}\_2$(calibration)로 분할 → ② $\mathcal{I}\_1$에서 $\hat q_{\alpha_{lo}}, \hat q_{\alpha_{hi}}$ 학습 → ③ $\mathcal{I}\_2$에서 $E_i$ 계산 → ④ $Q_{1-\alpha}(E,\mathcal{I}_2)$로 구간 확장/축소 (Algorithm 1, p.6). 신경망 구현 시 하위·상위 분위수를 2차원 출력으로 공유하여 계산 비용 절감 (p.7, 항목 2).
+
+**(D) 성능 향상.** Table 1 (α=0.1, 11 데이터셋 평균):
+
+| Method | Avg. Length | Avg. Coverage |
+|---|---|---|
+| Ridge | 3.06 | 90.03 |
+| Ridge Local | 2.94 | 90.13 |
+| Random Forests | 2.24 | 89.99 |
+| Random Forests Local | 1.82 | 89.95 |
+| Neural Net | 2.16 | 89.92 |
+| Neural Net Local | 1.81 | 89.95 |
+| **CQR Random Forests** | **1.41** | **90.33** |
+| **CQR Neural Net** | **1.40** | **90.05** |
+| *Quantile Random Forests | *2.23 | *92.62 |
+| *Quantile Neural Net | *1.49 | *88.51 |
+
+CQR이 커버리지 90%를 지키면서 최단 길이를 달성 (p.9–10). Quantile crossing 후처리 시 CQR NN 길이 1.40→1.35로 소폭 개선 (p.10).
+
+**(E) 한계 (저자 보고).** ① Facebook 데이터셋에서 conformity score에 동점(ties)이 있어 Theorem 1의 상한이 적용되지 않고 과도하게 보수적 (§6.3, p.11). ② Theorem 2의 비대칭 보정은 커버리지 강화 대가로 구간이 길어짐: CQR NN 1.40→1.58, CQR RF 1.41→1.57 (p.10).
 
 ---
 
-## 2-1. 상세 설명
-
-### 해결하고자 하는 문제
-기존 conformal prediction (split conformal, 식 8)의 구간 길이는 $2Q_{1-\alpha}(R, \mathcal{I}\_2)$로 **입력 $X_{n+1}$과 무관하게 고정**된다(p.4). Locally adaptive 변형은 부분적으로 개선하지만, training set의 residual이 최적화 과정에서 편향되어 있어 (특히 딥러닝처럼 overfitting하는 모델에서) 적응력이 제한된다(p.8).
-
-### 제안하는 방법 (수식 포함)
-
-**1단계**: 데이터를 proper training set $\mathcal{I}_1$과 calibration set $\mathcal{I}_2$로 분할.
-
-**2단계**: $\mathcal{I}_1$에서 quantile regression 알고리즘 $\mathcal{A}$로 하위/상위 조건부 quantile 함수를 적합:
-
-$$\{\hat{q}_{\alpha_{lo}}, \hat{q}_{\alpha_{hi}}\} \leftarrow \mathcal{A}(\{(X_i, Y_i): i \in \mathcal{I}_1\})$$
-
-이때 quantile regression 자체는 pinball loss를 최소화:
-
-$$\hat{q}_\alpha(x) = f(x; \hat{\theta}), \quad \hat{\theta} = \arg\min_\theta \frac{1}{n}\sum_{i=1}^n \rho_\alpha(Y_i, f(X_i;\theta)) + \mathcal{R}(\theta)$$
-
-$$\rho_\alpha(y, \hat{y}) := \begin{cases} \alpha(y-\hat{y}) & \text{if } y-\hat{y} > 0 \\ (1-\alpha)(\hat{y}-y) & \text{otherwise} \end{cases}$$
-
-**3단계**: $\mathcal{I}_2$에서 conformity score 계산:
-
-$$E_i := \max\{\hat{q}_{\alpha_{lo}}(X_i) - Y_i, \ Y_i - \hat{q}_{\alpha_{hi}}(X_i)\}$$
-
-**4단계**: 새로운 예측구간:
-
-$$C(X_{n+1}) = [\hat{q}_{\alpha_{lo}}(X_{n+1}) - Q_{1-\alpha}(E,\mathcal{I}_2), \ \hat{q}_{\alpha_{hi}}(X_{n+1}) + Q_{1-\alpha}(E,\mathcal{I}_2)]$$
-
-여기서 $Q_{1-\alpha}(E,\mathcal{I}_2)$는 $\{E_i : i \in \mathcal{I}_2\}$의 $(1-\alpha)(1+1/|\mathcal{I}_2|)$번째 경험적 분위수.
-
-**비대칭 확장 (Theorem 2)**:
-
-$$C(X_{n+1}) := [\hat{q}_{\alpha_{lo}}(X_{n+1}) - Q_{1-\alpha_{lo}}(E_{lo}, \mathcal{I}_2), \ \hat{q}_{\alpha_{hi}}(X_{n+1}) + Q_{1-\alpha_{hi}}(E_{hi}, \mathcal{I}_2)]$$
-
-### 모델 구조
-- **CQR Random Forests**: Quantile Regression Forests [Meinshausen, 2006] 사용, coverage 조절용 2개 추가 하이퍼파라미터를 cross-validation으로 튜닝(p.9).
-- **CQR Neural Net**: 3-layer fully connected network(64 hidden units×2), ReLU 활성화, 출력층을 2차원(하위/상위 quantile)으로 하여 파라미터 공유. Adam optimizer, learning rate $5\times10^{-4}$, dropout 0.1, pinball loss 사용(p.9).
-
-### 성능 향상
-Table 1(p.10) 기준, CQR Random Forests(길이 1.41)와 CQR Neural Net(길이 1.40)이 Random Forests(2.24), Neural Net(2.16), 그 Local 변형(1.82, 1.81)보다 모두 짧다. 11개 데이터셋 중 **10개**에서 CQR이 두 경쟁 방법을 모두 능가한다(p.10-11).
-
-### 한계
-1. **Quantile crossing 문제**: 하위/상위 quantile을 별도로 추정하므로 교차 가능성 존재(neural net에서 발생, forest에서는 미발생, p.10).
-2. **Tie 문제**: Facebook 데이터셋에서 conformity score 간 동점(ties)이 발생해 Theorem 1의 상한이 적용되지 않아 CQR Random Forests가 과도하게 보수적임(p.11).
-3. Data splitting으로 인한 표본 효율성 손실(명시적으로 각주 2에서 "split을 요구하지 않는 변형도 있다"고 언급하나 본문에서 다루지 않음, p.2).
-4. 비대칭 conformalization은 커버리지 보장이 강화되나 구간이 더 길어짐(trade-off, p.10).
+## 3. 페이지 / Figure / Table 번호 표기
+위 1·2절 표와 아래 서술에 각 주장의 위치(§, p., Figure, Table, 식 번호)를 모두 병기했습니다.
 
 ---
 
-## 3. 주장별 페이지/Figure/Table 표시
+## 4. 저자 보고 결과 vs 제 해석 (분리)
 
-| 주장 | 위치 |
-|---|---|
-| 이상적 예측구간의 두 조건 | p.1, Introduction 첫 단락 |
-| 기존 conformal의 한계 | p.1, 인용 [6,15,17] |
-| Theorem 1 (커버리지 보장) | p.5 |
-| Theorem 2 (비대칭 보장) | p.7 |
-| Locally adaptive의 통계적 한계 | p.8 |
-| 시뮬레이션 결과 (2.91 vs 2.86 vs 1.99) | Figure 2, p.5 |
-| 종합 실험 결과 | Table 1, p.10 |
-| 개별 데이터셋 결과 | Figure 3(MEPS), 4(blog/bio/bike), 5(community/star/concrete), 6(facebook), p.14-17 |
-| Quantile crossing 영향 | p.10, 마지막 단락 |
-| 비대칭 conformalization 비용 | p.10 |
+**연구 주제**
+- 저자 보고: conformal prediction + quantile regression 결합으로 적응적이면서 유효한 구간 생성 (초록).
+- 제 해석: 이 논문은 이후 "adaptive conformal" 계열의 사실상 표준 baseline이 되는 성격을 가진다(널리 인용됨). — *이는 제 판단이며 논문 본문 주장 아님.*
 
----
+**방법 (수식)**
+- 저자 보고: 식 (9)(10)(11)의 conformity score와 inflated quantile이 핵심이며, Theorem 1로 유효성 증명 (p.5–6).
+- 제 해석: 식 (9)의 $\max$ 구조가 "부호 있는 잔차"를 만들어 오버커버리지를 음수로 흡수하는데, 이 점이 순수 QR 대비 CQR이 더 짧아진 주된 메커니즘으로 보인다. 저자도 "signed conformity scores"로 언급하나(p.10), 그 기여도의 정량 분해(ablation)는 제시하지 않았다.
 
-## 4. 저자 보고 결과 vs 나의 해석
-
-| 구분 | 내용 |
-|---|---|
-| **저자 보고 (사실)** | Table 1: CQR RF 1.41 / CQR NN 1.40 평균 길이, coverage 90.33%/90.05% (11개 데이터셋 평균) |
-| **저자 보고 (사실)** | "CQR selects quantiles below the nominal level" — cross-validation으로 명목 quantile보다 낮은 값을 선택함(p.10) |
-| **저자 보고 (사실)** | Quantile Neural Net는 coverage 88.51%로 유의미하게 undercover(Table 1) |
-| **나의 해석** | CQR의 우수성은 상당 부분 "signed conformity score" (식 9)가 과대/과소 커버리지를 모두 보정할 수 있다는 데서 기인하며, 이는 단순 절대값 residual 기반 방법보다 정보 손실이 적은 보정 메커니즘으로 볼 수 있음 |
-| **나의 해석** | Random Forests 기반 quantile regression이 neural network보다 안정적인 이유는 forest의 quantile 추정이 leaf 내 empirical distribution에 기반해 자연스럽게 monotonic(quantile crossing 없음)하기 때문으로 추정됨 |
-| **나의 해석** | Table 1에서 "*" 표시된 비정규화 방법과 CQR을 직접 비교하는 것은 통계적으로 완전히 공정하지 않을 수 있음(후술 5번 항목 참고) |
+**결과**
+- 저자 보고: 11개 중 10개에서 CQR 우세, 평균 길이 최단 (Table 1, §6.3).
+- 제 해석: CQR이 데이터를 덜 쓰는(calibration 분리) 조건에서도 전체 데이터를 쓴 순수 QR을 이긴 것은 인상적이나, 이는 순수 QR의 과대커버(RF 92.62%)에서 오는 "길이 절약"과 분위수 크로스밸리데이션 튜닝이 함께 작용한 결과이므로, "동일 조건 우위"로 일반화하기엔 근거가 제한적이다. — *제 해석.*
 
 ---
 
-## 5. 통계적으로 취약한 부분과 비교 불가능한 수치
+## 5. 통계적으로 취약한 부분 · 비교 불가능한 수치
 
-1. **비정규화 방법과의 비교 불공정성**: Quantile Random Forests/Neural Net은 전체 훈련 데이터(calibration 없이)로 학습되어 CQR보다 많은 데이터를 사용함(p.9, 각주 없음). 저자도 "이는 놀라울 수 있다"고 인정하나(p.9-10), 커버리지 보장이 없는 방법과 있는 방법의 "길이"를 직접 비교하는 것은 방법론적으로 이질적임(Table 1의 asterisk 표시).
-
-2. **Facebook 데이터셋의 CQR RF 과잉 보수성**: "there are ties among the conformity scores and so the upper bound in Theorem 1 does not apply"(p.11)—즉 이론적 상한이 깨지는 상황이 실제 발생했음을 저자가 인정하나, 정량적으로 얼마나 벗어나는지에 대한 통계적 분석(신뢰구간, 표준오차)은 제공되지 않음(Figure 6 참조).
-
-3. **표준오차/신뢰구간 부재**: Table 1은 평균값만 제시하며, 20회 반복에 대한 분산/표준오차가 명시적으로 보고되지 않음(단, Figure 3-6의 boxplot에서 분포는 시각적으로 확인 가능하나 수치화되지 않음).
-
-4. **하이퍼파라미터 $\gamma=1$ 선택의 임의성**: locally adaptive 방법에서 " $\gamma=0$보다 성능이 상당히 개선된다"고만 서술(p.9)하며, $\gamma$ 값에 대한 체계적 sensitivity 분석 부재.
-
-5. **Quantile crossing 후처리 효과의 제한적 보고**: "coverage rates remaining about the same"(p.10)이라고만 언급되며 구체적 coverage 수치 비교 불가.
+- **커버리지가 다른 방법 간 길이 직접 비교의 한계:** Quantile Random Forests는 92.62%로 과대커버, Quantile Neural Net은 88.51%로 과소커버 (Table 1). 커버리지가 명목 90%에서 벗어난 방법의 길이는 **CQR의 90% 수준 길이와 직접 비교 불가**(짧아도 유효성 미달일 수 있음). 저자도 별표(*)로 "유한 표본 보장 없음"을 명시 (Table 1 각주).
+- **동점(ties) 문제:** Facebook 데이터셋에서 score 동점으로 Theorem 1 상한 미적용 → 해당 CQR RF 결과는 과보수라 다른 데이터셋과 동일선상 비교가 어렵다 (§6.3).
+- **분산/불확실성 미보고:** Table 1은 평균만 제시하고 표준오차·신뢰구간을 수치로 주지 않는다(Figure 3–6의 boxplot으로 산포를 시각화할 뿐). 방법 간 차이의 통계적 유의성 검정은 없다. — *제 지적.*
+- **스케일 정규화로 인한 절대 길이의 의미 제한:** 응답변수를 평균 절댓값으로 나눠 재척도화(§6)했으므로 "길이" 수치는 데이터셋 간 절대 비교보다 상대 비교에 적합하다. — *제 해석.*
+- **marginal vs conditional:** 보장은 marginal 커버리지(식 1)뿐이며, 조건부(각 $x$별) 커버리지는 보장되지 않는다.
 
 ---
 
 ## 6. 문서가 답하지 않는 질문
 
-1. Data splitting 없이(full conformal 방식) CQR을 적용할 경우의 성능은 어떠한가? (각주 2에서 언급만 하고 다루지 않음)
-2. Covariate shift 상황에서 CQR의 커버리지는 어떻게 되는가? (참고문헌 [50] Barber et al. 언급되나 본 논문에서 실험 없음)
-3. 다변량 응답변수(multivariate $Y$)에 대한 확장 가능성은?
-4. Conformal predictive distribution(Vovk et al. [49])과의 구체적 연결 방법은 무엇인가? (Conclusion에서 "흥미로운 연결"만 언급, p.11)
-5. Calibration set 크기 $|\mathcal{I}_2|$가 CQR 성능(특히 tie 문제)에 미치는 구체적 영향은?
-6. Cross-validation으로 quantile level을 튜닝할 때 이것이 실제로 finite-sample guarantee를 해치지 않는다는 것에 대한 엄밀한 증명이 부재(단언만 있음, p.7).
+- proper training : calibration 최적 분할 비율은? (실험은 동일 크기만 사용, §6)
+- 교환가능성이 깨지는 분포 변화(covariate/label shift) 상황의 성능은? (본문은 §7에서 후속 [50]만 언급)
+- 조건부 커버리지(conditional coverage)를 얼마나 달성하는가?
+- Full(비분할) conformal 변형의 실제 성능 수치는? (각주 2에서 존재만 언급)
+- calibration set 크기가 구간 길이에 미치는 정량적 영향은?
+- 계산 비용의 정량 비교(런타임)는?
+- 고차원 $p$에서의 거동, 분위수 크로스밸리데이션 튜닝의 커버리지 안정성 정량 분석은?
 
 ---
 
-## 7. 가장 중요한 5개 Figure 해석
+## 7. 가장 중요한 그림 5개 해석
 
-### **Figure 1 (p.3)**: Pinball Loss 시각화
-$\rho_\alpha(z)$의 비대칭 형태를 보여줌. $\alpha \neq 0.5$일 때 과대추정과 과소추정에 다른 가중치를 부여하여 quantile 추정을 가능케 하는 핵심 손실함수. CQR의 이론적 기반이 되는 quantile regression의 작동 원리를 설명.
+1. **Figure 1 (p.3) — Pinball loss.** $z=y-\hat y$에 대해 기울기가 $\alpha$(우), $1-\alpha$(좌)인 비대칭 손실. 분위수 추정이 왜 비대칭 페널티로 조건부 분위수를 잡는지를 시각화. CQR의 학습 목표(식 5–6)의 근간.
+2. **Figure 2 (p.5) — 시뮬레이션 비교.** (a) split(고정 길이 2.91), (b) local(2.86, 부분 적응), (c) CQR(1.99, 강한 적응), (d) 길이의 $X$-의존성 곡선. CQR 구간이 $X$에 따라 넓어지고 좁아지며, 분위수 추정 경계가 보정 경계와 거의 일치함을 보여 **적응성의 핵심 증거**.
+3. **Figure 3 (p.14, meps_19/20/21) — 데이터셋별 길이·커버리지 boxplot.** 세 방법 색상(빨강 split / 회색 local / 파랑 CQR)으로 CQR이 커버리지 90% 부근을 유지하며 최단 길이임을 반복 확인. Figure 4–6도 동일 형식(§6.3).
+4. **Figure 7 (p.19) — 전체 범위 산점도.** 식 (18)의 마지막 항이 만든 소수의 큰 이상치(outlier)를 −60~40 범위로 보여줌. Figure 2가 왜 잘린 범위였는지, 그리고 CQR의 이상치 견고성 논의의 배경.
+5. **Figure 8 (p.19) — 조건부 중앙값 기반 local 변형.** median 추정(QR forest)으로 local conformal을 구성해도 평균 길이 2.86으로 Figure 2b와 거의 동일 → "평균 대신 중앙값" 교체만으로는 적응성 개선이 미미함을 보이는 대조 실험.
 
-### **Figure 2 (p.5)**: 시뮬레이션 비교 (핵심 그림)
-이분산적 데이터+outlier 상황에서 (a) split conformal(고정폭 2.91), (b) locally adaptive(2.86), (c) CQR(1.99)을 비교. **CQR만이 $X$에 따라 구간 폭이 실제로 좁아지고 넓어지는 것을 시각적으로 확인**할 수 있으며, (d) 패널에서 세 방법의 길이 함수를 직접 겹쳐 비교함으로써 CQR의 적응성 우위를 명확히 입증. 이 논문의 핵심 motivating example.
-
-### **Table 1 (p.10)**: 종합 성능 표
-11개 데이터셋 전체에 대한 평균으로, CQR(볼드체)이 모든 conformal 경쟁자보다 짧은 평균 길이(1.40-1.41)를 가지면서도 명목 커버리지(90%)에 가장 근접함을 보여주는 논문의 핵심 정량적 근거.
-
-### **Figure 3 (MEPS 데이터셋, p.14)**: 실사용 사례 검증
-의료비 지출 데이터(현실 세계, 강한 이분산성 예상)에서 CQR Neural Net/RF가 다른 모든 방법보다 일관되게 짧은 길이(2.36-2.51)를 보이며 커버리지도 90% 근처에 안정적으로 유지됨을 확인. 세 개의 유사 데이터셋(MEPS_19/20/21)에서 결과가 일관되어 재현성을 시사.
-
-### **Figure 6 (Facebook 데이터셋, p.17)**: 한계 사례
-CQR Random Forests가 facebook_1/2에서 다른 방법 대비 큰 우위(길이 1.16-1.34)를 보이나 **coverage가 90%를 넘어 이상치를 보임**(우측 패널에서 CQR RF 박스가 다른 방법보다 오른쪽으로 치우침). 이는 conformity score의 tie 문제로 인한 이론적 상한 위반 사례를 시각적으로 보여주는 유일한 그림으로, 방법의 한계를 명시적으로 드러냄.
+(참고: 정량 핵심 결과는 그림이 아닌 **Table 1**에 있음.)
 
 ---
 
-## 8. 결론: 시사점 및 후속 연구 방향
+## 8. 결론 · 시사점 · 후속 연구
 
-### 저자가 제시한 시사점
-CQR은 "conformal prediction과 quantile regression의 장점을 결합한 새로운 방법"이며, exchangeability라는 온화한 가정 하에서 유한 표본 커버리지를 보장하면서 이분산성에 적응한다(p.11, Conclusion). 저자들은 **conformal predictive distributions**(단순 구간이 아닌 전체 예측 확률분포 추정)로의 확장 가능성을 언급하며, 독립적으로 작성된 관련 논문 [Vovk et al., 2019, arXiv:1902.06579]과의 흥미로운 연결점을 제시한다(p.11).
+**저자 제시 시사점·후속 계획 (§7, p.11):**
+- CQR은 교환가능성이라는 약한 가정만으로 유한 표본 miscoverage를 제어하면서 이질분산에 적응한다는 점을 결론으로 강조.
+- 후속 방향으로 **conformal predictive distributions**([49])로의 확장(구간이 아닌 예측 확률분포 추정)을 제시하고, 동시기 독립 연구 [17]과의 연결을 언급.
 
-### 8-1. 모델의 일반화 성능 향상 가능성
+**추가 후속 연구 방향 (제 제안):** 조건부 커버리지 강화, 분포 변화 하 견고성, calibration 크기·분할 비율 자동화, 동점 처리(무작위화 tie-breaking) 등.
 
-CQR의 일반화 성능 향상 가능성은 다음 세 가지 측면에서 두드러진다:
+### 8-1. 모델의 일반화 성능 향상 가능성 (중점)
+- 저자 논거(p.8, "Limitations"): local conformal은 **훈련 잔차가 최적화로 편향**되어 테스트 오차를 과소추정 → 적응성 손실. 반면 CQR은 목표가 조건부 분위수 추정이라 충분한 데이터에서 두 분위수를 안정적으로 근사, **일반화(테스트 커버리지)와 짧은 길이를 함께** 얻는다는 논리.
+- 일반화 관점 강점: (i) underlying 알고리즘 무관하게 커버리지 보장 → 모델 오지정(misspecification)에 견고 (Theorem 1); (ii) 분위수 수준을 CV로 튜닝해도 보장 유지(p.6–7) → 과적합 위험이 있는 딥러닝 QR에도 안전망 제공.
+- 제 해석: 다만 보장은 marginal이므로, 새로운 분포(공변량 변화)에서의 "일반화"는 별도 기법(가중 conformal 등)이 필요하다.
 
-1. **알고리즘 불가지론적(algorithm-agnostic) 특성**: CQR은 "임의의 quantile regression 알고리즘을 wrapping할 수 있다"(p.2)는 구조적 유연성 때문에, 향후 개발될 더 강력한 quantile 추정 모델(예: transformer 기반, gradient boosting 변형)에 즉시 적용 가능하며 이론적 커버리지 보장은 알고리즘의 정확도와 **독립적**으로 유지된다(Theorem 1은 임의의 $\hat{q}\_{\alpha_{lo}}, \hat{q}\_{\alpha_{hi}}$에 대해 성립).
+### 8-2. 2020년 이후 최신 연구 비교 (불확실성 표시)
 
-2. **분포 불가지론적 보장**: exchangeability만 요구하므로(정규성, 등분산성 등 불필요), 다양한 실제 데이터 분포(long-tail, multi-modal 등)에 대한 일반화가 이론적으로 보장됨. 이는 특정 분포 가정에 의존하는 전통적 방법 대비 우월한 일반화 잠재력을 시사.
+> **주의:** 현재 세션에서 웹 검색을 사용할 수 없어, 아래는 제 학습 지식(대략 2026년 1월까지)에 근거합니다. 연도·서지 세부는 부정확할 수 있으니 **원문 확인을 권장**합니다. 확신이 낮은 항목은 그렇게 표기했습니다.
 
-3. **한계**: 그러나 이 논문에서 다루지 않은 **covariate shift**(train/test 분포 상이) 상황에서는 exchangeability 가정이 깨지므로 이론적 보장이 실패한다. 실제 배포 환경에서의 일반화를 위해서는 [50] Barber et al.(2019)과 같은 covariate shift 대응 conformal 방법과의 결합이 필요하다.
+- **분포 변화 대응:** *"Conformal Prediction Under Covariate Shift"* (Tibshirani, Foygel Barber, Candès, Ramdas) — 가중치로 교환가능성 완화. 본 논문 참고문헌 [50]이 이 계열의 초기 버전(2019)으로 보임(확신 보통).
+- **시계열/온라인:** *"Adaptive Conformal Inference Under Distribution Shift"* (Gibbs & Candès, 2021년경) — 시간에 따라 $\alpha$를 온라인 갱신. CQR과 결합 가능. (연도 확신 보통)
+- **조건부 커버리지 개선:** Feldman·Bates·Romano의 CQR 확장 계열(orthogonal/conditional quantile regression 방향)이 있다고 기억하나, **정확한 제목·연도는 확신하지 못함**(추정하지 않겠습니다).
+- **개론·표준화:** Angelopoulos & Bates, *"A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification"* (2021~2023) — CQR을 표준 예시로 소개(확신 높음, 정확한 판본/연도는 확인 필요).
+- **분포적 예측:** Chernozhukov 등의 distributional/conformal 관련 연구가 §7에서 저자가 예고한 방향과 맞물림(세부 확신 보통).
 
-### 8-2. 2020년 이후 관련 최신 연구 비교 분석
-
-본 논문(2019)은 CQR이라는 개념을 최초로 제시했으며, 이후 다음과 같은 방향으로 발전했다고 알려져 있다(단, 아래 내용은 본 문서에 포함되지 않은 외부 지식으로, **확실성이 낮은 부분**은 명시함):
-
-- **CQR-r (Randomized/Improved CQR)**: 원 논문 저자들을 포함한 후속 연구에서 conformity score 정의를 개선하여 구간 길이를 추가로 단축하려는 시도가 있었던 것으로 알려짐. (※ 정확한 논문 제목과 세부 내용은 본 문서에서 확인 불가하여 확답 어려움)
-
-- **Conformal prediction의 분류(classification) 확장**: APS(Adaptive Prediction Sets), RAPS 등 classification 영역에서 유사한 아이디어(적응적 score 기반 conformalization)가 확장 적용된 연구들이 존재하는 것으로 알려져 있음. (※ 구체적 인용은 본 문서 범위 밖)
-
-- **Conditional coverage 강화 연구**: CQR은 marginal coverage만 보장하며 conditional coverage(특정 subgroup에서의 커버리지)는 보장하지 않는다는 한계가 있어, 이를 개선하려는 후속 연구들(예: Mondrian conformal prediction, group-conditional 방법)이 존재하는 것으로 추정되나 본 문서에서는 확인 불가.
-
-**주의**: 위 2020년 이후 연구에 대한 서술은 본 논문 문서 자체에 포함된 정보가 아니므로, 정확한 논문명·저자·수치는 검증되지 않았음을 명시한다. 확실한 근거가 있는 정보만 제공하는 원칙에 따라, 구체적인 후속 논문의 존재나 세부 결과를 단정적으로 서술하지 않았다.
-
-### 연구 시 고려할 점 (제언)
-1. Conditional coverage(그룹별/구간별 공정성)를 명시적으로 다루는 확장 연구가 필요함.
-2. Calibration set 크기가 작을 때(고차원 데이터 등) tie 문제로 인한 이론적 보장 붕괴 가능성에 대한 실증적 연구가 요구됨(Figure 6 사례 참고).
-3. Distribution shift/non-exchangeable 환경에서의 CQR 강건성 검증이 실무 적용을 위해 필수적임.
+**본 논문이 이후 연구에 미친 영향 (제 해석):** CQR은 "conformal + quantile regression"을 결합한 대표 절차로, 이후 회귀 불확실성 정량화 연구의 강력한 baseline이자 확장 출발점이 되었다고 평가됨(널리 인용). **향후 연구 시 고려점:** (1) 교환가능성 가정의 현실적 성립 여부, (2) marginal→conditional 커버리지 격차, (3) 동점·이산 반응 처리, (4) calibration 크기가 유효성·효율에 미치는 트레이드오프, (5) 딥러닝 QR의 분위수 튜닝 안정성.
 
 ---
 
-**참고 문헌 (본 분석에 사용된 자료)**:
-- Romano, Y., Patterson, E., & Candès, E. J. (2019). *Conformalized Quantile Regression*. arXiv:1905.03222v1 [stat.ME].
+## 참고 자료 (출처)
 
-**주의사항**: 본 답변은 제공된 PDF 문서(1905.03222v1.pdf)의 내용에 근거하여 작성되었으며, 8-2절의 "2020년 이후 최신 연구"에 대한 서술 중 일부는 문서에 포함되지 않은 일반적 배경지식으로 정확도가 100% 확신되지 않아 별도로 표시하였습니다.
+**1차 출처 (직접 근거):**
+- Y. Romano, E. Patterson, E. J. Candès, *"Conformalized Quantile Regression,"* arXiv:1905.03222v1 [stat.ME], 8 May 2019. (본 분석의 모든 §·식·Figure·Table 인용)
+- 논문 내 인용: [18] Koenker & Bassett, *Regression Quantiles* (1978); [22] Meinshausen, *Quantile Regression Forests* (2006); [15] Lei et al., *Distribution-Free Predictive Inference for Regression* (2018); [24] Steinwart & Christmann (2011); [50] Barber, Candès, Ramdas, Tibshirani, *Conformal Prediction Under Covariate Shift*, arXiv:1904.06019 (2019); [17] Vovk et al., *Conformal Calibrators*, arXiv:1902.06579 (2019); [49] Vovk et al., *Nonparametric Predictive Distributions Based on Conformal Prediction* (2017).
+
+**8-2에서 언급한 외부 문헌 (제 학습 지식 기반, 서지 세부 미검증):**
+- Gibbs & Candès, *Adaptive Conformal Inference Under Distribution Shift* (2021년경).
+- Angelopoulos & Bates, *A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification*.
+- (조건부 커버리지 개선 계열 논문은 제목·연도 확신 부족으로 구체 서지 미기재.)
+
+정확도를 위해, 8-2의 외부 문헌은 검색 기능을 켜시면 서지 정보를 확인해 드릴 수 있습니다. 원하시면 이 분석을 Word/PDF 파일로도 정리해 드리겠습니다.
